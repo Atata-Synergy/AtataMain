@@ -13,7 +13,7 @@ import Img5 from "../Image/phones.png";
 //const [timerSeconds, setTimerSeconds] = useState('00');
 //let interval = useRef();
 
-const startTimer = () => {
+{/*const startTimer = () => {
 const countdownDate = new Date('June 30,2020 00:00:00').getTime();
 
 
@@ -46,7 +46,7 @@ clearInterval(interval.current);
 startTimer(); 
 return ( ) => {
   clearInterval (interval.current);
-};
+};*/}
   
 
 
@@ -63,14 +63,14 @@ function LatestDeals(props) {
       <div className="group d-flex">
         <div className="row Deal-poster">
           <div className="percentage-off">
-            <p>From 10% OFF</p>
-          </div>
-        {/*<section className="timer-container">
-      <section className="timer">
+                      </div>
+       {/* <section className="timer-container">
+      <section className="timer">*/}
 
   <h1>10% Off Discount</h1>
+  </div>
 
-<div>
+{/*<div>
   <section>
     <p>{timerDays}</p> 
     <p><small>Days </small></p>
@@ -93,7 +93,7 @@ function LatestDeals(props) {
 </div>
       </section>
     </section>
-  </div>*/}
+</div>*/}
         <div className="bg-white d-flex">
           <div className="item">
             <div className="imageContainer">
@@ -155,9 +155,12 @@ function LatestDeals(props) {
               <span>LG, Nigeria</span>
             </div>
           </div>
-        </div>
-      </div></div>
-    </MyCateCard>
+          </div>
+      </div>
+      
+
+          </MyCateCard>
+          
   );
 }
 

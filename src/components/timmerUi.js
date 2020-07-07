@@ -1,4 +1,4 @@
-import React, {useEffect, useRef,  useState } from 'react';
+{/*import React, {useEffect, useRef,  useState } from 'react';
 import styled from "styled-components";
 import "@material-ui/core";
 
@@ -147,4 +147,4 @@ const Timmer = styled.div`
         padding: 3em 1em;
       }
     }
-`;
+  `;*/}

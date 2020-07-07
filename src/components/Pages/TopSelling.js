@@ -23,6 +23,11 @@ import Deals from "../card/LatestDeals";
 import form from "../Pages/rfqForm";
 import Cards from "../card/CardsRows";
 import Forms from "../Pages/rfqForm";
+import Cart from "../Pages/CartCss/cart"
+import AddToCart from "./addToCart";
+import product from "../Pages/ProductCart";
+
+
 
 
 
@@ -49,10 +54,25 @@ class TopSelling extends Component {
             </div>
             <div className="d-flex">
             
-              <Timmer />
+            <AddToCart/>
+            
+          </div>
+            <div className="d-flex">
+            
+              <Cart/>
               
             </div>
-     
+            <div className="d-flex">
+            
+            <product/>
+
+            
+          </div>
+          <div>
+            <productCart/>
+          </div>
+          
+
 </div>
 </div>
       
