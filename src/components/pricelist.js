@@ -3,9 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function PriceList(props) {
-  
- 
-
   return (
     <div className="PriceListStyle">
       <span>{props.Commodity} / {props.country}</span>

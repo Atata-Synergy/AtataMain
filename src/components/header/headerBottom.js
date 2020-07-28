@@ -130,7 +130,7 @@ export default function SearchAppBar() {
             ref={anchorRef}
             aria-controls={open ? "menu-list-grow" : undefined}
             aria-haspopup="true"
-            onClick={handleToggle}
+            onMouseEnter={handleToggle}
           >
             All Categories
             <MenuIcon />
@@ -157,9 +157,9 @@ export default function SearchAppBar() {
                       id="menu-list-grow"
                       onKeyDown={handleListKeyDown}
                     >
-                      <MenuItem onClick={handleClose}>Profile</MenuItem>
-                      <MenuItem onClick={handleClose}>My account</MenuItem>
-                      <MenuItem onClick={handleClose}>Logout</MenuItem>
+                      <MenuItem onMouseEnter={handleClose}>Profile</MenuItem>
+                      <MenuItem onMouseEnter={handleClose}>My account</MenuItem>
+                      <MenuItem onMouseEnter={handleClose}>Logout</MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>
@@ -186,12 +186,11 @@ export default function SearchAppBar() {
             </Menu>
           </Typography>
           <Form>
-
-          <div className="Login">
-            <AccountCircleIcon />Login / Sign up
-          </div>
+            <div className="Login">
+            <i class="far fa-user-circle"></i>
+            Login / sign up
+            </div>
           </Form>
-          
         </Toolbar>
       </AppBar>
     </div>
@@ -202,7 +201,7 @@ const Menu = styled.div`
   display: flex;
 
   .menuList {
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     padding: 5px 15px;
@@ -215,11 +214,18 @@ const Menu = styled.div`
 `;
 
 const Form = styled.div`
+  .Login {
+    padding: 12px 10px;
+    font-size: 15px;
 
-.Login{
-  .MuiSvgIcon-root{
-    font-size: 40px;
-    padding: 0px 5px;
+    i{
+      padding: 0 9px;
+      font-size: 35px;
+    }
+    
+    :hover {
+      background-color: var(--colorLight);
+      color: var(--colorRed);
+    }
   }
-}
 `;
