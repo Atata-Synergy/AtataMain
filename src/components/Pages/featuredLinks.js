@@ -33,7 +33,7 @@ class FeaturedLinks extends Component {
           </LinksItem>
           
          <LinksItem>
-            <Link to="/atataPay">
+            <Link to="/atataLogistics">
             <div>
               <AirportShuttle className="icon"></AirportShuttle>
               <LinksBottom className="text-icon">Atata Logistics</LinksBottom>

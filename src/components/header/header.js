@@ -31,7 +31,7 @@ function Header() {
           <div className=" clicks d-flex">
             <Link to="/SignIn">
               <p>
-                <i class="far fa-user"></i>Login
+                 <i class="far fa-user"></i>Login
               </p>
             </Link>
             <Link to="/Cart">

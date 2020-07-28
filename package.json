@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.4.2",
     "bootstrap": "^4.5.0",
     "bootstrap-select": "^1.13.13",
     "elegant-icons": "0.0.1",
@@ -26,6 +27,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-select-currency": "^1.0.7",
+    "react-shopping-cart": "^1.9.0",
     "react-slick": "^0.25.2",
     "react-star-rating": "^1.4.2",
     "react-toolbox": "^2.0.0-beta.13",
@@ -33,7 +35,8 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -61,7 +61,7 @@ function groupedCard() {
             <span>New Design</span>
           </div>
         </div>
-        <div className="item">
+        {/* <div className="item">
           <div className="imageContainer">
             <img src={Img3} />
           </div>
@@ -78,11 +78,7 @@ function groupedCard() {
           <div className="details">
             <span>Trending Now</span>
           </div>
-          
-          <div className="details">
-            <span>Trending Now</span>
-          </div>
-        </div>
+        </div> */}
       </div>
     </Group>
   );
@@ -93,6 +89,7 @@ const Group = styled.div`
   margin: 5px 10px;
   border-radius: 5px;
   padding: 5px;
+  width: 100px;
   .card-title{
       font-size: 16px;
       font-weight: bold;

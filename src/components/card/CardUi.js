@@ -1,4 +1,5 @@
 import React from 'react';
+import CardCard from './card'
 import img1 from "../Image/clothes.png";
 import img2 from "../Image/clothe1.png";
 import img3 from "../Image/Furniture.png";
@@ -9,7 +10,7 @@ import styled from "styled-components";
 import "./card-style.css"
 
 
-function Card(props){
+function Card(props) {
     return(
       <MyCard>
         <div className="d-flex mt-2 mb-2 px-2 CategoryTitle">
@@ -19,7 +20,7 @@ function Card(props){
             <hr />
       </div>
       <div className="group d-flex">
-        <div className="card text-center">
+        {/* <div className="card text-center">
         <div className="overflow">
         <img src= {img1} alt="Image1" className="card-img-top" />
         </div>        
@@ -29,7 +30,7 @@ function Card(props){
         <p><b>$20.00 - $30.00</b></p>
         <a href="#" className="btn btn-outline-success">View More</a>
         </div>
-        </div>
+        </div> */}
         <div className="card text-center">
         <div className="overflow">
         <img src= {img2} alt="Image1" className="card-img-top" />

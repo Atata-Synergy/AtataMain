@@ -26,7 +26,13 @@ import Forms from "../Pages/rfqForm";
 import Cart from "../Pages/CartCss/cart"
 import AddToCart from "./addToCart";
 import product from "../Pages/ProductCart";
-
+import Logistics from "../LogisticsFormDetails";
+import {Container} from "reactstrap";
+import Dashboard from "./BuyerDashboard";
+import CartPage from "./cartPage";
+import CartTable from '../checkoutpage';
+import Form from "../LogiisticsUserForm"
+import LogisticsForm from "../LogisticsFormDetails";
 
 
 
@@ -41,38 +47,14 @@ class TopSelling extends Component {
         <div className="col-12">
           <div className="row mt-5 mb-5">
 
-              <CategoryCard />
-            <div className="d-flex">
-              <Grouped />
-              
-            </div>
-            
-            <div className="d-flex">
-            
-              <Deals />
-              
-            </div>
-            <div className="d-flex">
-            
-            <AddToCart/>
-            
-          </div>
-            <div className="d-flex">
-            
-              <Cart/>
-              
-            </div>
-            <div className="d-flex">
-            
-            <product/>
 
-            
-          </div>
-          <div>
-            <productCart/>
-          </div>
-          
+         <LogisticsForm/>
 
+   
+
+
+              
+           
 </div>
 </div>
       

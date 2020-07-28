@@ -1,15 +1,33 @@
-import React from 'react';
+import React, {Component} from 'react';
 import img1 from "../Image/1.png";
 import img2 from "../Image/2.png";
 import img4 from "../Image/Computer.png";
 import img5 from "../Image/clothe3.png";
 import img6 from "../Image/machine1.png";
 import styled from "styled-components";
+import RemoveIcon from '@material-ui/icons/Remove';
+import SvgIcon2 from '@material-ui/icons/Add';
 
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import SvgIcon from '@material-ui/icons/Remove';
 
+class AddToCart extends Component {
+  constructor (props){
+    super(props);
+    this.state ={
+      count: 0
+    }
+  }
 
-function AddToCart(props){
-    return(
+  increment =( ) => {
+    this.setState ({ count: this.state.count + 1 });
+  }
+
+  decrement =( ) => {
+    this.setState ({ count: this.state.count - 1 });
+  }
+render (){
+   return(
       <MyCard>
         <div className="d-flex mt-2 mb-2 px-2 CategoryTitle">
          <div className="CategoryName">
@@ -19,95 +37,24 @@ function AddToCart(props){
       </div>
       <div className="group d-flex">
         
-        <div className="card text-center">
-        <div className="overflow">
-        <img src= {img2} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        </div>
-        <div className="card text-center">
+         <div className="card text-center">
         <div className="overflow">
         <img src= {img1} alt="Image1" className="card-img-top" />
         </div>        
         <div className="card-body text-dark">
-        
         <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
+        <p className="text-primary"><b>$20.00</b> </p>
+         <a href="#" className="btn btn-success">Add Cart</a>
+
+        </div>
+        <div className="counter" >
+        <SvgIcon onClick={this.decrement} ></SvgIcon>
+        <span>{this.state.count}</span>
+        <SvgIcon2 onClick={this.increment} ></SvgIcon2>
+         
         </div>
         </div>
-        <div className="card text-center">
-        <div className="overflow">
-        <h4 className="card-title"></h4>
-        <img src= {img2} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-      </div>
-      <div className="card text-center">
-        <div className="overflow">
-        <img src= {img2} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        </div>
-        <div className="card text-center">
-        <div className="overflow">
-        <img src= {img4} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        
-      </div>
-      
-         </div>
-         <div className="group d-flex">
-        <div className="card text-center">
-        <div className="overflow">
-        <img src= {img4} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        </div>
-        <div className="card text-center">
-        <div className="overflow">
-        <img src= {img1} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        </div>
+
         <div className="card text-center">
         <div className="overflow">
         <img src= {img2} alt="Image1" className="card-img-top" />
@@ -115,43 +62,30 @@ function AddToCart(props){
         <div className="card-body text-dark">
         
         <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
-        <a href="#" className="btn btn-success">Add Cart</a>
-        </div>
-        </div>
-        <div className="card text-center">
-        <div className="overflow">
-        <h4 className="card-title"></h4>
-        <img src= {img4} alt="Image1" className="card-img-top" />
-        </div>        
-        <div className="card-body text-dark">
-        
-        <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
+        <p className="text-primary"><b>$20.00</b> </p>
          <a href="#" className="btn btn-success">Add Cart</a>
         </div>
-      </div>
-      
+        </div>
         <div className="card text-center">
         <div className="overflow">
-        <img src= {img6} alt="Image1" className="card-img-top" />
+        <img src= {img4} alt="Image1" className="card-img-top" />
         </div>        
         <div className="card-body text-dark">
         
         <p className="card-text text-secondary">Black Shoe leather</p>
-        <p className="text-primary"><b>$20.00 - $30.00</b> / Piece</p>
-        <p><b>5 pieces (Min. Order</b></p>
+        <p className="text-primary"><b>$20.00</b> </p>
+        
         <a href="#" className="btn btn-success">Add Cart</a>
         </div>
-      </div>
+        </div>
+        
       </div>
         
         </MyCard>
     );
+   
 }
-
+  }
 const MyCard = styled.div`
 
 width:97%;
@@ -161,6 +95,24 @@ padding:15px 10px;
 .body{
   background:radial-gradient red;
 }
+.counter{
+  
+  display: flex;
+  background-color: rgb(0, 158, 127);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 104px;
+  height: 36px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
 .card{
   width: 15rem; 
   padding:10px 5px;

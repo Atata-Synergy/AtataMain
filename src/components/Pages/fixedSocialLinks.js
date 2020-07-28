@@ -14,7 +14,8 @@ function FixedSocialLinks() {
         <div>
           <i class="fab fa-instagram"></i>
         </div>
-      </div>
+        
+          </div>
     );
 }
 

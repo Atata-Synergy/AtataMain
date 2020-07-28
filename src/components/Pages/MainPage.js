@@ -1,7 +1,7 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
-import "../accounts/account.css"
+import "../accounts/account.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
 import CommodityPrice from "../commodity";
@@ -24,15 +24,11 @@ import RFQ from "./rfq";
 
 import Cards from "../card/CardsRows";
 import headerLogo from "../headerLogo";
-
-
-
-
+import FixedCartButton from "./FixedCartButton";
 
 function Page() {
   return (
     <>
-     
       <div className="col-12 my-5 index-viewed">
         <Row>
           <div className="col-xs-3 col-lg-3 col-md-0 col-sm-0 Price">
@@ -45,23 +41,22 @@ function Page() {
       </div>
       <div className="col-12 mx-auto my-4">
         <FeaturedLinks />
-      </div> 
-     
+      </div>
+      <FixedCartButton />
+
       <div className="col-12 mx-auto my-4">
         <headerLogo />
-      </div> 
-     
-     
-      
-        <div className= "group d-flex">
-          <Grouped/>
-          <Grouped1/>
-          </div>
-      
+      </div>
+
+      <div className="group d-flex">
+        <Grouped />
+        <Grouped1 />
+      </div>
+
       <div className="col-12 mx-auto mb-5">
         <CategoryLinks />
-    </div>
-    <div className="col-12 mx-auto mb-5">
+      </div>
+      <div className="col-12 mx-auto mb-5">
         {/* <HeaderText></HeaderText>
         <hr /> */}
         {/* <div className="my-5">
@@ -70,34 +65,30 @@ function Page() {
         <div className="my-5">
           <CategoryCard2 />
         </div>
-        
+
         <div className="my-5">
           <CategoryCard3 />
         </div>
         <div className="my-5">
           <LatestDeals />
         </div>
-        <div className="my-5">
-        </div>
-      
-        <div className= "group d-flex">
-          <Grouped/>
-          <Grouped1/>
-          </div>
-      
-        <div className="group d-flex">
-        <RFQ/>
-                </div>
-        </div>
-        
-        <div className="my-5">
-        <Cards/>
-        </div>
-        
+        <div className="my-5"></div>
 
-        
-      
-     {/* <div className="col-12 mx-auto">
+        <div className="group d-flex">
+          <Grouped />
+          <Grouped1 />
+        </div>
+
+        <div className="group d-flex">
+          <RFQ />
+        </div>
+      </div>
+
+      <div className="my-5">
+        <Cards />
+      </div>
+
+      {/* <div className="col-12 mx-auto">
         <HeaderText>Most viewed</HeaderText>
         <hr />
         <div className="my-5">
@@ -111,14 +102,15 @@ function Page() {
           <IndexBlog />
         </div>
       </div> */}
-        <Footer />
+      <Footer />
+
       <FixedSocialLinks />
       <MainHeader />
     </>
-  ); 
+  );
 }
 const HeaderText = styled.div`
-background-color: #ccc;
+  background-color: #ccc;
   font-family: "Bebas Neue", cursive;
   font-size: 40px;
   text-align: center;

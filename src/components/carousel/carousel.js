@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../accounts/account.css";
-import CarouselImg from "./Images/banner1.png";
-import CarouselImg2 from "./Images/slider2.jpg";
+import CarouselImg from "./Images/bagandshoe.jpg";
+import CarouselImg2 from "./Images/bannerShoe2.jpg";
 import CarouselImg3 from "./Images/slider4.png";
 import CarouselImg5 from "./Images/banner2.png";
 import CarouselImg6 from "./Images/slider5.png";

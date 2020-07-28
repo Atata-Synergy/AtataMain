@@ -170,7 +170,7 @@ function Commodity() {
 
 const CommodityStyle = styled.div``;
 const PriceStyle = styled.div`
-  height: 340px;
+  height: 320px;
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -180,8 +180,8 @@ const PriceStyle = styled.div`
 margin-top: 7px;
 
   .PriceListStyle {
-    background-color: var(--colorBlack);
-    color: var(--colorLight);
+    background-color: var(--colorAsh);
+    color: var(--colorBlack);
     text-align: center;
     font-size: 13px;
     display: flex;
