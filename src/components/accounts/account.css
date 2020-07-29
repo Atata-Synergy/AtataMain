@@ -3,6 +3,7 @@
 :root {
   --colorBlack: #1c1c1c;
   --colorLight: #f5f5f5;
+  --colorLightTransparent: #f5f5f562;
   --colorWhite: #ffffff;
   --colorGreen: #0e8502;
   --colorRed: #ff0000;
@@ -203,17 +204,6 @@ hr {
 .socialLinks .fa-instagram:hover {
   color: #008600;
 }
-
-form {
-  padding: 35px;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.formgroup {
-  font-family: "Baloo Da 2", cursive;
-}
-
 .signin,
 .userReg {
   width: 70%;

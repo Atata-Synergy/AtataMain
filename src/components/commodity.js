@@ -170,6 +170,7 @@ function Commodity() {
 
 const CommodityStyle = styled.div``;
 const PriceStyle = styled.div`
+background-color: var(--colorAsh);
   height: 320px;
   overflow: hidden;
   overflow-x: hidden;

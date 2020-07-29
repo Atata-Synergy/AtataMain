@@ -31,10 +31,7 @@ function Page() {
     <>
       <div className="col-12 my-5 index-viewed">
         <Row>
-          <div className="col-xs-3 col-lg-3 col-md-0 col-sm-0 Price">
-            <CommodityPrice />
-          </div>
-          <div className="col-xs-9 col-lg-9 col-md-12 col-sm-12 slider">
+          <div className="col-xs-12 col-lg-12 col-md-12 col-sm-12 slider">
             <Simpleslider />
           </div>
         </Row>
@@ -57,11 +54,7 @@ function Page() {
         <CategoryLinks />
       </div>
       <div className="col-12 mx-auto mb-5">
-        {/* <HeaderText></HeaderText>
-        <hr /> */}
-        {/* <div className="my-5">
-          <CategoryCard />
-        </div> */}
+       
         <div className="my-5">
           <CategoryCard2 />
         </div>
