@@ -3,6 +3,9 @@ import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import AllCateDropDown from "./dropdown/allcategoriesDropDown";
+import LoginDropDown from "./dropdown/loginDropdown";
+import SubMenuList from './dropdown/subMenuList';
 
 function HeaderBottom() {
   //function for hover on All Categories
@@ -10,6 +13,7 @@ function HeaderBottom() {
     const Hover = document.getElementById("allCate-SubMenu");
     Hover.classList.remove("hidden");
   }
+
   function OnLeave(e) {
     const Hover = document.getElementById("allCate-SubMenu");
     Hover.classList.add("hidden");
@@ -25,20 +29,15 @@ function HeaderBottom() {
     Hover.classList.add("hidden");
   }
 
-
   return (
     <>
       <Container>
         <div className="rightMenu">
           <ul>
-            <li
-              className="d-flex"
-              onMouseEnter={Onhover}
-              onMouseLeave={OnLeave}
-            >
+            <li className="d-flex" onMouseEnter={Onhover}>
               <MenuIcon />
               <p style={{ margin: "0 10px" }}> All Categories </p>
-              {OnLeave ? <ExpandLessIcon /> : <ExpandMoreIcon /> }
+              {OnLeave ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             </li>
             <li>Top Selling</li>
             <li>Blog</li>
@@ -53,35 +52,94 @@ function HeaderBottom() {
           </form>
 
           <div className="login">
-            
-            <i
-              class="fas fa-user-circle"
-              onMouseEnter={handleOnhover}
-              onMouseLeave={handleMouseOut}
-            ></i>
+            <i class="fas fa-user-circle" onMouseEnter={handleOnhover}></i>
           </div>
         </div>
       </Container>
-      {/* DropDown for All Categories */}
-      <div className="hidden" id="allCate-SubMenu">
-        Hello1
-      </div>
 
-      {/* Login Drop Down */}
-      <div className="hidden" id="LoginDrop">
-        Hello
-      </div>
+      <DropDown>
+        {/* DropDown for All Categories */}
+        <div className="d-flex">
+        <div
+          className="allCate-SubMenu hidden"
+          onMouseLeave={OnLeave}
+          id="allCate-SubMenu"
+        >
+          <AllCateDropDown />
+        </div>
+        <div className='' id='subMenuList'>
+          <SubMenuList />
+        </div>
+        </div>
+
+        {/* Login Drop Down */}
+        <div
+          className=" LoginDrop hidden"
+          id="LoginDrop"
+          onMouseLeave={handleMouseOut}
+        >
+          <p>
+            <LoginDropDown />
+          </p>
+        </div>
+      </DropDown>
     </>
   );
 }
+const DropDown = styled.div`
+  position: absolute;
+  width: 100%;
+  .allCate-SubMenu {
+    margin: 0 0 0 35px;
+    font-size:15px;
+    text-align: center;
+    padding: 10px;
+    background: var(--colorLight);
+    background-image: url("./Images/bg.png");
+    width: 18%;
+  }
+  .LoginDrop {
+    position: absolute;
+    right: 4px;
+    p {
+      // layout
+      position: relative;
+      max-width: 30em;
 
+      // looks
+      background-color: #fff;
+      padding: 1.125em 1.5em;
+      box-shadow: 2px 2px 5px #aaaaaa;
+      border-radius: 1rem;
+    }
+
+    p::before {
+      // layout
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 100%;
+      left: 6em; // offset should move with padding of parent
+      border: 0.75rem solid transparent;
+      border-top: none;
+
+      // looks
+      border-bottom-color: #fff;
+    }
+  }
+`;
 const Container = styled.div`
   width: 100%;
-  background-color: var(--colorRed);
+  background-color: var(--colorGreen);
   display: flex;
   color: var(--colorLight);
   font-weight: 500;
   overflow: hidden;
+  .active {
+    background-color: var(--colorLight);
+    color: var(--colorRed);
+  }
   .rightMenu,
   .leftMenu {
     width: 50%;
