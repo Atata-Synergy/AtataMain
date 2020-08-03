@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function LoginDropDown(){
     return(
         <Links className="d-flex">
-            <li><Link to='/Login'>Login</Link></li>
+            <li><Link to='/signin'>Login</Link></li>
             <li> or </li>
             <li><Link to='/Register'>Register</Link></li>
         </Links>

@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Home from "@material-ui/icons/Payment"
+import Home from "@material-ui/icons/Payment";
 
-import HomeWork from "@material-ui/icons/HomeWork"
+import HomeWork from "@material-ui/icons/HomeWork";
 import AirportShuttle from "@material-ui/icons/AirportShuttle";
-import PeopleSharpIcon from "@material-ui/icons/PeopleSharp"
+import PeopleSharpIcon from "@material-ui/icons/PeopleSharp";
 
-
-
-import {green} from "@material-ui/core/colors";
+import { green } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import atataPay from "../Image/atataPaySmall.png";
 import atataSure from "../Image/atataSureSmall.png";
 
@@ -18,52 +16,45 @@ class FeaturedLinks extends Component {
   render() {
     return (
       <div className="w-100">
-         <Links>
-       
-         <LinksItem>
+        <Links>
+          <LinksItem>
             <Link to="/atataPay">
-            <div>
-              <Home className="icon"></Home>
-              <LinksBottom className="text-icon">Atata Pay</LinksBottom>
-              
-              
-      </div>
-             
+              <div>
+                <Home className="icon"></Home>
+                <LinksBottom className="text-icon">Atata Pay</LinksBottom>
+              </div>
             </Link>
           </LinksItem>
-          
-         <LinksItem>
+
+          <LinksItem>
             <Link to="/atataLogistics">
-            <div>
-              <AirportShuttle className="icon"></AirportShuttle>
-              <LinksBottom className="text-icon">Atata Logistics</LinksBottom>
-      </div>
-             
+              <div>
+                <AirportShuttle className="icon"></AirportShuttle>
+                <LinksBottom className="text-icon">Atata Logistics</LinksBottom>
+              </div>
             </Link>
           </LinksItem>
-          
-         <LinksItem>
+
+          <LinksItem>
             <Link to="/atataPay">
-            <div>
-              <HomeWork className="icon"></HomeWork>
-              <LinksBottom className="text-icon">Atata Warehouse</LinksBottom>
-      </div>
-             
+              <div>
+                <HomeWork className="icon"></HomeWork>
+                <LinksBottom className="text-icon">Atata Warehouse</LinksBottom>
+              </div>
             </Link>
           </LinksItem>
-        
+
           <LinksItem>
             <Link to="/atataInsurance">
-            <div>
-              <PeopleSharpIcon className="icon"></PeopleSharpIcon>
-             <LinksBottom className="text-icon">Atata Insurance </LinksBottom>
-             </div>
+              <div>
+                <PeopleSharpIcon className="icon"></PeopleSharpIcon>
+                <LinksBottom className="text-icon">
+                  Atata Insurance{" "}
+                </LinksBottom>
+              </div>
             </Link>
           </LinksItem>
-
-
         </Links>
-
       </div>
     );
   }
@@ -133,15 +124,14 @@ const LinksItem = styled.div`
 const LinksTop = styled.div`
   font-size: 50px;
   margin: 10% 0;
-
 `;
 const LinksBottom = styled.div`
   font-family: "Muli", sans-serif;
-  
-  padding-bottom:40%;
+
+  padding-bottom: 40%;
   color: #036735;
-  .styleBottom{
-    padding-left:20px;
+  .styleBottom {
+    padding-left: 20px;
   }
-`;  
+`;
 export default FeaturedLinks;

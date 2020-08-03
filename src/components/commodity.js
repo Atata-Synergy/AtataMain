@@ -5,7 +5,6 @@ import PriceList from "../components/pricelist";
 function Commodity() {
   return (
     <CommodityStyle>
-     
       <PriceStyle>
         <PriceList
           Commodity="Rice"
@@ -170,15 +169,16 @@ function Commodity() {
 
 const CommodityStyle = styled.div``;
 const PriceStyle = styled.div`
-background-color: var(--colorAsh);
-  height: 320px;
-  overflow: hidden;
+  background-color: var(--colorAsh);
+  margin-top: 5%;
+  height: 470px;
+  overflow: scroll;
   overflow-x: hidden;
   overflow-y: scroll;
   ::-webkit-scrollbar {
-  width: 10px;
-}
-margin-top: 7px;
+    width: 10px;
+  }
+  margin-top: 7px;
 
   .PriceListStyle {
     background-color: var(--colorAsh);

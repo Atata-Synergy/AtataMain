@@ -67,7 +67,7 @@ function HeaderBottom() {
         >
           <AllCateDropDown />
         </div>
-        <div className='' id='subMenuList'>
+        <div className='hidden' id='SubMenuList'>
           <SubMenuList />
         </div>
         </div>

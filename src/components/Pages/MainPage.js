@@ -29,9 +29,13 @@ import FixedCartButton from "./FixedCartButton";
 function Page() {
   return (
     <>
-      <div className="col-12 my-5 index-viewed">
+      <div className="col-12 index-viewed">
         <Row>
-          <div className="col-xs-12 col-lg-12 col-md-12 col-sm-12 slider">
+          
+        <div className="col-xs-3 col-lg-3 col-md-12 col-sm-12">
+            <CommodityPrice />
+          </div>
+          <div className="col-xs-9 col-lg-9 col-md-12 col-sm-12 slider">
             <Simpleslider />
           </div>
         </Row>
@@ -81,20 +85,20 @@ function Page() {
         <Cards />
       </div>
 
-      {/* <div className="col-12 mx-auto">
+       <div className="col-12 mx-auto">
         <HeaderText>Most viewed</HeaderText>
         <hr />
         <div className="my-5">
           <BottomItem />
         </div>
       </div> 
-      {/* <div className="col-12 mt-5 mx-auto">
+       <div className="col-12 mt-5 mx-auto">
         <HeaderText>Blog</HeaderText>
         <hr />
         <div className="my-5">
           <IndexBlog />
         </div>
-      </div> */}
+      </div> 
       <Footer />
 
       <FixedSocialLinks />

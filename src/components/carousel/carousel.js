@@ -1,38 +1,49 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../accounts/account.css";
-import CarouselImg from "./Images/bagandshoe.jpg";
-import CarouselImg2 from "./Images/bannerShoe2.jpg";
-import CarouselImg3 from "./Images/slider4.png";
-import CarouselImg5 from "./Images/banner2.png";
-import CarouselImg6 from "./Images/slider5.png";
-import CarouselImg7 from "./Images/slider3.jpg";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import styled from "styled-components";
+import CarouselImg from "./Images/banner.png";
+import CarouselImg2 from "./Images/banner2.png";
+import CarouselImg3 from "./Images/banner3.png";
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
 export default class SimpleSlider extends Component {
   render() {
     return (
-      <div className="slider">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg2} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg3} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg5} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg6} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={CarouselImg7} />
-          </Carousel.Item>
-        </Carousel>
-      </div>
+      <>
+        <Slider>
+          <AliceCarousel autoPlay autoPlayInterval="3000">
+            <img src={CarouselImg} className="sliderimg" />
+            <img src={CarouselImg2} className="sliderimg" />
+            <img src={CarouselImg3} className="sliderimg" />
+          </AliceCarousel>
+        </Slider>
+      </>
     );
   }
 }
+
+const Slider = styled.div`
+  height: 50%;
+  width: 100%;
+  color: red;
+  .alice-carousel__prev-btn-item,
+  .alice-carousel__next-btn-item {
+    position: absolute;
+    color: var(--colorWhite);
+    top: 38%;
+  }
+  .alice-carousel__prev-btn-item {
+    left: 0;
+  }
+  .alice-carousel__next-btn-item {
+    right: 0;
+  }
+  .arrows {
+    position: absolute;
+    transform: (-100px, -100px);
+  }
+`;

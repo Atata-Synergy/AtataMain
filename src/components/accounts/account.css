@@ -511,9 +511,11 @@ a {
 }
 
 .slider {
-  margin: 7px 0;
+  margin: 1px 0;
+  padding: 10px;
   background-color: var(--colorLight);
-  height: 25rem;
+  height: 480px;
+  overflow: hidden;
 }
 .homeRFQ {
   background-color: #fff;
