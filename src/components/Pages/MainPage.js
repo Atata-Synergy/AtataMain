@@ -4,17 +4,13 @@ import styled from "styled-components";
 import "../accounts/account.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
-import CommodityPrice from "../commodity";
+import CommodityPrice from "../ComodityPrice/commodity";
 import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
-import FeaturedLinks from "../Pages/featuredLinks";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
 import BottomItem from "../Pages/bottomItem";
 import IndexBlog from "../Pages/IndexBlog";
-import ItemCategory from "../Pages/ItemCategories";
-import { Container } from "semantic-ui-react";
-import CategoryCard from "./bottomCategoryItems";
 import CategoryCard2 from "./homeCard";
 import CategoryCard3 from "./AccessoriesCard";
 import LatestDeals from "../card/weeklyDeals";
@@ -23,7 +19,6 @@ import Grouped1 from "../card/groupedCardWithLocation";
 import RFQ from "./rfq";
 
 import Cards from "../card/CardsRows";
-import headerLogo from "../headerLogo";
 import FixedCartButton from "./FixedCartButton";
 
 function Page() {
@@ -31,17 +26,13 @@ function Page() {
     <>
       <div className="col-12 index-viewed">
         <Row>
-          
-        <div className="col-xs-3 col-lg-3 col-md-12 col-sm-12">
+          <div className="col-xs-3 col-lg-3 my-4 col-md-12 col-sm-12">
             <CommodityPrice />
           </div>
-          <div className="col-xs-9 col-lg-9 col-md-12 col-sm-12 slider">
+          <div className="col-xs-9 col-lg-9 col-md-12 my-4 col-sm-12 slider">
             <Simpleslider />
           </div>
         </Row>
-      </div>
-      <div className="col-12 mx-auto my-4">
-        <FeaturedLinks />
       </div>
       <FixedCartButton />
 
@@ -58,7 +49,6 @@ function Page() {
         <CategoryLinks />
       </div>
       <div className="col-12 mx-auto mb-5">
-       
         <div className="my-5">
           <CategoryCard2 />
         </div>
@@ -85,20 +75,20 @@ function Page() {
         <Cards />
       </div>
 
-       <div className="col-12 mx-auto">
+      <div className="col-12 mx-auto">
         <HeaderText>Most viewed</HeaderText>
         <hr />
         <div className="my-5">
           <BottomItem />
         </div>
-      </div> 
-       <div className="col-12 mt-5 mx-auto">
+      </div>
+      <div className="col-12 mt-5 mx-auto">
         <HeaderText>Blog</HeaderText>
         <hr />
         <div className="my-5">
           <IndexBlog />
         </div>
-      </div> 
+      </div>
       <Footer />
 
       <FixedSocialLinks />

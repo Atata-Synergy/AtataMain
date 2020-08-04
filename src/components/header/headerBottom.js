@@ -40,7 +40,7 @@ function HeaderBottom() {
               {OnLeave ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             </li>
             <li>Top Selling</li>
-            <li>Blog</li>
+            <li><a target="_blank" href='http://blog.atata57.com/'>Blog</a></li>
             <li>About</li>
             <li>Services</li>
           </ul>
@@ -151,6 +151,10 @@ const Container = styled.div`
       margin: 5px;
       li {
         padding: 10px 15px;
+        a{
+          color: var(--colorWhite);
+          text-decoration: none;
+        }
       }
       li:hover {
         background-color: var(--colorLightTransparent);

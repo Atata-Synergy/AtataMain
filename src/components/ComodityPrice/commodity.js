@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PriceList from "../components/pricelist";
+import PriceList from "./pricelist";
 
 function Commodity() {
   return (
@@ -171,14 +171,14 @@ const CommodityStyle = styled.div``;
 const PriceStyle = styled.div`
   background-color: var(--colorAsh);
   margin-top: 5%;
-  height: 470px;
+  height: 460px;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 10px;
   }
-  margin-top: 7px;
+  margin-top: 12px;
 
   .PriceListStyle {
     background-color: var(--colorAsh);

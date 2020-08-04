@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import "../accounts/account.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -7,8 +6,6 @@ import styled from "styled-components";
 import CarouselImg from "./Images/banner.png";
 import CarouselImg2 from "./Images/banner2.png";
 import CarouselImg3 from "./Images/banner3.png";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
 export default class SimpleSlider extends Component {
   render() {
