@@ -1,11 +1,13 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import styled from "styled-components";
-import "./card-style.css";
-import Img1 from "../Image/clothes.png";
-import Img2 from "../Image/clothe1.png";
-import Img3 from "../Image/clothe2.png";
-import Img4 from "../Image/clothe3.png";
+import "../card-style.css";
+import Img1 from "../../Image/ghana.jpg";
+import Img2 from "../../Image/naijaWire.jpg";
+import Img3 from "../../Image/ankaraSuit.jpg";
+import Img4 from "../../Image/Ankarasneaker.jpg";
+import Img5 from "../../Image/femaleShoes.jpg";
+import Flag from "react-flags";
 
 function SlideCard(props) {
   return (
@@ -54,7 +56,7 @@ export default class CardSlider extends React.Component {
       <AliceCarousel
         duration={400}
         autoPlay={true}
-        startIndex={1}
+        startIndex={0}
         fadeOutAnimation={true}
         mouseDragEnabled={true}
         playButtonEnabled={true}
@@ -67,27 +69,70 @@ export default class CardSlider extends React.Component {
       >
         <SlideCard
           img={Img1}
-          title="Mens Red Sweater from Onitsha"
-          amount1="500"
-          amount2="1000"
+          title="Ghana Kante Ankara"
+          amount1="5000"
+          amount2="15,000"
           MOQ='5 pieces'
         />
         <SlideCard
           img={Img2}
-          title="Original Sweater"
+          title="Original Nigeria wire"
           amount1="200"
           amount2="1500"
           MOQ='5 pieces'
         />
-        <SlideCard img={Img3} title="Sweater" amount1="500" amount2="2000" MOQ='5 pieces' />
-        <SlideCard img={Img4} title="Sweater" amount1="700" amount2="2000"  MOQ='5 pieces'/>
+        <SlideCard img={Img3} title="Ankara Suit" amount1="5000" amount2="20000" MOQ='5 pieces' />
+        <SlideCard img={Img5} title="Female Ankara Shoes" amount1="700" amount2="2000"  MOQ='5 pieces'/>
         <SlideCard
-          img={Img2}
-          title="Unisex Sweater"
+          img={Img4}
+          title="Ankara Sneakers"
           amount1="600"
           amount2="1000"
           MOQ='5 pieces'
         />
+        <SlideCard
+          img={Img4}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        <SlideCard
+          img={Img3}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        <SlideCard
+          img={Img2}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        <SlideCard
+          img={Img1}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        <SlideCard
+          img={Img5}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        <SlideCard
+          img={Img2}
+          title="Ankara Sneakers"
+          amount1="600"
+          amount2="1000"
+          MOQ='5 pieces'
+        />
+        
       </AliceCarousel>
     );
   }

@@ -120,6 +120,8 @@ export default class IndexBlog extends Component {
 const BlogBody = styled.div`
   background-color: var(--colorLight);
   display: flex;
+  width: 97%;
+  margin: auto;
   padding: 10px;
 `;
 const Blog = styled.div`

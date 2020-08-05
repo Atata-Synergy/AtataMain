@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Img1 from "../Image/cassavaa.jpg";
-import Img2 from "../Image/Computer.png";
-import Img3 from "../Image/Furniture.png";
-import Img4 from "../Image/gadgets.png";
-import Img5 from "../Image/phones.png";
+import Img2 from "../Image/waterMelon.jpg";
+import Img3 from "../Image/rawmaterial.jpg";
+import Img4 from "../Image/fertilizers.jpg";
+import Img5 from "../Image/picfeeds.jpg";
 
 function Card(props) {
   return (
@@ -57,17 +57,17 @@ function CategoryCard(props) {
   return (
     <MyCateCard>
       <div className="CategoryName">
-        <p>Recommended Farms for you</p>
+        <p>Recommended Agric for you</p>
       </div>
       <div className="FeaturedItems">
-        <Card img={Img1} title='Cassava' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img5} title='Smart Phones' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img4} title='Console Accessories' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img1} title='Seedligs, stems and tubers' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img2} title='Fruits and Vegetables' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img3} title='Raw materials' MOQRange="20pcs - 100pcs"/>
       </div>
       <div className="FeaturedItems">
-        <Card img={Img5} title='Phones Accessories' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img4} title='Gaming stuffs' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img5} title='Other Gadget Accessories' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img5} title='Feeds and Vaccines' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img4} title='Fertilizers and chemicals' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img5} title='Other Agric products' MOQRange="20pcs - 100pcs"/>
       </div>
     </MyCateCard>
   );

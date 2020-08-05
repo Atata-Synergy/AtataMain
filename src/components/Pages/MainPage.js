@@ -17,8 +17,6 @@ import LatestDeals from "../card/LatestDeals";
 import WeeklyDeals from "../card/weeklyDeals";
 import Grouped from "../card/CardSlider";
 import RFQ from "./rfq";
-
-import Cards from "../card/CardsRows";
 import FixedCartButton from "./FixedCartButton";
 
 function Page() {
@@ -62,23 +60,12 @@ function Page() {
         </div>
       </div>
 
-      <div className="my-5">
-        <Cards />
+      <div className="col-12 mx-auto">
+        <BottomItem />
       </div>
 
-      <div className="col-12 mx-auto">
-        <HeaderText>Most viewed</HeaderText>
-        <hr />
-        <div className="my-5">
-          <BottomItem />
-        </div>
-      </div>
-      <div className="col-12 mt-5 mx-auto">
-        <HeaderText>Blog</HeaderText>
-        <hr />
-        <div className="my-5">
-          <IndexBlog />
-        </div>
+      <div className="my-5">
+        <IndexBlog />
       </div>
       <Footer />
 

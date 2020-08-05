@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import SliderCard from "./SliderCard";
+import SliderCard from "./slidercard/SliderCardforMadeinAfrica";
 import { Link } from "react-router-dom";
 
 function Card() {
   return (
     <PreviewCard>
       <div className="Content">
-        <p>Top Selling</p>
+        <p>Made in Africa</p>
         <h5 className="sm-text">Click the button below to see more</h5>
         <Link to='/' className="content_btn">View More</Link>
       </div>

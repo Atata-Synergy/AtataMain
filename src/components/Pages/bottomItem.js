@@ -19,7 +19,10 @@ export default class bottomItem extends Component {
         {(value) => {
           const { id, title, info, price, price2 } = value.detailProduct;
           return (
-            <ButtomItems>
+            <MyCateCard>
+              <div className='CategoryName'>
+                Most Viewed Items
+              </div>
               <div
                 className="bottomItems"
                 onClick={() => value.handleDetail(id)}
@@ -337,7 +340,7 @@ export default class bottomItem extends Component {
                   </div>
                 </div>
               </div>
-            </ButtomItems>
+            </MyCateCard>
           );
         }}
       </ProductConsumer>
@@ -345,11 +348,25 @@ export default class bottomItem extends Component {
   }
 }
 
-const ButtomItems = styled.div`
+
+const MyCateCard = styled.div`
   width: 100%;
   background-color: var(--colorLight);
+  margin: 20px 0px;
   padding: 10px;
-
+  .CategoryName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .FeaturedItems{
+    display: flex;
+  }
+  .row{
+    width:97%;
+    margin: auto;
+  }
   .bottomItem {
     background-color: var(--colorWhite);
     margin: 10px;
@@ -399,3 +416,4 @@ const ButtomItems = styled.div`
     }
   }
 `;
+

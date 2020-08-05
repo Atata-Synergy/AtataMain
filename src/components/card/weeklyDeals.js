@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SliderCard from "./SliderCard";
+import SliderCard from "./slidercard/SliderCard";
 import { Link } from "react-router-dom";
 
 function Card() {
