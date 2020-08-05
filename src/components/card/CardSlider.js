@@ -7,17 +7,9 @@ function Card() {
   return (
     <PreviewCard>
       <div className="Content">
-        <p>Weekly Deals</p>
-        <div className="Timer">
-          <li className="time" id="hour">00</li>
-          <li>:</li>
-          <li className="time" id="minutes">00</li>
-          <li>:</li>
-          <li className="time" id="second">00</li>
-        </div>
-        <Link to="/" className="content_btn">
-          View More
-        </Link>
+        <p>Top Selling</p>
+        <h5 className="sm-text">Click the button below to see more</h5>
+        <Link to='/' className="content_btn">View More</Link>
       </div>
       <div className="slides">
         <SliderCard />
@@ -31,27 +23,20 @@ const PreviewCard = styled.div`
   height: 270px;
   display: flex;
   overflow: hidden;
-  background: linear-gradient(30deg,#053001,#075306,#0c7804,#0e8502,#0e8502,#0c7804,#075306,#053001);
+  background-color: #660404;
   padding: 10px;
   .Content {
     color: var(--colorWhite);
     width: 30%;
-    font-size: 3rem;
+    font-size: 4rem;
     p {
+      margin-top: 7%;
       font-weight: bold;
     }
-    .Timer {
-      display: flex;
-      list-style-type: none;
-      .time {
-        background-color: var(--colorWhite);
-        color: var(--colorGreen);
-        border-radius: 5px;
-        padding: 5px;
-        margin: 5px;
-        font-weight: bold;
-        font-size: 40px;
-      }
+    .sm-text {
+      font-size: 12px;
+      margin-bottom: -5%;
+      margin-left: 10px;
     }
   }
   .content_btn {
@@ -62,7 +47,7 @@ const PreviewCard = styled.div`
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: -10%;
+    margin-top: -10%;    
     margin-left: 10px;
   }
   .slides {

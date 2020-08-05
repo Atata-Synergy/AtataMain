@@ -14,8 +14,7 @@ import IndexBlog from "../Pages/IndexBlog";
 import CategoryCard2 from "./homeCard";
 import CategoryCard3 from "./AccessoriesCard";
 import LatestDeals from "../card/weeklyDeals";
-import Grouped from "../card/groupedCard";
-import Grouped1 from "../card/groupedCardWithLocation";
+import Grouped from "../card/CardSlider";
 import RFQ from "./rfq";
 
 import Cards from "../card/CardsRows";
@@ -34,15 +33,9 @@ function Page() {
           </div>
         </Row>
       </div>
-      <FixedCartButton />
 
-      <div className="col-12 mx-auto my-4">
-        <headerLogo />
-      </div>
-
-      <div className="group d-flex">
+      <div className="col-12">
         <Grouped />
-        <Grouped1 />
       </div>
 
       <div className="col-12 mx-auto mb-5">
@@ -60,11 +53,6 @@ function Page() {
           <LatestDeals />
         </div>
         <div className="my-5"></div>
-
-        <div className="group d-flex">
-          <Grouped />
-          <Grouped1 />
-        </div>
 
         <div className="group d-flex">
           <RFQ />
@@ -91,8 +79,11 @@ function Page() {
       </div>
       <Footer />
 
+      {/* Fixed properties  */}
+      <FixedCartButton />
       <FixedSocialLinks />
       <MainHeader />
+      {/* Fixed properties Ends Here  */}
     </>
   );
 }

@@ -21,6 +21,7 @@
     "react-dom": "^16.13.0",
     "react-flags-select": "^1.1.12",
     "react-hook-form": "^5.4.2",
+    "react-items-carousel": "^2.8.0",
     "react-mdl": "^2.1.0",
     "react-number-format": "^4.4.1",
     "react-phone-number-input": "^3.0.22",
