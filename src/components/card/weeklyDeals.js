@@ -7,7 +7,7 @@ function Card() {
   return (
     <PreviewCard>
       <div className="Content">
-        <p>Weekly Deals</p>
+        <p>Latest Deals</p>
         <div className="Timer">
           <li className="time" id="hour">00</li>
           <li>:</li>
@@ -31,12 +31,14 @@ const PreviewCard = styled.div`
   height: 270px;
   display: flex;
   overflow: hidden;
-  background: linear-gradient(30deg,#053001,#075306,#0c7804,#0e8502,#0e8502,#0c7804,#075306,#053001);
+  background: linear-gradient(160deg,#ff9900,#ffa21a,#ffab2a,#ffaf31,#ffb134,#ffae31,#ffa41f,#ff9900);
   padding: 10px;
   .Content {
     color: var(--colorWhite);
     width: 30%;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 15px;
+    padding-left: 15px;
     p {
       font-weight: bold;
     }
@@ -45,7 +47,7 @@ const PreviewCard = styled.div`
       list-style-type: none;
       .time {
         background-color: var(--colorWhite);
-        color: var(--colorGreen);
+        color: var(--colorYellow);
         border-radius: 5px;
         padding: 5px;
         margin: 5px;
@@ -56,8 +58,8 @@ const PreviewCard = styled.div`
   }
   .content_btn {
     width: 20px;
-    background-color: var(--colorWhite);
-    color: black;
+    background-color: Black;
+    color: var(--colorWhite);
     padding: 10px;
     font-size: 14px;
     font-weight: bold;

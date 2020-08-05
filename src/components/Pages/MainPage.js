@@ -13,7 +13,8 @@ import BottomItem from "../Pages/bottomItem";
 import IndexBlog from "../Pages/IndexBlog";
 import CategoryCard2 from "./homeCard";
 import CategoryCard3 from "./AccessoriesCard";
-import LatestDeals from "../card/weeklyDeals";
+import LatestDeals from "../card/LatestDeals";
+import WeeklyDeals from "../card/weeklyDeals";
 import Grouped from "../card/CardSlider";
 import RFQ from "./rfq";
 
@@ -39,7 +40,7 @@ function Page() {
       </div>
 
       <div className="col-12 mx-auto mb-5">
-        <CategoryLinks />
+        <CategoryCard3 />
       </div>
       <div className="col-12 mx-auto mb-5">
         <div className="my-5">
@@ -47,12 +48,14 @@ function Page() {
         </div>
 
         <div className="my-5">
-          <CategoryCard3 />
+          <CategoryLinks />
         </div>
         <div className="my-5">
           <LatestDeals />
         </div>
-        <div className="my-5"></div>
+        <div className="my-5">
+          <WeeklyDeals />
+        </div>
 
         <div className="group d-flex">
           <RFQ />

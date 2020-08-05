@@ -28,31 +28,32 @@ const PreviewCard = styled.div`
   .Content {
     color: var(--colorWhite);
     width: 30%;
-    font-size: 4rem;
+    font-size: 2rem;
+    margin-top: 40px;
+    padding-left: 15px;
     p {
-      margin-top: 7%;
       font-weight: bold;
     }
     .sm-text {
-      font-size: 12px;
-      margin-bottom: -5%;
-      margin-left: 10px;
+      font-size: 15px;
+      padding-left: 10px;
     }
   }
   .content_btn {
     width: 20px;
-    background-color: var(--colorWhite);
-    color: black;
+    background-color: Black;
+    color: var(--colorWhite);
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: -10%;    
+    margin-top: -10%;
     margin-left: 10px;
   }
   .slides {
     width: 70%;
   }
 `;
+
 
 export default Card;
