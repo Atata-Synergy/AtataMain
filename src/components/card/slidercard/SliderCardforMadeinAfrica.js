@@ -7,7 +7,6 @@ import Img2 from "../../Image/naijaWire.jpg";
 import Img3 from "../../Image/ankaraSuit.jpg";
 import Img4 from "../../Image/Ankarasneaker.jpg";
 import Img5 from "../../Image/femaleShoes.jpg";
-import Flag from "react-flags";
 
 function SlideCard(props) {
   return (

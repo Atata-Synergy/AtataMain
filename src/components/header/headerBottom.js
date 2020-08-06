@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AllCateDropDown from "./dropdown/allcategoriesDropDown";
 import LoginDropDown from "./dropdown/loginDropdown";
 import SubMenuList from './dropdown/subMenuList';
+import { Link } from 'react-router-dom'
 
 function HeaderBottom() {
   //function for hover on All Categories
@@ -41,7 +42,7 @@ function HeaderBottom() {
             </li>
             <li>Top Selling</li>
             <li><a target="_blank" href='http://blog.atata57.com/'>Blog</a></li>
-            <li>About</li>
+            <li><Link to='/product-page'>About</Link></li>
             <li>Services</li>
           </ul>
         </div>
