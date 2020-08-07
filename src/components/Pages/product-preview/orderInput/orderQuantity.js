@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import styled from "styled-components";
@@ -19,21 +20,19 @@ const useStyles = makeStyles((theme) => ({
   button1: {
     width: "85%",
     padding: 13,
-    background: 'var(--colorGreen)',
-    color: 'var(--colorWhite)',
-   fontSize: 12,
-   margin: 5,
-    
+    background: "var(--colorGreen)",
+    color: "var(--colorWhite)",
+    fontSize: 12,
+    margin: 5,
   },
   button2: {
     width: "85%",
     padding: 13,
-    background: 'none',
-    border: 'solid 2px var(--colorGreen)',
-    color: 'var(--colorGreen)',
-   fontSize: 12,
-   margin: 5,
-    
+    background: "none",
+    border: "solid 2px var(--colorGreen)",
+    color: "var(--colorGreen)",
+    fontSize: 12,
+    margin: 5,
   },
 }));
 
@@ -46,57 +45,59 @@ export default function OrderQ() {
           <MOQList>
             <p>2-9 Pieces</p>
             <NumberFormat
-          className={"px-1"}
-          value={'1100.60'}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"₦"}
-        />
+              className={"px-1"}
+              value={"1100.60"}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"₦"}
+            />
           </MOQList>
         </ListItem>
         <ListItem>
           <MOQList>
             <p>10-99 Pieces</p>
             <NumberFormat
-          className={"px-1"}
-          value={'1100.36'}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"₦"}
-        />
+              className={"px-1"}
+              value={"1100.36"}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"₦"}
+            />
           </MOQList>
         </ListItem>
         <ListItem>
           <MOQList>
             <p>100-4999 Pieces</p>
             <NumberFormat
-          className={"px-1"}
-          value={'1100.04'}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"₦"}
-        />
+              className={"px-1"}
+              value={"1100.04"}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"₦"}
+            />
           </MOQList>
         </ListItem>
         <ListItem>
           <MOQList>
             <p>{">=5000 Pieces"}</p>
             <NumberFormat
-          className={"px-1"}
-          value={'1000.00'}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"₦"}
-        />
+              className={"px-1"}
+              value={"1000.00"}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"₦"}
+            />
           </MOQList>
         </ListItem>
       </List>
       <Button variant="contained" className={classes.button1}>
         Add to Cart
       </Button>
-      <Button variant="contained" className={classes.button2}>
-        Proceed to checkout
-      </Button>
+      <Link to="/checkout">
+        <Button variant="contained" className={classes.button2}>
+          Proceed to checkout
+        </Button>
+      </Link>
     </div>
   );
 }

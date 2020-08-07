@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
   },
   panel: {
     height: 460,
-    width: "105%",
+    width: "102.5%",
     overflow: "scroll",
     overflowX: "hidden",
   },
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Imgslide: {
     display: "flex",
-    width: 800,
+    width: 650,
     overflow: "hidden",
     margin: "auto",
   },

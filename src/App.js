@@ -19,7 +19,7 @@ import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsP
 import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";
 import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
 import ProductPage from '../src/components/Pages/product-preview/ProductMain'
-
+import Checkout from '../src/components/checkout/mainCheckout'
 
 
 class App extends Component {
@@ -32,6 +32,7 @@ class App extends Component {
         <Route exact path="/Signin" component={Login} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/RFQ" component={RFQ} />
+        <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/product-page" component={ProductPage} />
         <Route exact path="/Whislist" component={Wishlist} />
         <Route exact path="/IndividualRegistration" component={RegisterUser} />

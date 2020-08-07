@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 
 export default function HeaderCenter() {
   return (
-    <HeaderTop>
+    <TopHeader>
       <Link to='/'>
       <div className="logo">
         <img src={Logo} />
       </div>
       </Link>
-    </HeaderTop>
+    </TopHeader>
   );
 }
 
-const HeaderTop = styled.div`
+const TopHeader = styled.div`
   .logo {
     width: 10%;
     margin: auto;

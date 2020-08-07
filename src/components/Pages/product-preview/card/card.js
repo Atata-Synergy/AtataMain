@@ -51,7 +51,7 @@ const ItemCard = styled.div`
   margin-top: 6rem;
   margin: 0 2px;
   width: 240px;
-  height: 330px;
+  height: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -113,8 +113,8 @@ const ItemCard = styled.div`
       background-color: var(--colorGreen);
       color: var(--colorLight);
       padding: 10px;
-      margin: auto;
-      width: 45%;
+      margin: 2px auto;
+      width: 70%;
       text-align: center;
       font-size: 15px;
       margin-bottom: 5px;

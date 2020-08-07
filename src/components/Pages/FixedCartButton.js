@@ -278,7 +278,7 @@ const MyBtn = styled.div`
     cursor: pointer;
     position: fixed;
     right: 0px;
-    top: 60%;
+    top: 70%;
     margin-top: 50px;
     z-index: 99;
     padding: 0px;

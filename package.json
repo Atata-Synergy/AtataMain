@@ -24,6 +24,7 @@
     "react-items-carousel": "^2.8.0",
     "react-mdl": "^2.1.0",
     "react-number-format": "^4.4.1",
+    "react-payment-inputs": "^1.1.7",
     "react-phone-number-input": "^3.0.22",
     "react-rater": "^5.1.1",
     "react-router-dom": "^5.1.2",

@@ -11020,6 +11020,11 @@ react-overlays@^4.1.0:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
+react-payment-inputs@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/react-payment-inputs/-/react-payment-inputs-1.1.7.tgz#d9a2471913525ef83533d97385aba8f5f0500e9b"
+  integrity sha512-yBCqDBJxS1AbsljS2duGxoaTFVbkVVqcW5IUxCxSe2H8x0H+UoLiooeK4Cm0rEI64BSvfu8a/mQNjyCmymvbag==
+
 react-phone-number-input@^3.0.22:
   version "3.0.22"
   resolved "https://registry.yarnpkg.com/react-phone-number-input/-/react-phone-number-input-3.0.22.tgz#4e694492388dc7350e687e2c7900a7c843f7d06d"
