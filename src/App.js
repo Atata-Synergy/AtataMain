@@ -13,6 +13,12 @@ import Register from "../src/components/accounts/registerPages/RegisterMain";
 import RegisterUser from "../src/components/accounts/registerPages/registerUser";
 import Cart from "./components/Pages/CartCss/cart";
 import RFQ from "../src/components/Pages/rfq";
+
+//Categories
+import TopCategories from '../src/components/Pages/Categories/TopCategory';
+import Categories from '../src/components/Pages/Categories/CategoriesPage';
+//Categories Ends
+
 import Wishlist from "../src/components/Pages/wishlist";
 import AtataInsurance from "../src/components/AtataServicesPage/Atata-insurancePage";
 import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsPage";
@@ -29,6 +35,8 @@ class App extends Component {
         <Route exact path="/" component={Page} />
         <Route exact path="/MyAccount" component={MainScreen} />
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/topcategories" component={TopCategories} />
+        <Route exact path="/categories" component={Categories} />
         <Route exact path="/Signin" component={Login} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/RFQ" component={RFQ} />

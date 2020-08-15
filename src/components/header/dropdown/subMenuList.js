@@ -22,69 +22,69 @@ function SubMenuList() {
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
       <div className="list">
         <p>Heading</p>
         <div className="menu">
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
-          <li><Link to='/'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
+          <li><Link to='/categories'>Placeholder</Link></li>
         </div>
       </div>
     </SubMenu>

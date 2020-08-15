@@ -93,11 +93,9 @@ export default function OrderQ() {
       <Button variant="contained" className={classes.button1}>
         Add to Cart
       </Button>
-      <Link to="/checkout">
-        <Button variant="contained" className={classes.button2}>
+        <Link to="/checkout" className={classes.button2}>
           Proceed to checkout
-        </Button>
-      </Link>
+        </Link>
     </div>
   );
 }

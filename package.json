@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "bootstrap-select": "^1.13.13",
     "elegant-icons": "0.0.1",
+    "flag-icon-css": "^3.5.0",
     "primereact": "^4.2.0",
     "react": "^16.13.0",
     "react-alice-carousel": "^1.19.3",

@@ -34,11 +34,6 @@ function Header() {
                  <i class="far fa-user"></i>Login
               </p>
             </Link>
-            <Link to="/Cart">
-            <p>
-              <i class="fas fa-shopping-cart"></i>Cart
-            </p>
-            </Link>
             <Link to="/RFQ">
               <p>RFQ</p>
             </Link>
@@ -51,6 +46,7 @@ function Header() {
 
 const HeaderWrap = styled.div`
   padding: 6px 2rem;
+  box-shadow: 2px 2px 7px var(--colorAsh);
   a{
     color: var(--colorBlack);
     :hover{
@@ -92,7 +88,6 @@ const HeaderWrap = styled.div`
     margin-left: 25px;
     p {
       margin: 2px 20px;
-      font-family: "Muli", sans-serif;
       font-weight: bold;
       font-size: 18px;
       i {

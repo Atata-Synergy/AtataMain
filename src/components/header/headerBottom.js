@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AllCateDropDown from "./dropdown/allcategoriesDropDown";
 import LoginDropDown from "./dropdown/loginDropdown";
 import SubMenuList from './dropdown/subMenuList';
@@ -12,12 +11,20 @@ function HeaderBottom() {
   //function for hover on All Categories
   function Onhover(e) {
     const Hover = document.getElementById("allCate-SubMenu");
+    const allCategories = document.getElementById("allCategories");
+    const TurnIcon = document.getElementById("IconUp");
     Hover.classList.remove("hidden");
+    allCategories.classList.add('focus');
+    TurnIcon.classList.add("ChangeIcon");
   }
 
   function OnLeave(e) {
     const Hover = document.getElementById("allCate-SubMenu");
+    const allCategories = document.getElementById("allCategories");
+    const TurnIcon = document.getElementById("IconUp");
     Hover.classList.add("hidden");
+    allCategories.classList.remove('focus');
+    TurnIcon.classList.remove("ChangeIcon");
   }
 
   // function for hover on login Icon
@@ -35,10 +42,10 @@ function HeaderBottom() {
       <Container>
         <div className="rightMenu">
           <ul>
-            <li className="d-flex" onMouseEnter={Onhover}>
+            <li className="d-flex" id='allCategories' onMouseEnter={Onhover}>
               <MenuIcon />
-              <p style={{ margin: "0 10px" }}> All Categories </p>
-              {OnLeave ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+              <p style={{ margin: "0 10px" }} > All Categories </p>
+               <ExpandLessIcon id='IconUp' /> 
             </li>
             <li>Top Selling</li>
             <li><a target="_blank" href='http://blog.atata57.com/'>Blog</a></li>
@@ -137,10 +144,8 @@ const Container = styled.div`
   color: var(--colorLight);
   font-weight: 500;
   overflow: hidden;
-  .active {
-    background-color: var(--colorLight);
-    color: var(--colorRed);
-  }
+  
+  
   .rightMenu,
   .leftMenu {
     width: 50%;
@@ -165,6 +170,17 @@ const Container = styled.div`
       }
     }
   }
+  .focus{
+    background-color: var(--colorLightTransparent);
+    color: var(--colorLight);
+    border-radius: 5px;
+    
+    }
+    .ChangeIcon{
+        transform: rotate(180deg);
+        transition: 0.4s;
+      }
+
   .leftMenu {
     display: flex;
     form {
