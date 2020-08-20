@@ -516,7 +516,9 @@ a {
   background-color: var(--colorLight);
   height: 480px;
   overflow: hidden;
+  
 }
+
 .homeRFQ {
   background-color: #fff;
   border: 15px solid #dddddd;
@@ -581,6 +583,12 @@ a {
   background-color: blue;
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 425px){
+.slider{
+  display: none;
+}
 }
 @media only screen and (max-width: 1120px) {
   .carousel-indicators {

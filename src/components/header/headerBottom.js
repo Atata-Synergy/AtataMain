@@ -47,7 +47,7 @@ function HeaderBottom() {
               <p style={{ margin: "0 10px" }} > All Categories </p>
                <ExpandLessIcon id='IconUp' /> 
             </li>
-            <li>Top Selling</li>
+            <li><Link to='/topcategories'>Top Selling</Link></li>
             <li><a target="_blank" href='http://blog.atata57.com/'>Blog</a></li>
             <li><Link to='/product-page'>About</Link></li>
             <li>Services</li>
@@ -80,7 +80,7 @@ function HeaderBottom() {
         </div>
         </div>
 
-        {/* Login Drop Down */}
+        {/* Login DropDown */}
         <div
           className=" LoginDrop hidden"
           id="LoginDrop"

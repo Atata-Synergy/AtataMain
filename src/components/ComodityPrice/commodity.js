@@ -169,9 +169,13 @@ function Commodity() {
 
 const CommodityStyle = styled.div``;
 const PriceStyle = styled.div`
+@media screen and (max-width: 425px) {
+  display: none;
+}
+
   background-color: var(--colorAsh);
-  margin-top: 5%;
-  height: 460px;
+  margin-top: 6%;
+  height: 467px;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: scroll;

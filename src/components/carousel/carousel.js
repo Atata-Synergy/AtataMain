@@ -18,13 +18,14 @@ export default class SimpleSlider extends Component {
             <img src={CarouselImg3} className="sliderimg" />
           </AliceCarousel>
         </Slider>
-      </>
+        </>
+      
     );
   }
 }
 
 const Slider = styled.div`
-  height: 50%;
+  height: 70%;
   width: 100%;
   color: red;
   .alice-carousel__prev-btn-item,
@@ -43,4 +44,13 @@ const Slider = styled.div`
     position: absolute;
     transform: (-100px, -100px);
   }
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
+
+const Mslider = styled.div`
+@media screen and (min-width: 425px) {
+  display: none;
+}`;

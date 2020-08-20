@@ -3,7 +3,18 @@ import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import { Link } from "react-router-dom";
+import LoginDropDown from "./dropdown/loginDropdown";
 import HeaderLogo from "../logoComponents/headerLogo.png";
+
+// function for hover on login Icon
+function handleOnhover(e) {
+  const Hover = document.getElementById("LoginDrop");
+  Hover.classList.remove("hidden");
+}
+function handleMouseOut(e) {
+  const Hover = document.getElementById("LoginDrop");
+  Hover.classList.add("hidden");
+}
 
 function Header() {
   return (
@@ -28,12 +39,19 @@ function Header() {
             />
             <button>Search</button>
           </div>
+          <div className="login">
+            <i class="fas fa-user-circle" onMouseEnter={handleOnhover}></i>
+          </div>
           <div className=" clicks d-flex">
-            <Link to="/SignIn">
-              <p>
-                 <i class="far fa-user"></i>Login
-              </p>
-            </Link>
+          <div
+          className=" LoginDrop hidden"
+          id="LoginDrop"
+          onMouseLeave={handleMouseOut}
+        >
+          <p>
+            <LoginDropDown />
+          </p>
+        </div>
             <Link to="/RFQ">
               <p>RFQ</p>
             </Link>
@@ -43,6 +61,8 @@ function Header() {
     </div>
   );
 }
+
+
 
 const HeaderWrap = styled.div`
   padding: 6px 2rem;
@@ -77,10 +97,11 @@ const HeaderWrap = styled.div`
     }
     button {
       margin: 7px;
-      padding: 10px;
+      padding: 7px;
       height: 40px;
       border: none;
-      background-color: var(--colorAsh);
+      color: var(--colorWhite);
+      background-color: var(--colorGreen);
     }
   }
   .clicks {
