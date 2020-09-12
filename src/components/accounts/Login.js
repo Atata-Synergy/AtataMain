@@ -1,12 +1,27 @@
-import React from "react";
+import React, { Component } from "react";
 import "./login.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "../logoComponents/headerLogo.png";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 
-function Login() {
+class Login extends Component {
+  state = {
+    clicked: false
+}
+
+handleClick = () => {
+  this.setState({clicked: true});
+
+  setTimeout(() => {
+      this.setState({clicked : false});
+  }, 2000)
+}
+  render(){
+    const {clicked} = this.state;
+
   return (
     <div className="LoginContainer">
       <div className="LogoContaniner">
@@ -32,7 +47,8 @@ function Login() {
               Remember Me
             </div>
             <div className="form-group">
-              <button className="btn">Login</button>
+              <button className="btn" onClick={this.handleClick} disabled={clicked}>{clicked && <CircularProgress style={{color:'#fff', width: '20px', height:'20px'}} />}
+              {!clicked && 'Login'}</button>
               <Link to="/forgotpassword">
                 <p className="forgetPwd">Forgot password?</p>
               </Link>
@@ -48,6 +64,7 @@ function Login() {
       </div>
     </div>
   );
+}
 }
 
 export default Login;
