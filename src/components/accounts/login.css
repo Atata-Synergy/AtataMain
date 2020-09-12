@@ -71,3 +71,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1080px) {
+.LogoContaniner {
+  display: none;
+}
+.formContaniner {
+  width: 98%;
+}
+.form{
+  width: 80%;
+}
+.reg{
+  font-size: 14px;
+  width: 100%;
+}
+
+}
