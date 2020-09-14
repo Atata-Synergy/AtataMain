@@ -1,0 +1,94 @@
+.LoginContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+}
+.LogoContaniner {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0f5707;
+}
+.LogoContaniner > .logo {
+  width: 150px;
+  height: 130px;
+  margin: auto;
+  border-radius: 17px;
+  background-color: #fff;
+}
+.LogoContaniner > .logo > img {
+  width: 150px;
+  height: 120px;
+}
+
+.formContaniner {
+  height: 100vh;
+  width: 68%;
+  background-color: #eeeded;
+}
+
+.formContaniner > .select-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.formContaniner > .select-container > .highlight-text > p {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: -6px;
+}
+
+.formContaniner > .select-container > .highlight-text > span {
+  font-size: 20px;
+}
+.formContaniner > .select-container > .acct-select > a {
+  width: 90%;
+  margin: 20px 0px;  
+  text-decoration: none;
+}
+.formContaniner > .select-container > .acct-select > a > .select {
+  display: flex;
+  padding: 17px 20px;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0px;
+  justify-content: space-between;
+  font-size: 50px;
+  border: solid 3px #cac9c9;
+  border-radius: 10px;
+}
+.formContaniner > .select-container > .acct-select > a > .select:hover {
+box-shadow: 5px 15px 10px #dddddd;
+color: var(--colorGreen);
+transform: translate(0px, -5px);
+transition: all linear 0.2s;
+
+}
+.formContaniner > .select-container > .acct-select > a > .select > .text > p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: -35px;
+
+}
+.formContaniner > .select-container > .acct-select > a > .select > .text > small{
+    font-size: 16px;
+
+}
+.formContaniner > .select-container > .signin {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .LogoContaniner {
+    display: none;
+  }
+  .formContaniner {
+    width: 98%;
+  }
+}

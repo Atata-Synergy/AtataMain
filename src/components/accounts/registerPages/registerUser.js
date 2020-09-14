@@ -4,8 +4,6 @@ import {
   RegionDropdown,
   CountryRegionData,
 } from "react-country-region-selector";
-import Header from "../../header/header";
-import Footer from "../../footer/footer";
 import styled from "styled-components";
 
 export default class UserReg extends Component {
@@ -32,7 +30,6 @@ export default class UserReg extends Component {
             <div className=" row">
               <div className="form-group d-flex">
                 <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Middle Name" />
                 <input type="text" placeholder="Last Name" />
               </div>
               <div className="form-group d-flex">
@@ -63,9 +60,6 @@ export default class UserReg extends Component {
             </div>
           </div>
         </Register>
-
-        <Header />
-        <Footer />
       </>
     );
   }

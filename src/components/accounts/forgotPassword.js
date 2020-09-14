@@ -21,6 +21,7 @@ class ForgotPassword extends Component {
 
    
     return (
+      <div className='mainContainer'>
         
       <div className="fp-container">
         <p>Don't Worry, you will get back in a minute</p>
@@ -40,6 +41,7 @@ class ForgotPassword extends Component {
             <button className="back">{"<<BACK"}</button>
           </Link>
         </form>
+      </div>
       </div>
     );
   }
