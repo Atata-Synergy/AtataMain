@@ -34,19 +34,23 @@ function Cart() {
                           <img src={Img1} alt="" />
                         </div>
                         <div class="details">
-                          <p>Minimalistic shop for multipurpose use</p>
+                          <p>Black shoe leather</p>
                         </div>
                       </div>
                     </td>
                     <td>
-                      <h5>₦360.00</h5>
+                      <h5>$3.00-$5.00</h5>
                     </td>
+                    <div>
                     <td>
                       <div class="product_count">
                         <button className="reduce-btn">
-                          <i class="fas fa-minus"></i>
+                          <i class="fas fa-minus">
+                          
+                          </i>
+                          
                         </button>
-                        <input
+                             <input
                           type="text"
                           name="qty"
                           id="sst"
@@ -59,11 +63,14 @@ function Cart() {
                           onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
                           class="increase-btn"
                           type="button"
+                        
                         >
                           <i class="fas fa-plus"></i>
                         </button>
                       </div>
-                    </td>
+                        </td>
+                        </div>
+                        
                     <td>
                       <h5>₦720.00</h5>
                     </td>
@@ -72,72 +79,43 @@ function Cart() {
                         <i className="far fa-times-circle"></i>
                       </button>
                     </td>
-                  </tr>
+                  </tr> 
                 </tbody>
               </table>
+              <div className="row">
 
               <div className="bottom_button my-5 d-flex">
                 <div>
-                  <button class="gray_btn" href="#">
-                    Update Cart
+                  <button class="btn btn-success" href="#">
+                   CHECKOUT
                   </button>
+                  </div>
+                  <div className="d-flex col-md-8">
+                  <button className="btn btn-success" href="#">
+                   Proceed with this Supplier
+                  </button>
+                  
                 </div>
-              </div>
-              <div className="shipping">
-                <div className="d-flex subtotal my-3">
-                  <div className="mr-5">
-                    <h5>Subtotal</h5>
-                  </div>
-                  <div className="ml-2">
-                    <h5>₦2160.00</h5>
-                  </div>
                 </div>
-                <div class="shipping_area d-flex">
-                  <div className="mr-5">
-                    <h5>Shipping</h5>
-                  </div>
-                  <div class="shipping_box">
-                    <ul class="list">
-                      <li>Flat Rate: ₦5.00</li>
-                      <li>Free Shipping</li>
-                      <li>Flat Rate: ₦10.00</li>
-                      <li class="active">Local Delivery: ₦2.00</li>
-                    </ul>
-                  </div>
+                
+                
                 </div>
-                <tr class="out_button_area">
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <div class="checkout_btn_inner d-flex align-items-center">
-                      <button className="gray_btn mr-2" href="#">
-                        Continue Shopping
-                      </button>
-                      <button className="proceedBtn" href="#">
-                        Proceed to checkout
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              </div>
-            </div>
-          </div>
+                </div>
+                </div>
         </div>
       </CartArea>
-      <Header />
-      <Footer />
     </>
   );
 }
 
 const CartArea = styled.div`
   padding-top: 100px;
+  width:200%;
   padding-bottom: 100px;
 
   .imagecontainer {
     margin-left: 0;
-    width: 100px;
+    width: 100%;
     overflow: hidden;
     object-fit: cover;
     object-positon: center;
@@ -145,7 +123,7 @@ const CartArea = styled.div`
   }
   .imagecontainer img {
     position: relative;
-    width: 100px;
+    width: 80%;
   }
   .details {
     text-align: center;
@@ -154,8 +132,8 @@ const CartArea = styled.div`
   }
   .reduce-btn,
   .increase-btn {
-    padding: 12px 5px;
-    background-color: var(--colorLight);
+    padding: 10px 10px;
+    background-color: var(--colorGreen);
     border: solid 1px #eeeeee;
   }
   .coupon {
@@ -382,16 +360,16 @@ const CartArea = styled.div`
     color: #777777;
   }
   .cart_inner .table tbody tr.shipping_area .shipping_box input {
-    height: 40px;
+    height: 80px;
     outline: none;
     border: 1px solid #eeeeee;
     background: #e8f0f2;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 50px;
     margin-bottom: 20px;
   }
   .cart_inner .table tbody tr.out_button_area .checkout_btn_inner {
-    margin-left: -208px;
+    margin-left: 208px;
   }
   .cart_inner .table tbody tr.out_button_area .checkout_btn_inner .primary-btn {
     height: 40px;
@@ -406,7 +384,7 @@ const CartArea = styled.div`
     tr.out_button_area
     .checkout_btn_inner
     .primary-btn:hover:before {
-    left: 240px;
+    left: 100px;
   }
 
   .gray_btn {

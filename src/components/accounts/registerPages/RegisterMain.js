@@ -1,68 +1,57 @@
 import React, { Component } from "react";
-import "../account.css";
+import "./register.css";
 import { Link } from "react-router-dom";
-import Header from "../../header/header";
-import Footer from "../../footer/footer";
-import styled from "styled-components";
+import Logo from "../../logoComponents/headerLogo.png";
 
-class Register extends Component {
+class RegisterMain extends Component {
   render() {
     return (
-      <>
-        <div className="registerMain">
-          <p class="regH">Choose an Account Type</p>
-          <Contains>
-            <Link to="/IndividualRegistration" className="accountCard user">
-              <i class="fas fa-user"></i>
-              <p>Buyer</p>
-            </Link>
-            <Link to="/CompanyReg" class="accountCard company">
-              <i class="fas fa-building"></i>
-              <p>Service Provider</p>
-            </Link>
-            <Link to="/ProductSellerRegistration" class="accountCard seller">
-              <i class="fas fa-briefcase"></i>
-              <p>Products Suppliers</p>
-            </Link>
-            <Link to="/WarehouseRegistration" class="accountCard warehouse">
-              <i class="fas fa-warehouse"></i>
-              <p>Warehouse</p>
-            </Link>
-          </Contains>
-          <div
-            className="register"
-            style={{ margin: "5% auto", padding: "2%" }}
-          >
-            <p>
-              Already have an account?
-              <Link to="/Signin">
-                <span>Signin</span>
-              </Link>
-            </p>
+      <div className="LoginContainer">
+        <div className="LogoContaniner">
+          <div className="logo">
+            <img src={Logo} />
           </div>
         </div>
-        <Header />
-        <Footer />
-      </>
+        <div className="formContaniner">
+          <div className="select-container">
+            <div className="highlight-text">
+              <p>Choose the type of account</p>
+              <small>
+                Creating account on ATATA57 is just few steps away, choose to
+                sell or to buy
+              </small>
+            </div>
+            <div className="acct-select">
+              <Link to="/IndividualRegistration">
+                <div className="select">
+                  <i class="fas fa-shopping-bag"></i>
+                  <div className="text">
+                    <p>Create a buyer account</p>
+                    <small>buyer from sellers accross africa</small>
+                  </div>
+                </div>
+              </Link>
+              <Link to="/registerUser">
+                <div className="select">
+                  <i class="fas fa-user-tie"></i>
+                  <div className="text">
+                    <p>Become a service provider</p>
+                    <small>Click here to create an account</small>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="signin">
+              <p>Already a Member?</p>
+              <Link to="/signin">
+                <span>Click Here to Sign In</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
 
-const Contains = styled.div`
-  display: flex;
-  margin-top: 20px;
-  i{
-    font-size: 40px;
-  }
-  a{
-    text-align: center;
-    padding: 30px;
-    margin: 20px;
-    width: 20%;
-    p{
-      font-size: 17px;
-    }
-  }
-`;
-
-export default Register;
+export default RegisterMain;

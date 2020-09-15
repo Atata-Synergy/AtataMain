@@ -1,14 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Fredoka+One&display=swap");
-/*colors */
-:root {
-  --colorBlack: #1c1c1c;
-  --colorLight: #f5f5f5;
-  --colorWhite: #ffffff;
-  --colorGreen: #0e8502;
-  --colorRed: #ff0000;
-  --colorYellow: #ff9900;
-  --colorAsh: #c9c9c9;
-}
+
 
 * {
   margin: 0;
@@ -203,184 +193,6 @@ hr {
 .socialLinks .fa-instagram:hover {
   color: #008600;
 }
-
-form {
-  padding: 35px;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.formgroup {
-  font-family: "Baloo Da 2", cursive;
-}
-
-.signin,
-.userReg {
-  width: 70%;
-  margin: auto;
-  margin-top: 7rem;
-  margin-bottom: 50px;
-  padding: 30px;
-  background-image: url("../bgImg.png");
-  font-family: "Baloo Da 2", cursive;
-  -webkit-box-shadow: -5px 5px 10px #00000034;
-  box-shadow: -5px 5px 10px #00000034;
-}
-
-.registerMain {
-  width: 70%;
-  margin: auto;
-  margin-top: 7rem;
-  margin-bottom: 50px;
-  padding: 20px;
-  font-family: "Baloo Da 2", cursive;
-}
-.signH,
-.regH {
-  color: #3f3e3e;
-  font-size: 30px;
-  margin: auto;
-  padding: 10px;
-  width: 70%;
-  text-align: center;
-}
-
-.signin .formgroup,
-.userReg .formgroup {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.signin input,
-.userReg input {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  outline: none;
-}
-
-.userReg select {
-  width: 97%;
-  padding: 15px;
-  border: none;
-  outline: none;
-}
-
-.signin input:hover,
-.userReg input:hover,
-.userReg select:hover {
-  -webkit-box-shadow: 4px 6px 5px #46464636;
-  box-shadow: 4px 6px 5px #46464636;
-}
-
-.signinbtnG {
-  width: 100%;
-  padding: 15px;
-  outline: none;
-  border: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#75af75),
-    to(#008600)
-  );
-  background: linear-gradient(to right, #75af75, #008600);
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.signinbtnR {
-  width: 98%;
-  padding: 15px;
-  outline: none;
-  border: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#971d1d),
-    to(#ff0909)
-  );
-  background: linear-gradient(to right, #971d1d, #ff0909);
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.signinbtnG:hover,
-.signinbtnR:hover {
-  -webkit-box-shadow: 4px 6px 5px #59cf59af;
-  box-shadow: 4px 6px 5px #59cf59af;
-  -webkit-transition: o 0.5s;
-  transition: o 0.5s;
-}
-
-.forgotPass {
-  background-color: #fff;
-  color: #ff0909;
-  text-align: center;
-  width: 53px;
-  margin-left: -65px;
-  margin-top: 10px;
-  font-size: 13px;
-}
-
-.register {
-  color: #3f3e3e;
-  margin-top: -5%;
-  text-align: center;
-}
-
-.register span {
-  color: #ff0909;
-}
-
-.user:hover {
-  background-color: #ff0909;
-  text-decoration: none;
-  border: none;
-  color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.company:hover {
-  background-color: #008600;
-  text-decoration: none;
-  border: none;
-  color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.seller:hover {
-  background-color: #ffbd09;
-  text-decoration: none;
-  border: none;
-  color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.warehouse:hover {
-  background-color: #ff0998;
-  text-decoration: none;
-  border: none;
-  color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.password {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 a {
   color: #008600;
   text-decoration: none;
@@ -521,9 +333,14 @@ a {
 }
 
 .slider {
-  margin: 7px 0;
+  margin: 1px 0;
+  padding: 10px;
   background-color: var(--colorLight);
+  height: 480px;
+  overflow: hidden;
+  
 }
+
 .homeRFQ {
   background-color: #fff;
   border: 15px solid #dddddd;
@@ -588,6 +405,12 @@ a {
   background-color: blue;
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 425px){
+.slider{
+  display: none;
+}
 }
 @media only screen and (max-width: 1120px) {
   .carousel-indicators {

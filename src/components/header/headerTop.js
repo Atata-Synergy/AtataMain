@@ -1,25 +1,33 @@
-import React, { useState } from "react";
-import "./header.css";
+import React from "react";
+import { respondTo } from "../../Responsiveness/_respondTo";
+import styled from "styled-components";
+import MenuIcon from "@material-ui/icons/Menu";
+import Logo from "../logoComponents/headerLogo.png";
 import { Link } from "react-router-dom";
-import MainScreen from "../accounts/mainScreen";
-import RightMenu from "./rightMenu";
 
-function HeaderTop() {
-  const [show, setShow] = useState(false);
-
+export default function HeaderCenter() {
   return (
-   <nav class="headerTop">
-      {/*<ul class="leftMenu">
-        <li class="Menu2">
-          <select name="currency" id="currency">
-            <option value="dollar">US dollar</option>
-            <option value="Naira">NGN Naira</option>
-          </select>
-        </li>
-        <RightMenu />
-  </ul>*/}
-    </nav>
+    <>
+    <TopHeader>
+      <Link to="/" className="topHeader">
+        <div className="logo">
+          <img src={Logo} />
+        </div>
+      </Link>
+    </TopHeader>
+    </>
   );
 }
 
-export default HeaderTop;
+
+
+const TopHeader = styled.div` 
+.logo {
+  width: 10%;
+  margin: auto;
+  img {
+    width: 80%;
+    height: 20%;
+  }
+}
+`;

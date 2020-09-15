@@ -1,126 +1,75 @@
 import React from "react";
 import styled from "styled-components";
-import Img1 from "../Image/machineTransparent.png";
-import Img2 from "../Image/Computer.png";
-import Img3 from "../Image/Furniture.png";
-import Img4 from "../Image/gadgets.png";
-import Img5 from "../Image/phones.png";
+import SliderCard from "./slidercard/SliderCard";
+import { Link } from "react-router-dom";
 
-function CategoryCard(props) {
+function Card() {
   return (
-    <MyCateCard>
-      <div className="d-flex mt-2 mb-2 px-2 CategoryTitle">
-        <div className="CategoryName">
-          <p>WEEKLY DEALS</p>
+    <PreviewCard>
+      <div className="Content">
+        <p>Weekly Deals</p>
+        <div className="Timer">
+          <li className="time" id="hour">00</li>
+          <li>:</li>
+          <li className="time" id="minutes">00</li>
+          <li>:</li>
+          <li className="time" id="second">00</li>
         </div>
-        <hr />
+        <Link to="/" className="content_btn">
+          View More
+        </Link>
       </div>
-      <div className="group d-flex">
-        <div className="row Deal-poster">
-          <div className="percentage-off">
-            <p>Percentage Off</p>
-          </div>
-          <div className="timer">
-            <span>10%</span>
-          </div>
-        </div>
-        <div className="bg-white d-flex">
-          <div className="item">
-            <div className="imageContainer">
-              <img src={Img1} />
-            </div>
-            <div className="price">Bamboo Color</div>
-            <div className="details">
-              <span>AC,Ghana</span>
-            </div>
-          </div>
-          <div className="item">
-            <div className="imageContainer">
-              <img src={Img3} />
-            </div>
-            <div className="price">Gaming</div>
-            <div className="details">
-              <span>LG, Nigeria</span>
-            </div>
-          </div>
-        </div>
+      <div className="slides">
+        <SliderCard />
       </div>
-    </MyCateCard>
+    </PreviewCard>
   );
 }
 
-const MyCateCard = styled.div`
-  width: 620px;
-  margin: auto;
-  height: 230px;
-  background-color: var(--colorLight);
-  .CategoryTitle {
-    .CategoryName {
-      font-family: "Muli", sans-serif;
+const PreviewCard = styled.div`
+  width: 100%;
+  height: 270px;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(30deg,#053001,#075306,#0c7804,#0e8502,#0e8502,#0c7804,#075306,#053001);
+  padding: 10px;
+  .Content {
+    color: var(--colorWhite);
+    width: 30%;
+    font-size: 2rem;
+    margin-top: 15px;
+    padding-left: 15px;
+    p {
       font-weight: bold;
-      font-size: 16px;
-      padding: 5px;
     }
-    hr {
-      width: 70%;
-      border: solid 5px var(--colorAsh);
+    .Timer {
+      display: flex;
+      list-style-type: none;
+      .time {
+        background-color: var(--colorWhite);
+        color: var(--colorGreen);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: bold;
+        font-size: 40px;
+      }
     }
   }
-
-  .group {
-    background-color: var(--colorYellow);
-    text-align: center;
-    width: 97%;
-    margin: auto;
-    height: 173px;
+  .content_btn {
+    width: 20px;
+    background-color: Black;
+    color: var(--colorWhite);
     padding: 10px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    .Deal-poster {
-      width: 250px;
-      height: 173px;
-      padding: 10px;
-      color: var(--colorWhite);
-      p {
-        font-size: 17px;
-        font-weight: bold;
-      }
-      span {
-        padding: 20px;
-        color: var(--colorYellow);
-        background-color: var(--colorWhite);
-        font-size: 30px;
-        font-weight: bold;
-      }
-    }
-    .bg-white {
-      background-color: var(--colorWhite);
-    }
-    .item {
-      border: solid 1px var(--colorLight);
-      background-color: var(--colorWhite);
-      width: 200px;
-      margin: 1px;
-      height: 170px;
-
-      :hover {
-        border: solid 1px var(--colorAsh);
-      }
-      .imageContainer {
-        overflow: hidden;
-        width: 200px;
-        margin: auto;
-        img {
-          width: 160px;
-          height: 130px;
-        }
-      }
-      .price {
-        font-weight: bold;
-      }
-    }
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: -10%;
+    margin-left: 10px;
+  }
+  .slides {
+    width: 70%;
   }
 `;
 
-export default CategoryCard;
+export default Card;

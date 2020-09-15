@@ -12,7 +12,7 @@ function ItemCards(props) {
       </div>
       <div className="Card-top">
         <p>{props.title}</p>
-        <p className="moq">{props.moq}</p>
+        <p className="moq">{props.moq}MOQ</p>
       </div>
       <div className="amount mb-2">
         <NumberFormat
@@ -58,10 +58,7 @@ const ItemCard = styled.div`
     transition: 0.3s;
     border: solid 0.5px var(--colorAsh);
   }
-    .moq {
-      font-size: 10px;
     
-  }
   .Card-top {
     span {
       background-color: var(--colorRed);
@@ -71,18 +68,20 @@ const ItemCard = styled.div`
       margin: 7px 0px;
       padding: 5px 10px;
       border-radius: 5px;
-      font-family: "Muli", sans-serif;
     }
     p {
-      margin-top: 5px;
       text-align: center;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-family: "Muli", sans-serif;
     }
+    .moq {
+      margin-top:-15px;
+      font-size: 15px;
+    
+  }
   }
   .image-container {
     width: 250px;
@@ -100,6 +99,7 @@ const ItemCard = styled.div`
   }
   .amount {
     text-align: center;
+    margin-top: -14px;
     span {
       font-size: 20px;
       font-weight: 500;
