@@ -22,7 +22,7 @@ class RegisterMain extends Component {
               </small>
             </div>
             <div className="acct-select">
-              <Link to="/registerUser">
+              <Link to="/IndividualRegistration">
                 <div className="select">
                   <i class="fas fa-shopping-bag"></i>
                   <div className="text">
@@ -35,8 +35,8 @@ class RegisterMain extends Component {
                 <div className="select">
                   <i class="fas fa-user-tie"></i>
                   <div className="text">
-                    <p>Become service provider</p>
-                    <small>buyer from sellers accross africa</small>
+                    <p>Become a service provider</p>
+                    <small>Click here to create an account</small>
                   </div>
                 </div>
               </Link>
@@ -44,7 +44,7 @@ class RegisterMain extends Component {
             <div className="signin">
               <p>Already a Member?</p>
               <Link to="/signin">
-                <span>Click Here to Register</span>
+                <span>Click Here to Sign In</span>
               </Link>
             </div>
           </div>

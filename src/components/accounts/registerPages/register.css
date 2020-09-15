@@ -1,4 +1,5 @@
-.LoginContainer {
+.LoginContainer,
+.ind-reg {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -28,7 +29,62 @@
   width: 68%;
   background-color: #eeeded;
 }
+.ind-reg > .logo {
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+.ind-reg > .logo > img {
+  width: 200px;
+  height: 170px;
+}
+.ind-reg > .ind-reg-form {
+  width: 68%;
+  margin: auto;
+  padding: 0px 20px;
+}
+.ind-reg-form > .form{
+  width: 80%;
+  margin-top: -7px;
 
+}
+.ind-reg-form > .form > h3{
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.ind-reg-form > .form > hr{
+  width: 10%;
+  border: solid 4px var(--colorGreen);
+  margin-left: 0;
+  border-radius: 10px;
+}
+.ind-reg-form > .form > form > .group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+  
+.ind-reg-form > .form > form > .group > .btn{
+  background-color: var(--colorGreen);
+  color: var(--colorWhite);
+}
+.ind-reg-form > .form > form > .group > .form-group {
+  width: 100%;
+}
+.ind-reg-form > .form > form > .group > .form-group >input{
+  width: 90%;
+  height: 40px;
+}
+.ind-reg-form > .form > form > .group > .form-group > select{
+  width: 90%;
+  height: 38px;
+  border: solid 2px #E9E7E7;
+  border-radius: 5px;
+
+}
 .formContaniner > .select-container {
   width: 70%;
   margin: auto;
@@ -46,7 +102,7 @@
 }
 .formContaniner > .select-container > .acct-select > a {
   width: 90%;
-  margin: 20px 0px;  
+  margin: 20px 0px;
   text-decoration: none;
 }
 .formContaniner > .select-container > .acct-select > a > .select {
@@ -61,28 +117,30 @@
   border-radius: 10px;
 }
 .formContaniner > .select-container > .acct-select > a > .select:hover {
-box-shadow: 5px 15px 10px #dddddd;
-color: var(--colorGreen);
-transform: translate(0px, -5px);
-transition: all linear 0.2s;
-
+  box-shadow: 5px 15px 10px #dddddd;
+  color: var(--colorGreen);
+  transform: translate(0px, -5px);
+  transition: all linear 0.2s;
 }
-.formContaniner > .select-container > .acct-select > a > .select > .text > p{
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: -35px;
-
+.formContaniner > .select-container > .acct-select > a > .select > .text > p {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: -35px;
 }
-.formContaniner > .select-container > .acct-select > a > .select > .text > small{
-    font-size: 16px;
-
+.formContaniner
+  > .select-container
+  > .acct-select
+  > a
+  > .select
+  > .text
+  > small {
+  font-size: 16px;
 }
 .formContaniner > .select-container > .signin {
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
-
 
 @media screen and (max-width: 1080px) {
   .LogoContaniner {
