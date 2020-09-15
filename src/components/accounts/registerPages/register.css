@@ -149,4 +149,12 @@
   .formContaniner {
     width: 98%;
   }
+  .ind-reg > .ind-reg-form{
+    width: 90%;
+  }
+  
+.ind-reg-form > .form{
+  width: 100%;
+}
+
 }
