@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import styled from "styled-components";
 import Img1 from "../Image/generalHome.jpg";
 import Img2 from "../Image/television.jpg";
@@ -10,6 +11,7 @@ import Img6 from "../Image/camera.jpg";
 
 function Card(props) {
   return (
+    <Link to="/">
     <ItemCard>
       <div className="Imagecontainer">
         <img src={props.img} />
@@ -19,6 +21,7 @@ function Card(props) {
         <p>MOQ from: {props.MOQRange}</p>
       </div>
     </ItemCard>
+    </Link>
   );
 }
 
@@ -26,7 +29,7 @@ const ItemCard = styled.div`
   display: flex;
   background-color: var(--colorWhite);
   border-radius: 5px;
-  width: 450px;
+  width: 420px;
   height: 200px;
   overflow: hidden;
   margin: 5px;
@@ -43,10 +46,11 @@ const ItemCard = styled.div`
   .Details {
     width: 60%;
     margin: 50px 10px;
+    color:black;
+
     .title {
       font-size: 25px;
       font-weight: bold;
-      color:black;
     }
     p{
       font-size: 17px;
@@ -86,6 +90,8 @@ const MyCateCard = styled.div`
   }
   .FeaturedItems{
     display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
   }
 `;
 

@@ -33,6 +33,24 @@ const PreviewCard = styled.div`
   overflow: hidden;
   background: linear-gradient(30deg,#053001,#075306,#0c7804,#0e8502,#0e8502,#0c7804,#075306,#053001);
   padding: 10px;
+@media screen and (max-width: 1080px) {
+  flex-direction: column;
+  .Content{ 
+    display: flex;
+    align-content: center;
+    .time{
+      height: 70px;
+    }
+    .content_btn{
+      margin-top: 5px;
+      height: 70px;
+      width: 80px;
+    }
+    .slides{
+      width: 100%;
+    }
+  }
+}
   .Content {
     color: var(--colorWhite);
     width: 30%;
