@@ -31,7 +31,7 @@ class RegisterMain extends Component {
                   </div>
                 </div>
               </Link>
-              <Link to="/registerUser">
+              <Link to="/serviceprovider">
                 <div className="select">
                   <i class="fas fa-user-tie"></i>
                   <div className="text">

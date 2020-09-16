@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Img1 from "../Image/cassavaa.jpg";
 import Img2 from "../Image/waterMelon.jpg";
@@ -8,15 +9,17 @@ import Img5 from "../Image/picfeeds.jpg";
 
 function Card(props) {
   return (
-    <ItemCard>
-      <div className="Imagecontainer">
-        <img src={props.img} />
-      </div>
-      <div className="Details">
-        <p className="title">{props.title}</p>
-        <p>MOQ from: {props.MOQRange}</p>
-      </div>
-    </ItemCard>
+    <Link to="/">
+      <ItemCard>
+        <div className="Imagecontainer">
+          <img src={props.img} />
+        </div>
+        <div className="Details">
+          <p className="title">{props.title}</p>
+          <p>MOQ from: {props.MOQRange}</p>
+        </div>
+      </ItemCard>
+    </Link>
   );
 }
 
@@ -24,7 +27,7 @@ const ItemCard = styled.div`
   display: flex;
   background-color: var(--colorWhite);
   border-radius: 5px;
-  width: 450px;
+  width: 420px;
   height: 200px;
   overflow: hidden;
   margin: 5px;
@@ -41,12 +44,13 @@ const ItemCard = styled.div`
   .Details {
     width: 60%;
     margin: 50px 10px;
+    color: black;
+
     .title {
       font-size: 25px;
       font-weight: bold;
-      color:black;
     }
-    p{
+    p {
       font-size: 17px;
       color: var(--colorDark);
     }
@@ -60,14 +64,30 @@ function CategoryCard(props) {
         <p>Recommended Agric for you</p>
       </div>
       <div className="FeaturedItems">
-        <Card img={Img1} title='Seedligs, stems and tubers' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img2} title='Fruits and Vegetables' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img3} title='Raw materials' MOQRange="20pcs - 100pcs"/>
+        <Card
+          img={Img1}
+          title="Seedligs, stems and tubers"
+          MOQRange="20pcs - 100pcs"
+        />
+        <Card
+          img={Img2}
+          title="Fruits and Vegetables"
+          MOQRange="20pcs - 100pcs"
+        />
+        <Card img={Img3} title="Raw materials" MOQRange="20pcs - 100pcs" />
       </div>
       <div className="FeaturedItems">
-        <Card img={Img5} title='Feeds and Vaccines' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img4} title='Fertilizers and chemicals' MOQRange="20pcs - 100pcs"/>
-        <Card img={Img5} title='Other Agric products' MOQRange="20pcs - 100pcs"/>
+        <Card img={Img5} title="Feeds and Vaccines" MOQRange="20pcs - 100pcs" />
+        <Card
+          img={Img4}
+          title="Fertilizers and chemicals"
+          MOQRange="20pcs - 100pcs"
+        />
+        <Card
+          img={Img5}
+          title="Other Agric products"
+          MOQRange="20pcs - 100pcs"
+        />
       </div>
     </MyCateCard>
   );
@@ -82,8 +102,10 @@ const MyCateCard = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
-  .FeaturedItems{
+  .FeaturedItems {
     display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
   }
 `;
 

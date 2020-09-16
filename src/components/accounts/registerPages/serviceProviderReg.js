@@ -6,8 +6,7 @@ import {
 } from "react-country-region-selector";
 import "./register.css";
 import { Link } from "react-router-dom";
-import Logo from "../../logoComponents/logo2.png";
-import styled from "styled-components";
+import Logo from "../../logoComponents/logo3.png";
 
 export default class UserReg extends Component {
   constructor(props) {
@@ -34,17 +33,19 @@ export default class UserReg extends Component {
         </div>
         <div className="ind-reg-form">
           <div className="form">
-            <h3>Registration</h3>
+            <h3>Service Provider Registration</h3>
             <hr />
             <form>
               <div className="group">
                 <div className="form-group">
-                  <label>First Name</label>
+                  <label>Full Name</label>
                   <input input="text" placeholder="Enter first name..." />
                 </div>
+              </div>
+              <div className="group">
                 <div className="form-group">
-                  <label>Last Name</label>
-                  <input type="text" placeholder="Enter Last name..." />
+                  <label>Company Name</label>
+                  <input input="text" placeholder="Enter first name..." />
                 </div>
               </div>
               <div className="group">
@@ -86,22 +87,19 @@ export default class UserReg extends Component {
               </div>
               <div className="group">
                 <div className="form-group">
-                  <label>Address</label>
-                  <input input="text" placeholder="Enter address here..." />
-                </div>
-              </div>
-              <div className="group">
-                <div className="form-group">
                   <Link to="/register">
                     <button className="btn-back">{'<< '}Back</button>
                   </Link>
                 </div>
                 <div className="form-group">
                   <Link to="/">
-                    <button className="btn">Register</button>
+                    <button className="btn">Register as Provider</button>
                   </Link>
                 </div>
               </div>
+              <div className="group">
+
+</div>
             </form>
           </div>
         </div>
