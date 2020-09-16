@@ -67,9 +67,14 @@
   margin-top: 7px;
 }
   
-.ind-reg-form > .form > form > .group > .btn{
+.ind-reg-form > .form > form > .group > .form-group > a >.btn{
   background-color: var(--colorGreen);
   color: var(--colorWhite);
+}
+.ind-reg-form > .form > form > .group > .form-group > a >.btn-back{
+  background-color: #E9E7E7;
+  color: var(--colorAsh);
+  border: none;
 }
 .ind-reg-form > .form > form > .group > .form-group {
   width: 100%;

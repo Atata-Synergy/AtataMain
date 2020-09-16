@@ -11,6 +11,7 @@ import Login from "../src/components/accounts/Login";
 import Register from "../src/components/accounts/registerPages/RegisterMain";
 import Forgotpwd from "../src/components/accounts/forgotPassword";
 import RegisterUser from "../src/components/accounts/registerPages/registerUser";
+import ServiceProviderReg from "../src/components/accounts/registerPages/serviceProviderReg";
 import Cart from "./components/Pages/CartCss/cart";
 import RFQ from "../src/components/Pages/rfq";
 
@@ -44,6 +45,7 @@ class App extends Component {
         <Route exact path="/product-page" component={ProductPage} />
         <Route exact path="/Whislist" component={Wishlist} />
         <Route exact path="/IndividualRegistration" component={RegisterUser} />
+        <Route exact path="/serviceprovider" component={ServiceProviderReg} />
         <Route exact path="/atataPay" component={AtataPay} />
         <Route exact path="/atataWarehouse" component={AtataWarehouse} />
         <Route exact path="/atataLogistics" component={AtataLogistics} />
