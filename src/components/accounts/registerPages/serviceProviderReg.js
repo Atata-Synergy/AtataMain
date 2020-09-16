@@ -6,8 +6,7 @@ import {
 } from "react-country-region-selector";
 import "./register.css";
 import { Link } from "react-router-dom";
-import Logo from "../../logoComponents/logo2.png";
-import styled from "styled-components";
+import Logo from "../../logoComponents/logo3.png";
 
 export default class UserReg extends Component {
   constructor(props) {
