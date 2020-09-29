@@ -35,9 +35,7 @@ class ForgotPassword extends Component {
             <input type="password" placeholder="Retype New Password" />
             </div>
             <div className='form-group buttons'>
-            <Link to="/">
-            <button className="back">{"Go to Home"}</button>
-          </Link>
+           
             <button className="btn" onClick={this.handleClick} disabled={clicked}>
               {clicked && <CircularProgress style={{color:'#fff', width: '20px', height:'20px'}} />}
               {!clicked && 'Change Password'}
