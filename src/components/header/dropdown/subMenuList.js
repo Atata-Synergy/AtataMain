@@ -3,8 +3,8 @@ import styled from "styled-components";
 import BgImg from "../Images/bg.png";
 import { Link } from "react-router-dom";
 
-function SubMenuList() {
-  
+class SubMenuList extends React.Component {
+  render(){
   function Onhover(e) {
     const Hover = document.getElementById("SubMenuList");
     const Hoverer = document.getElementById("allCate-SubMenu");
@@ -89,6 +89,7 @@ function SubMenuList() {
       </div>
     </SubMenu>
   );
+}
 }
 
 const SubMenu = styled.div`

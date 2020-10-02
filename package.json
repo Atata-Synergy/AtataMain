@@ -20,6 +20,7 @@
     "react-country-flag": "^2.0.1",
     "react-country-region-selector": "^2.1.0",
     "react-dom": "^16.13.0",
+    "react-external-link": "^1.1.1",
     "react-flags-select": "^1.1.12",
     "react-hook-form": "^5.4.2",
     "react-items-carousel": "^2.8.0",
