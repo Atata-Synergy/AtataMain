@@ -8,6 +8,10 @@ import { ExternalLink } from "react-external-link";
 import LoginDropDown from "./dropdown/loginDropdown";
 import { Link } from "react-router-dom";
 import { Data } from "./dropdown/CategoryData";
+import mobileHeader from './MobileHeader';
+
+
+
 
 class HeaderBottom extends React.Component {
   state = {
@@ -37,84 +41,84 @@ class HeaderBottom extends React.Component {
     ],
     AllCatMenuItems: [
       {
-        id:0,
+        id: 0,
         link: "/categories",
         cate1: "Agriculture",
         cate2: "Food and Beverages",
         menu: Data.Agriculture,
       },
       {
-        id:1,
+        id: 1,
         link: "/categories",
         cate1: "Consumer Electonics",
         cate2: "Home Appliances",
         menu: Data.ConsumerElectonics,
       },
       {
-        id:2,
+        id: 2,
         link: "/categories",
         cate1: "Appreal",
         cate2: "Fashion Accessories",
         menu: Data.Appreal,
       },
       {
-        id:3,
+        id: 3,
         link: "/categories",
         cate1: "Home and Garden",
         cate2: "Furniture",
         menu: Data.HomeAndGarden,
       },
       {
-        id:4,
+        id: 4,
         link: "/categories",
         cate1: "Energy",
         cate2: "Enviroment",
         menu: Data.Energy,
       },
       {
-        id:5,
+        id: 5,
         link: "/categories",
         cate1: "Machinery",
         cate2: "Vehicles and Accessories",
         menu: Data.Machinery,
       },
       {
-        id:6,
+        id: 6,
         link: "/categories",
         cate1: "Business Services",
         cate2: "Service Equipment",
         menu: Data.BusinessServices,
       },
       {
-        id:7,
+        id: 7,
         link: "/categories",
         cate1: "Sports and Entertainment",
         cate2: "Toys and Hobbies",
         menu: Data.SportsAndEntertainment,
       },
       {
-        id:8,
+        id: 8,
         link: "/categories",
         cate1: "Packaging and Printing",
         cate2: "Office and School Supplies",
         menu: Data.PackagingandPrinting,
       },
       {
-        id:9,
+        id: 9,
         link: "/categories",
         cate1: "Beauty and Personal Care",
         cate2: "Health and Medical",
         menu: Data.BeautyAndPersonalCare,
       },
       {
-        id:10,
+        id: 10,
         link: "/categories",
         cate1: "Luggage, Bags and Cases",
         cate2: "Shoes and Accessories",
         menu: Data.Luggage,
       },
       {
-        id:11,
+        id: 11,
         link: "/categories",
         cate1: "Minerals and Metallurgy ",
         cate2: "Rubber and Plastics",
@@ -166,6 +170,13 @@ class HeaderBottom extends React.Component {
               ))}
             </ul>
           </div>
+
+          <ul className="mobileheader">
+            <div className="menu-icon">
+              <MenuIcon />
+            </div>
+          </ul>
+
           <div className="leftMenu">
             <form>
               <input type="search" />
@@ -173,7 +184,7 @@ class HeaderBottom extends React.Component {
             </form>
 
             <div className="login">
-              <i class="fas fa-user-circle" onMouseEnter={handleOnhover}></i>
+              <i class="fas fa-user-circle" onMouseOver ={handleOnhover}></i>
             </div>
           </div>
         </Container>
@@ -192,10 +203,10 @@ class HeaderBottom extends React.Component {
                     {items.cate1} / {items.cate2}
                   </p>
                 </Link>
-              {this.state.AllCatMenuItems.reduce((items, key) => (
-                <div className="sub-menu hidden" id="SubMenuList">
-                  {items.menu}
-                </div>
+                {this.state.AllCatMenuItems.reduce((items, key) => (
+                  <div className="sub-menu hidden" id="SubMenuList">
+                    {items.menu}
+                  </div>
                 ))}
               </>
             ))}
@@ -336,8 +347,23 @@ const Container = styled.div`
       width: 50%;
     }
   }
-  @media screen and (max-width: 1080px) {
+  .mobileheader {
     display: none;
+  }
+  @media screen and (max-width: 1080px) {
+    .rightMenu {
+      display: none;
+    }
+    .leftMenu {
+      display: none;
+    }
+    .mobileheader {
+      display: block;
+      padding: 10px;
+      .menu-icon {
+        margin-bottom: -10px;
+      }
+    }
   }
 `;
 
