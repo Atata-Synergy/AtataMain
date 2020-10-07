@@ -5,7 +5,6 @@ import "../accounts/account.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
 import CommodityPrice from "../ComodityPrice/commodity";
-import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
@@ -71,7 +70,6 @@ function Page() {
 
       {/* Fixed properties  */}
       <FixedCartButton />
-      <FixedSocialLinks />
       <MainHeader />
       {/* Fixed properties Ends Here  */}
     </>

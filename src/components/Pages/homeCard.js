@@ -29,10 +29,10 @@ const ItemCard = styled.div`
   display: flex;
   background-color: var(--colorWhite);
   border-radius: 5px;
-  width: 420px;
+  width: 350px;
   height: 200px;
   overflow: hidden;
-  margin: 5px;
+  margin: 10px;
   .Imagecontainer {
     width: 40%;
     height: 90%;
@@ -49,11 +49,11 @@ const ItemCard = styled.div`
     color:black;
 
     .title {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bold;
     }
     p{
-      font-size: 17px;
+      font-size: 15px;
       color: var(--colorDark);
     }
   }
@@ -80,10 +80,10 @@ function CategoryCard(props) {
 }
 
 const MyCateCard = styled.div`
-  width: 100%;
+  width: 90%;
   background-color: var(--colorLight);
-  margin: 20px 0px;
-  padding: 10px;
+  margin: 20px auto;
+  padding: 5px;
   .CategoryName {
     font-size: 20px;
     font-weight: bold;

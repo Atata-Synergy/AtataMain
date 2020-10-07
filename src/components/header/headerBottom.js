@@ -5,7 +5,6 @@ import { AllCatMenuItems } from "./AllCateData";
 import MenuIcon from "@material-ui/icons/Menu";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandLess";
-import { ExternalLink } from "react-external-link";
 import ItemsCarousel from "react-items-carousel";
 import { Link } from "react-router-dom";
 import { Data } from "./dropdown/CategoryData";
@@ -39,31 +38,7 @@ class HeaderBottom extends React.Component {
   };
 
   render() {
-    //function for hover on All Categories
-    function Onhover(e) {
-      const Hover = document.getElementById("allCate-SubMenu");
-      const TurnIcon = document.getElementById("IconUp");
-      Hover.classList.remove("hidden");
-      TurnIcon.classList.add("ChangeIcon");
-    }
-
-    function OnLeave(e) {
-      const Hover = document.getElementById("allCate-SubMenu");
-      const TurnIcon = document.getElementById("IconUp");
-      Hover.classList.add("hidden");
-      TurnIcon.classList.remove("ChangeIcon");
-    }
-
-    // function for hover on login Icon
-    function handleOnhover(e) {
-      const Hover = document.getElementById("LoginDrop");
-      Hover.classList.remove("hidden");
-    }
-    function handleMouseOut(e) {
-      const Hover = document.getElementById("LoginDrop");
-      Hover.classList.add("hidden");
-    }
-
+   
     function Nav() {
       const [activeItemIndex, setActiveItemIndex] = useState(0);
       const chevronWidth = 40;
