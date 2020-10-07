@@ -10,13 +10,10 @@ function MainHeader() {
   return (
     <>
       <Header className="MainHeader">
-        <HeaderTop/>
         <OtherServices />
+        <HeaderTop />
         <HeaderBottom />
       </Header>
-      <HeaderS className="MainHeader">
-        <MobileHeader />
-      </HeaderS>
     </>
   );
 }
@@ -27,7 +24,7 @@ const Header = styled.div`
   }
 `;
 const HeaderS = styled.div`
-background-color: var(--colorGreen);
+  background-color: var(--colorGreen);
   @media screen and (min-width: 425px) {
     display: none;
   }

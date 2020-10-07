@@ -1,0 +1,14 @@
+.all-categories{
+    width: 100%;
+    background-color: var(--colorGreen);
+    overflow: hidden;
+}
+.all-categories > ul{
+    list-style-type: none;
+    margin: 10px 5px;
+    color: var(--colorLight) ;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
