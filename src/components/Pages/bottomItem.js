@@ -350,9 +350,9 @@ export default class bottomItem extends Component {
 
 
 const MyCateCard = styled.div`
-  width: 100%;
+  width: 90%;
   background-color: var(--colorLight);
-  margin: 20px 0px;
+  margin: 5px auto;
   padding: 10px;
   .CategoryName {
     font-size: 20px;
@@ -364,13 +364,14 @@ const MyCateCard = styled.div`
     display: flex;
   }
   .row{
-    width:97%;
+    width:100%;
     margin: auto;
   }
   .bottomItem {
     background-color: var(--colorWhite);
-    margin: 10px;
+    margin: 10px auto;
     height: 150px;
+    width: 360px;
     padding: 15px;
   }
   .imageContainer {
@@ -390,24 +391,26 @@ const MyCateCard = styled.div`
   .details {
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    width: 60%;
+    text-align:center;
   }
   .title {
     color: var(--colorBlack);
-    font-family: "Muli", sans-serif;
     font-size: 16px;
+    text-align:center;
     font-weight: bold;
-    margin: 0 3px;
   }
 
   .price {
-    font-family: "Muli", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    text-align:center;
     font-weight: bolder;
     color: var(--colorYellow);
   }
   .button {
     padding: 10px;
+    width: 70%;
+    margin: auto;
     text-align: center;
     color: var(--colorAsh);
     &:hover {

@@ -120,22 +120,24 @@ export default class IndexBlog extends Component {
 const BlogBody = styled.div`
   background-color: var(--colorLight);
   display: flex;
-  width: 97%;
+  flex-wrap: wrap;
+  width: 90%;
   margin: auto;
   padding: 10px;
 `;
 const Blog = styled.div`
   background-color: var(--colorWhite);
   padding: 10px;
-  margin: 10px;
-  width: 450px;
+  margin: 10px auto;
+  width: 370px;
   overflow: hidden;
   border: solid 0.5px var(--colorAsh);
+  border-radius: 10px;
 
   .Imagecontainer {
     overflow: hidden;
     width: 430px;
-    margin-top: 0;
+    margin-top: -10px;
     height: 250px;
     background-color: var(--colorBlack);
   }
@@ -155,15 +157,13 @@ const Blog = styled.div`
     margin: auto;
 
     p {
-      font-family: "Muli", sans-serif;
       text-align: center;
       font-size: 25px;
       font-weight: bolder;
     }
     .content {
-      font-family: "Muli", sans-serif;
       font-size: 15px;
-      height: 80px;
+      height: 90px;
       width: 100%;
       white-space: pre-wrap;
       overflow: hidden;
@@ -187,5 +187,72 @@ const Blog = styled.div`
         width: 50%;
         text-align:center;
     }
+  }
+
+  @media screen and (max-width: 1080px) {
+    background-color: var(--colorWhite);
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+    overflow: hidden;
+    border: solid 0.5px var(--colorAsh);
+  
+    .Imagecontainer {
+      overflow: hidden;
+      width: 430px;
+      margin-top: -10px;
+      height: 250px;
+      background-color: var(--colorBlack);
+    }
+    .Imagecontainer img {
+      width: 500px;
+      margin: auto;
+      height: 300px;
+      &:hover {
+        transition: all 1s linear;
+        background-color: var(--colorBlack);
+        opacity: 50%;
+        transform: scale(1.2);
+      }
+    }
+    .blogtext {
+      width: 90%;
+      margin: auto;
+  
+      p {
+        font-family: "Muli", sans-serif;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+      .content {
+        font-family: "Muli", sans-serif;
+        font-size: 15px;
+        height: 90px;
+        width: 100%;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+    .Blogdetails {
+      color: var(--colorAsh);
+      width: 100%;
+      padding: 10px;
+       i{
+          margin: 0 10px;
+      }
+      .post-by{
+          width: 50%;
+          text-align:center;
+      }
+      .comments {
+          width: 50%;
+          text-align:center;
+      }
+    }
+  
   }
 `;

@@ -53,13 +53,9 @@ function Page() {
         <div className="my-5">
           <WeeklyDeals />
         </div>
-
-        <div className="group d-flex">
-          <RFQ />
-        </div>
       </div>
 
-      <div className="col-12 mx-auto">
+      <div className="col-12">
         <BottomItem />
       </div>
 
