@@ -41,7 +41,7 @@ export default class CardSlider extends React.Component {
   render() {
     const responsive = {
       0: {
-        items: 2,
+        items: 3,
       },
       600: {
         items: 3,
@@ -139,18 +139,21 @@ export default class CardSlider extends React.Component {
 
 const CardSlide = styled.div`
   width: 97%;
-  height: 250px;
+  height: 210px;
+  margin: 5px auto;
   background-color: var(--colorWhite);
   border-radius: 5px;
 
   .ImgContainer {
-    width: 200px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     margin: auto;
     overflow: hidden;
+    justify-items: center;
     img {
       width: 180px;
-      height: 180px;
+      height: 150px;
+      margin:auto;
     }
   }
   .details {
@@ -169,6 +172,49 @@ const CardSlide = styled.div`
     .MOQ{
         font-size: 13px;
         padding: 3px 0 0 0 ;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    width: 98%;
+    height: 180px;
+    margin: 0px auto;
+    font-size: 10px;
+
+    .ImgContainer {
+      width: 90%;
+      height: 120px;
+      margin: auto;
+      overflow: hidden;
+      justify-items: center;
+      img {
+        width: 90%px;
+        height: 130px;
+        margin:auto;
+      }
+    }
+
+    .details {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      .ItemTitle {
+        height: 22px;
+        overflow: ellipsis;
+        font-size: 14px;
+      }
+      .ItemAmount {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .MOQ{
+        
+          p{
+          font-size: 10px;
+          width: 90%;
+          text-align: center;
+          margin: auto;
+          }
+      }
     }
   }
 `;

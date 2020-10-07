@@ -5,7 +5,6 @@ import "../accounts/account.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
 import CommodityPrice from "../ComodityPrice/commodity";
-import FixedSocialLinks from "../Pages/fixedSocialLinks";
 import Row from "react-bootstrap/Row";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
@@ -54,13 +53,9 @@ function Page() {
         <div className="my-5">
           <WeeklyDeals />
         </div>
-
-        <div className="group d-flex">
-          <RFQ />
-        </div>
       </div>
 
-      <div className="col-12 mx-auto">
+      <div className="col-12">
         <BottomItem />
       </div>
 
@@ -71,7 +66,6 @@ function Page() {
 
       {/* Fixed properties  */}
       <FixedCartButton />
-      <FixedSocialLinks />
       <MainHeader />
       {/* Fixed properties Ends Here  */}
     </>

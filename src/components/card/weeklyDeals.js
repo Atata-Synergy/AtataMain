@@ -16,7 +16,7 @@ function Card() {
           <li className="time" id="second">00</li>
         </div>
         <Link to="/" className="content_btn">
-          View More
+          View More {'>'}
         </Link>
       </div>
       <div className="slides">
@@ -27,12 +27,16 @@ function Card() {
 }
 
 const PreviewCard = styled.div`
-  width: 100%;
-  height: 270px;
+  width: 90%;
+  margin:auto;
+  height: 230px;
   display: flex;
+  border-radius: 5px;
   overflow: hidden;
   background: linear-gradient(160deg,#ff9900,#ffa21a,#ffab2a,#ffaf31,#ffb134,#ffae31,#ffa41f,#ff9900);
-  padding: 10px;
+  padding: 5px;
+
+
   .Content {
     color: var(--colorWhite);
     width: 30%;
@@ -70,6 +74,42 @@ const PreviewCard = styled.div`
   .slides {
     width: 70%;
   }
+
+  
+@media screen and (max-width: 1080px) {
+  flex-direction: column;
+  height: 250px;
+  .slides {
+    width: 100%;
+  }
+
+  p{
+    font-size: 18px;
+    width: 40%;
+  }
+  .Content{ 
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    .Timer{
+      margin-top:-20px;
+      margin-left: -10px;
+      .time{
+        font-size: 20px;
+      }
+      .slides{
+        width: 90%;
+      }
+    }
+    .content_btn{
+      width: 30%;
+      font-size: 13px;
+      text-align: right;
+      background-color: transparent;
+    }
+  }
+}
 `;
 
 export default Card;
