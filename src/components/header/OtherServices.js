@@ -10,9 +10,7 @@ function Others() {
   const [hover, setHover] = useState("hidden");
 
   const handleHover = (hover) => {
-    // setTimeout(() => {
       setHover(" ");
-    // }, 500);
   };
 
   const handleHoverOut = (hover) => {
