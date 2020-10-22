@@ -22,9 +22,6 @@ function Header() {
       <HeaderWrap>
         <div className="d-flex">
           <Logo>
-            <span>
-              <i class="fas fa-bars"></i>
-            </span>
             <div className="logoContainer">
               <Link to="/">
                 <img src={HeaderLogo} alt="logo" />
