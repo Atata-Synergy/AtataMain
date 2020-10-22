@@ -15,6 +15,52 @@
   background-color: var(--colorWhite);
 }
 /* Main Header Ends */
+/* Page Header Starts */
 
-
-
+.PagesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 10px;
+  box-shadow: 2px 2px 20px #1c1c1c1c;
+}
+.PagesHeader > .logo,
+.PagesHeader > .login {
+  margin: auto;
+}
+.PagesHeader > .logo > a >img {
+  width: 70px;
+  height: 50px;
+}
+.PagesHeader > .search {
+  display: flex;
+  margin: auto;
+  border: solid 1px #aaaaaa;  
+  border-radius: 5px;
+  height: 42px;
+  width: 45%;
+  overflow: hidden;
+}
+.PagesHeader > .search > button {
+  font-size: 14px;
+  border: none;
+  background-color: var(--colorGreen);
+  color: var(--colorLight);
+  outline: none;
+  padding: 5px;
+  width: 25%;
+  height: 40px;
+}
+.PagesHeader > .search > input {
+  width: 75%;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.PagesHeader > .login{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--colorGreen);
+}
