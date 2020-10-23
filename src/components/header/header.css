@@ -19,6 +19,7 @@
 
 .PagesHeader {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   padding: 10px;
@@ -28,14 +29,14 @@
 .PagesHeader > .login {
   margin: auto;
 }
-.PagesHeader > .logo > a >img {
+.PagesHeader > .logo > a > img {
   width: 70px;
   height: 50px;
 }
 .PagesHeader > .search {
   display: flex;
   margin: auto;
-  border: solid 1px #aaaaaa;  
+  border: solid 1px #aaaaaa;
   border-radius: 5px;
   height: 42px;
   width: 45%;
@@ -59,8 +60,28 @@
   border-radius: 5px;
   outline: none;
 }
-.PagesHeader > .login{
+.PagesHeader > .login {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--colorGreen);
+  list-style-type: none;
+  cursor: pointer;
+}
+.login-dropdown {
+  position: absolute;
+  font-size: 13px;
+  right: 100px;
+  padding: 5px;
+  top: 45px;
+  background-color: var(--colorWhite);
+  list-style-type: none;
+  box-shadow: 2px 2px 5px #1c1c1c0c;
+}
+.login-dropdown > a > li{
+  margin: 10px 15px;
+}
+@media screen and (max-width: 960px) {
+  .PagesHeader {
+  }
+
 }
