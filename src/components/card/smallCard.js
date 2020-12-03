@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "../Image/clothe1.png";
 import NumberFormat from "react-number-format";
 import { Link } from "react-router-dom";
 
@@ -12,20 +11,11 @@ function ItemCards(props) {
       </div>
       <div className="Card-top">
         <p>{props.title}</p>
-        <p className="moq">{props.moq}MOQ</p>
       </div>
       <div className="amount mb-2">
         <NumberFormat
           className={"px-1"}
-          value={props.amount1}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"₦"}
-        />
-        -
-        <NumberFormat
-          className={"px-1"}
-          value={props.amount2}
+          value={props.amount}
           displayType={"text"}
           thousandSeparator={true}
           prefix={"₦"}
@@ -43,14 +33,14 @@ function ItemCards(props) {
 
 const ItemCard = styled.div`
   background-color: var(--colorWhite);
-  margin-top: 6rem;
-  margin: auto;
+  margin: 3px auto;
+  margin-bottom: 0.9rem;
   width: 270px;
   height: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  box-shadow: 0px 0px 50px #00000015;
+  box-shadow: 0px 0px 10px #00000015;
   padding: 10px;
   border: solid 0.5px transparent;
 
@@ -71,17 +61,12 @@ const ItemCard = styled.div`
     }
     p {
       text-align: center;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: bold;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .moq {
-      margin-top:-15px;
-      font-size: 15px;
-    
-  }
   }
   .image-container {
     width: 250px;
@@ -126,5 +111,36 @@ const ItemCard = styled.div`
       font-size: 15px;
     }
   }
+@media screen and (max-width: 1080px) {  
+  width: 140px;
+  height: 200px;
+  padding: 2px;
+  .image-container {
+    width: 135px;
+    margin: auto;
+    height: 100px;
+    overflow: hidden;
+    img {
+      width: 140px;
+      margin: auto;
+      height: 100px;
+    }
+  }
+  .Card-top {
+    p {
+      font-size: 13px;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .amount {
+    span {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
 `;
 export default ItemCards;

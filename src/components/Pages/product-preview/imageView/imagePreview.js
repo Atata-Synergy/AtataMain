@@ -33,8 +33,7 @@ class ImagePreview extends Component {
         </div>
         <div className="ImageList">
           <li>
-          
-            <img src={Img1} onClick={()=> this.Swap(Img1)} id="p-img" />
+           <img src={Img1} onClick={()=> this.Swap(Img1)} id="p-img" />
           </li>
           <li>
             <img src={Img2} onClick={()=> this.Swap(Img2)} id="p-img" />
@@ -54,24 +53,15 @@ class ImagePreview extends Component {
   }
 }
 
-const imageProps = {
-  smallImage: {
-    isFluidWidth: true,
-    src: Img1
-  },
-  largeImage: {
-    src: Img1,
-    width: 1200,
-    height: 1800
-  },
-  enlargedImageContainerStyle: { background: '#fff', zIndex: 9 }
-};
+
 
 const Preview = styled.div`
   padding: 10px;
+  width: 50%;
+  margin: auto;
   .ImagePreview {
     border: solid 1px var(--colorAsh);
-    width: 500px;
+    width: 90%;
     height: 400px;
     margin: auto;
     padding: auto;
@@ -82,7 +72,7 @@ const Preview = styled.div`
     }
   }
   .ImageList {
-    width: 89%;
+    width: 90%;
     margin: auto;
     margin-top: 3px;
     padding: 10px;

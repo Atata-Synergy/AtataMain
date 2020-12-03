@@ -14,7 +14,6 @@ import NewPwd from "../src/components/accounts/registerPages/resetPassword";
 import RegisterUser from "../src/components/accounts/registerPages/registerUser";
 import ServiceProviderReg from "../src/components/accounts/registerPages/serviceProviderReg";
 import Cart from "./components/Pages/CartCss/cart";
-import RFQ from "../src/components/Pages/rfq";
 
 //Categories
 import TopCategories from '../src/components/Pages/Categories/TopCategory';
@@ -42,7 +41,6 @@ class App extends Component {
         <Route exact path="/Register" component={Register} />
         <Route exact path="/forgotpassword" component={Forgotpwd} />
         <Route exact path="/newpassword" component={NewPwd} />
-        <Route exact path="/RFQ" component={RFQ} />
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/product-page" component={ProductPage} />
         <Route exact path="/Whislist" component={Wishlist} />

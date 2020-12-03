@@ -12,8 +12,8 @@ class Login extends Component {
     clicked: false
 }
 
-handleClick = () => {
-  this.setState({clicked: true});
+handleClick = (e) => {
+  this.setState({});
 
   setTimeout(() => {
       this.setState({clicked : false});
@@ -34,12 +34,12 @@ handleClick = () => {
           <form>
             <div className="form-group">
               <label>Email</label>
-              <input type="email" placeholder="emailaddress@email.com" />
+              <input type="email" name='email' placeholder="emailaddress@email.com" />
               <p className="error">*Invalid email address</p>
             </div>
             <div className="form-group">
               <label>Password</label>
-              <input type="Password" placeholder="Enter password here..." />
+              <input type="Password" name='password' placeholder="Enter password here..." />
               <p className="error">*Password is incorrect</p>
             </div>
             <div className="checkbox">

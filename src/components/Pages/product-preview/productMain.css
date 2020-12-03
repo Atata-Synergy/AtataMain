@@ -1,0 +1,7 @@
+.prd-contaniner{
+    width: 90%;
+    margin: auto;
+}
+.prd-display{
+    display: flex;
+}

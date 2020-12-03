@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { UserData } from '../../dummyUserData';
 import { Link } from "react-router-dom";
 import AtataPay from "./Images/atataPay.png";
 import AtataSure from "./Images/atatasure.png";
@@ -67,6 +68,7 @@ function Account() {
 
   return (
     <>
+    
       <div className="sign-in" onMouseEnter={handleHover}>
         <li>
           Sign In or Register <i class="fas fa-angle-down"></i>

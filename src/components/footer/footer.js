@@ -58,6 +58,9 @@ const Main = styled.div`
   display: flex;
   color: var(--colorYellow);
   padding: 50px 50px;
+@media screen and (max-width: 1080px) {
+  display: none;
+}
 `;
 
 const Navigation = styled.div`

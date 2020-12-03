@@ -5,6 +5,7 @@ import Order from "./orderInput/OrderMain";
 import OrderQuantity from "./orderInput/orderQuantity";
 import Grid from "@material-ui/core/Grid";
 import CompanyDetails from "./CompanyDetails";
+import './productMain.css'
 
 //Header
 import Header from "../../header/header";
@@ -27,21 +28,13 @@ class App extends Component {
   render() {
     return (
       <>
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <ProductView>
-              <Grid item xs={5}>
+      <div className='prd-contaniner'>
+        <section className='prd-display'>
                 <ImagePreview />
-              </Grid>
-              <Grid item xs={4}>
                 <Order />
-              </Grid>
-              <Grid item xs={3}>
-                <OrderQuantity />
-              </Grid>
-            </ProductView>
-          </Grid>
+                {/* <OrderQuantity /> */}
+          
+        </section>
           <div className="col-12 col-xs-12 col-lg-12 col-md-12 col-sm-12">
             <Grid item xs={12}>
               <Title>Other Product by (Seller Name)</Title>
@@ -114,8 +107,7 @@ class App extends Component {
               </ProductView>
             </Grid>
           </div>
-        </Grid>
-      </Container>
+      </div>
       <FixedCartButton />
       <Header />
       </>

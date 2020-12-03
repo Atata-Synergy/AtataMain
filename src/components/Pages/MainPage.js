@@ -4,36 +4,18 @@ import styled from "styled-components";
 import "../accounts/account.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
-import CommodityPrice from "../ComodityPrice/commodity";
-import Row from "react-bootstrap/Row";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
-import BottomItem from "../Pages/bottomItem";
 import IndexBlog from "../Pages/IndexBlog";
 import CategoryCard2 from "./homeCard";
 import CategoryCard3 from "./AccessoriesCard";
-import LatestDeals from "../card/LatestDeals";
-import WeeklyDeals from "../card/weeklyDeals";
-import Grouped from "../card/CardSlider";
-import RFQ from "./rfq";
 import FixedCartButton from "./FixedCartButton";
 
 function Page() {
   return (
     <>
-      <div className="col-12 index-viewed">
-        <Row>
-          <div className="col-xs-3 col-lg-3 my-4 col-md-12 col-sm-12">
-            <CommodityPrice />
-          </div>
-          <div className="col-xs-9 col-lg-9 col-md-12 my-4 col-sm-12 slider">
+      <div className="index-viewed">
             <Simpleslider />
-          </div>
-        </Row>
-      </div>
-
-      <div className="col-12">
-        <Grouped />
       </div>
 
       <div className="col-12 mx-auto mb-5">
@@ -47,16 +29,6 @@ function Page() {
         <div className="my-5">
           <CategoryLinks />
         </div>
-        <div className="my-5">
-          <LatestDeals />
-        </div>
-        <div className="my-5">
-          <WeeklyDeals />
-        </div>
-      </div>
-
-      <div className="col-12">
-        <BottomItem />
       </div>
 
       <div className="my-5">
