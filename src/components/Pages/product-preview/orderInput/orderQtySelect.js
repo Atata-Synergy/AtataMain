@@ -86,6 +86,10 @@ const QtySelect = styled.div`
       border: solid 0.5px var(--colorAsh);
       
   }
+  .Name{
+    font-size: 14px;
+    font-weight: normal;
+  }
 `;
 
 export default OrderQtySelect;

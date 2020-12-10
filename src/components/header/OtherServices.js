@@ -21,33 +21,7 @@ function Others() {
     <>
       <div className="others">
         <li>Blog</li>
-        <li onMouseEnter={handleHover}>
-          Other Services <i class="fas fa-angle-down"></i>
-        </li>
-      </div>
-      {/* Other Dropdown */}
-      <div className={`others-dropdown ${hover}`}
-      onMouseLeave={handleHoverOut}>
-        <div className="item">
-          <Link to="/atatapay">
-            <img src={AtataPay} />
-            Atata Pay
-          </Link>
-          <Link to="/atatalogistics">
-            <img src={AtataLogistics} />
-            Atata Logistics
-          </Link>
-        </div>
-        <div className="item">
-          <Link to="/atatawarehouse">
-            <img src={Atatahouse} />
-            Atata House
-          </Link>
-          <Link to="/atatainsurance">
-            <img src={AtataSure} />
-            Atata Sure
-          </Link>
-        </div>
+        <li>Lang</li>
       </div>
     </>
   );

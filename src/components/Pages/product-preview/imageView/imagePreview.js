@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import ReactImageMagnify from 'react-image-magnify';
 import styled from "styled-components";
 import Img1 from '../Images/1.png';
 import Img2 from '../Images/2.png';
@@ -15,7 +14,7 @@ class ImagePreview extends Component {
     super()
     
     this.state = {
-      mainUrl: Img1,
+      mainUrl: Img3,
     }
     this.Swap = this.Swap.bind(this)
 
@@ -31,7 +30,7 @@ class ImagePreview extends Component {
         <div className="ImagePreview">
           <img src={this.state.mainUrl} id="main" />
         </div>
-        <div className="ImageList">
+        {/* <div className="ImageList">
           <li>
            <img src={Img1} onClick={()=> this.Swap(Img1)} id="p-img" />
           </li>
@@ -47,7 +46,7 @@ class ImagePreview extends Component {
           <li>
             <img src={Img5} onClick={()=> this.Swap(Img5)} id="p-img" />
           </li>
-        </div>
+        </div> */}
       </Preview>
     );
   }
@@ -56,13 +55,12 @@ class ImagePreview extends Component {
 
 
 const Preview = styled.div`
-  padding: 10px;
-  width: 50%;
+  width: 100%;
   margin: auto;
   .ImagePreview {
     border: solid 1px var(--colorAsh);
     width: 90%;
-    height: 400px;
+    height: 350px;
     margin: auto;
     padding: auto;
     overflow: hidden;

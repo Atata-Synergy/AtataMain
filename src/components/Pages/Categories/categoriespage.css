@@ -95,11 +95,21 @@
   height: 300px !important;
 }
 
-.cart-container>.breadcrumb {
+.MuiTypography-root{
   background-color: #f1efef;
+  padding: 10px 5rem;
+
+}
+
+.MuiBreadcrumbs-ol{
+  font-size: 14px;
   max-width: 90%;
   margin: auto;
   margin-bottom: 20px;
+}
+.MuiBreadcrumbs-li > a{
+  color: #aaa;
+  font-weight: 500;
 }
 
 .category-shop {

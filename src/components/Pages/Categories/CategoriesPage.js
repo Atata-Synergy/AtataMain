@@ -15,17 +15,16 @@ import CarouselSlider from "./cart-slider";
 function Categories() {
   return (
     <div className="cart-container">
-      <section className="top-display">
-        <CarouselSlider />
-      </section>
-      <div className="breadcrumb">
         <Breadcrumbs aria-label="breadcrumb">
           <Link to='/' className='bd-text'>
             Home
           </Link>
           <Link>Category</Link>
         </Breadcrumbs>
-      </div>
+      <section className="top-display">
+        <CarouselSlider />
+      </section>
+      
       <div className="category-shop">
         <section className="side-nav">
           {CategoriesData.SideNav.map((menu) => (

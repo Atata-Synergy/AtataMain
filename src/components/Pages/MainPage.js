@@ -7,8 +7,8 @@ import Simpleslider from "../carousel/carousel";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
 import IndexBlog from "../Pages/IndexBlog";
-import CategoryCard2 from "./homeCard";
-import CategoryCard3 from "./AccessoriesCard";
+// import CategoryCard2 from "./homeCard";
+import CategoryCard from "../card/categoryCard";
 import FixedCartButton from "./FixedCartButton";
 
 function Page() {
@@ -19,11 +19,11 @@ function Page() {
       </div>
 
       <div className="col-12 mx-auto mb-5">
-        <CategoryCard3 />
+        <CategoryCard />
       </div>
       <div className="col-12 mx-auto mb-5">
         <div className="my-5">
-          <CategoryCard2 />
+          {/* <CategoryCard2 /> */}
         </div>
 
         <div className="my-5">

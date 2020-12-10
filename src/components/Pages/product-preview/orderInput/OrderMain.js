@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import ItemName from "./ItemName";
-import ColorSelect from "./OrderColor";
 import OrderQtySelect from "./orderQtySelect";
 import Details from "./details";
 import Sizes from "./OrderSizes";
-import Shipping from "./OrderShipping"
 
 
 class OrderInput extends Component {
@@ -13,15 +11,9 @@ class OrderInput extends Component {
       <>
         <ItemName />
 
-        <ColorSelect />
-
-        <Sizes />
-
-        <Shipping />
+        {/* <Sizes /> */}
 
         <OrderQtySelect />
-
-        <Details />
       </>
     );
   }
