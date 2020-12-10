@@ -69,7 +69,7 @@ class App extends Component {
             <p className="header">Related Items</p>
             <div className=' prd-items'>
             {Categories.RelatedItems.map((item) => (
-            <SmallCard img={item.img} title={item.title} amount={item.amount} />
+            <SmallCard img={item.img} title={item.title} category={item.category} amount={item.amount} />
           ))}
             </div>
           </section>
@@ -77,7 +77,7 @@ class App extends Component {
             <p className="header">Recently viewed Items</p>
             <div className=' prd-items'>
             {Categories.RecentlyViewed.map((item) => (
-            <SmallCard img={item.img} title={item.title} amount={item.amount} />
+            <SmallCard img={item.img} title={item.title} category={item.category} amount={item.amount} />
           ))}
             </div>
           </section>

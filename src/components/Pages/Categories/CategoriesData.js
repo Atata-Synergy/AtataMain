@@ -192,19 +192,19 @@ const Categories = {
   RecentlyViewed: [
     {
       id: 0,
-      title: "Hello",
+      title: "Weaved Basket",
       img: Img14,
       amount: 20000,
     },
     {
       id: 1,
-      title: "Hello",
+      title: "Ankara Bags and Shoes",
       img: Img13,
       amount: 20000,
     },
     {
       id: 2,
-      title: "Hello",
+      title: "Ankara Bags, purse and Shoes",
       img: Img9,
       amount: 20000,
     },

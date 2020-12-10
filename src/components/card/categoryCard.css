@@ -5,7 +5,7 @@
 .items-card-container> .header{
     background-color: var(--colorYellow);
     padding: 10px 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--colorWhite);
 }
 button.right-btn,button.left-btn{
@@ -20,19 +20,21 @@ button.right-btn,button.left-btn{
 .items-card-display {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
 }
-
 .item-card {
     background-color: var(--colorWhite);
-    margin: 3px auto;
-    margin-bottom: 0.9rem;
+    margin: 4px;
     width: 190px;
+    color: black;
     height: 290px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    box-shadow: 0px 0px 10px #00000020;
+    box-shadow: 0px 0px 7px #00000020;
     padding: 10px;
     border: solid 0.5px transparent;
 }
@@ -40,6 +42,8 @@ button.right-btn,button.left-btn{
 .item-card:hover {
     transition: 0.3s;
     border: solid 0.5px var(--colorAsh);
+    text-decoration: none;
+
 }
 .item-card>.Card-top{
     align-items: center;
