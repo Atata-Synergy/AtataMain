@@ -4,7 +4,6 @@ import Order from "./orderInput/OrderMain";
 import "./productMain.css";
 import { Data } from "../../../dummyUserData";
 import Categories from '../Categories/CategoriesData'
-
 //Header
 import Header from "../../header/header";
 //Header
@@ -24,7 +23,7 @@ class App extends Component {
             </div>
             <div className="order">
               <Order />
-              <button>Proceed to Checkout</button>
+              <button>Add to Cart </button>
             </div>
           </section>
           <section className="prd-details-display">

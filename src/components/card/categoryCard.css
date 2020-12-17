@@ -1,9 +1,11 @@
 .items-card-container {
     margin: 2rem auto;
-    width: 97%;
+    max-width: 100%;
 }
 .items-card-container> .header{
-    background-color: var(--colorYellow);
+    width: 96%;
+    margin: 1rem auto;
+    background-color: var(--colorGreen);
     padding: 10px 1rem;
     font-weight: 700;
     color: var(--colorWhite);

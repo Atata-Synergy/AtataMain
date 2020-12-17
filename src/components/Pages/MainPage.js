@@ -7,28 +7,29 @@ import Simpleslider from "../carousel/carousel";
 import CategoryLinks from "./bottomCategoryItems";
 import Footer from "../footer/footer";
 import IndexBlog from "../Pages/IndexBlog";
-// import CategoryCard2 from "./homeCard";
+import Auction from "../Auction/auction";
 import CategoryCard from "../card/categoryCard";
+import Featured from "../card/FeaturedProducts";
+import Latest from "../card/LatestItem";
 import FixedCartButton from "./FixedCartButton";
 
 function Page() {
   return (
     <>
       <div className="index-viewed">
-            <Simpleslider />
+        <Simpleslider />
       </div>
-
       <div className="col-12 mx-auto mb-5">
         <CategoryCard />
       </div>
       <div className="col-12 mx-auto mb-5">
-        <div className="my-5">
-          {/* <CategoryCard2 /> */}
-        </div>
-
-        <div className="my-5">
-          <CategoryLinks />
-        </div>
+        <Auction />
+      </div>
+      <div className="col-12 mx-auto mb-5">
+        <Featured />
+      </div>
+      <div className="col-12 mx-auto mb-5">
+        <Latest />
       </div>
 
       <div className="my-5">
@@ -50,7 +51,5 @@ const HeaderText = styled.div`
   text-align: center;
   margin: 20px 0;
 `;
-
-
 
 export default Page;
