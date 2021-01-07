@@ -2,7 +2,6 @@ import React from "react";
 import SmallCard from "../../card/smallCard";
 import Header from "../../header/header";
 import Footer from "../../footer/footer";
-import Cart from "../FixedCartButton";
 import "./categoriespage.css";
 import CategoriesData from "./CategoriesData";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
@@ -37,7 +36,6 @@ function Categories() {
           ))}
         </section>
       </div>
-      <Cart />
       <Footer />
       <Header />
     </div>

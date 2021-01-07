@@ -11,7 +11,6 @@ import Auction from "../Auction/auction";
 import CategoryCard from "../card/categoryCard";
 import Featured from "../card/FeaturedProducts";
 import Latest from "../card/LatestItem";
-import FixedCartButton from "./FixedCartButton";
 
 function Page() {
   return (
@@ -38,7 +37,6 @@ function Page() {
       <Footer />
 
       {/* Fixed properties  */}
-      <FixedCartButton />
       <MainHeader />
       {/* Fixed properties Ends Here  */}
     </>

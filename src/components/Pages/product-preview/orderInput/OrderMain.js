@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import ItemName from "./ItemName";
-import OrderQtySelect from "./orderQtySelect";
-import Details from "./details";
-import Sizes from "./OrderSizes";
+import Counter from '../counter'
 
 
 class OrderInput extends Component {
@@ -13,7 +11,11 @@ class OrderInput extends Component {
 
         {/* <Sizes /> */}
 
-        <OrderQtySelect />
+        <Counter
+          productQuantity='2'
+          updateQuantity={this.props.updateQuantity}
+          resetQuantity={this.resetQuantity}
+        />
       </>
     );
   }

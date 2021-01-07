@@ -11,18 +11,12 @@ import Login from "../src/components/accounts/Login";
 import Register from "../src/components/accounts/registerPages/RegisterMain";
 import Forgotpwd from "../src/components/accounts/forgotPassword";
 import NewPwd from "../src/components/accounts/registerPages/resetPassword";
-import Cart from "./components/Pages/CartCss/cart";
 
 //Categories
 import TopCategories from '../src/components/Pages/Categories/TopCategory';
 import Categories from '../src/components/Pages/Categories/CategoriesPage';
 //Categories Ends
 
-import Wishlist from "../src/components/Pages/wishlist";
-import AtataInsurance from "../src/components/AtataServicesPage/Atata-insurancePage";
-import AtataLogistics from "../src/components/AtataServicesPage/Atata-logisticsPage";
-import AtataWarehouse from "../src/components/AtataServicesPage/Atata-warehousePage";
-import AtataPay from "../src/components/AtataServicesPage/AtataPay-Page";
 import ProductPage from '../src/components/Pages/product-preview/ProductMain'
 import Checkout from '../src/components/checkout/mainCheckout'
 
@@ -32,7 +26,6 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Page} />
-        <Route exact path="/cart" component={Cart} />
         <Route exact path="/topcategories" component={TopCategories} />
         <Route exact path="/categories" component={Categories} />
         <Route exact path="/Signin" component={Login} />
@@ -41,11 +34,6 @@ class App extends Component {
         <Route exact path="/newpassword" component={NewPwd} />
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/product-page" component={ProductPage} />
-        <Route exact path="/Whislist" component={Wishlist} />
-        <Route exact path="/atataPay" component={AtataPay} />
-        <Route exact path="/atataWarehouse" component={AtataWarehouse} />
-        <Route exact path="/atataLogistics" component={AtataLogistics} />
-        <Route exact path="/atataInsurance" component={AtataInsurance} />
 
         <Route component={NotFound} />
       </Switch>

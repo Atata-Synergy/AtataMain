@@ -9,8 +9,6 @@ import Header from "../../header/header";
 //Header
 import Footer from "../../footer/footer";
 import SmallCard from "../../card/smallCard";
-//Fixed cart button
-import FixedCartButton from "../FixedCartButton";
 
 class App extends Component {
   render() {
@@ -81,7 +79,6 @@ class App extends Component {
             </div>
           </section>
         </div>
-        <FixedCartButton />
         <Header />
         <Footer />
       </>
