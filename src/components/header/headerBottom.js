@@ -2,40 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./headerBottom.css";
 import { AllCatMenuItems } from "./AllCateData";
-import MenuIcon from "@material-ui/icons/Menu";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandLess";
 import ItemsCarousel from "react-items-carousel";
 import { Link } from "react-router-dom";
-import { Data } from "./dropdown/CategoryData";
 
 class HeaderBottom extends React.Component {
-  state = {
-    NavItems: [
-      {
-        id: 0,
-        icon1: <MenuIcon />,
-        icon2: <ExpandLessIcon />,
-        title: "All Categories",
-        link: "",
-      },
-      {
-        id: 1,
-        title: "Top Selling",
-        link: "/topcategories",
-      },
-      {
-        id: 2,
-        title: "Blog",
-        target: "_blank",
-        href: "http://blog.atata57.com/",
-      },
-      {
-        id: 3,
-        title: "Services",
-      },
-    ],
-  };
+  
 
   render() {
    

@@ -1,47 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Fredoka+One&display=swap");
 /*colors */
-:root {
-  --colorBlack: #1c1c1c;
-  --colorLight: #f5f5f5;
-  --colorGreen: #0e8502;
-  --colorRed: #fa0214;
-}
 
 /* Main Header starts */
+
 .MainHeader {
   width: 100%;
   position: absolute;
   top: 0;
   background-color: var(--colorWhite);
 }
+
 /* Main Header Ends */
-/* Page Header Starts */
 
 .PagesHeader {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   padding: 10px;
   box-shadow: 2px 2px 20px #1c1c1c1c;
 }
-.PagesHeader > .logo,
-.PagesHeader > .login {
+
+.PagesHeader>.logo, .PagesHeader>.login {
   margin: auto;
 }
-.PagesHeader > .logo > a >img {
+
+.PagesHeader>.logo>a>img {
   width: 70px;
   height: 50px;
 }
-.PagesHeader > .search {
+
+.PagesHeader>.search {
   display: flex;
   margin: auto;
-  border: solid 1px #aaaaaa;  
+  border: solid 1px #aaaaaa;
   border-radius: 5px;
   height: 42px;
   width: 45%;
   overflow: hidden;
 }
-.PagesHeader > .search > button {
+
+.PagesHeader>.search>button {
   font-size: 14px;
   border: none;
   background-color: var(--colorGreen);
@@ -51,7 +51,8 @@
   width: 25%;
   height: 40px;
 }
-.PagesHeader > .search > input {
+
+.PagesHeader>.search>input {
   width: 75%;
   height: 40px;
   border: none;
@@ -59,8 +60,28 @@
   border-radius: 5px;
   outline: none;
 }
-.PagesHeader > .login{
+
+.PagesHeader>.login {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--colorGreen);
+  list-style-type: none;
+  cursor: pointer;
 }
+
+.login-dropdown {
+  position: absolute;
+  font-size: 13px;
+  right: 100px;
+  padding: 5px;
+  top: 45px;
+  background-color: var(--colorWhite);
+  list-style-type: none;
+  box-shadow: 2px 2px 5px #1c1c1c0c;
+}
+
+.login-dropdown>a>li {
+  margin: 10px 15px;
+}
+
+@media screen and (max-width: 960px) {}

@@ -20,10 +20,7 @@ function Footer() {
       <Services>
         <span className="header"> Services</span>
         <ul>
-          <Link to="/atatapay">Atata Pay</Link>
-          <Link to="/atatainsurance">Atata Insurance</Link>
-          <Link to="/atatawarehouse">Atata Warehouse</Link>
-          <Link to="/atatalogistics">Atata Logistics</Link>
+          <a href='http://###'>Atata Auction</a>
         </ul>
       </Services>
       <SocialLinks>
@@ -58,6 +55,9 @@ const Main = styled.div`
   display: flex;
   color: var(--colorYellow);
   padding: 50px 50px;
+@media screen and (max-width: 1080px) {
+  display: none;
+}
 `;
 
 const Navigation = styled.div`

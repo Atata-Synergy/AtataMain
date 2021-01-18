@@ -1,30 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import ItemName from "./ItemName";
-import ColorSelect from "./OrderColor";
-import OrderQtySelect from "./orderQtySelect";
-import Details from "./details";
-import Sizes from "./OrderSizes";
-import Shipping from "./OrderShipping"
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "../../../../Redux/index";
 
+function OrderInput() {
+  const count = useSelector(state => state);
+  const dispatch = useDispatch();
+  return (
+    <>
+      <ItemName />
 
-class OrderInput extends Component {
-  render() {
-    return (
-      <>
-        <ItemName />
-
-        <ColorSelect />
-
-        <Sizes />
-
-        <Shipping />
-
-        <OrderQtySelect />
-
-        <Details />
-      </>
-    );
-  }
+      {count == 0 ? (
+        <button>-</button>
+      ) : (
+        <button onClick={() => dispatch(decrement())}>-</button>
+      )}
+      <input type="text" placeholder="0" value={count} />
+      <button onClick={() => dispatch(increment())}>+</button>
+    </>
+  );
 }
+
 
 export default OrderInput;

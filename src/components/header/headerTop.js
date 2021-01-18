@@ -1,5 +1,4 @@
 import React from "react";
-import { respondTo } from "../../Responsiveness/_respondTo";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "../logoComponents/headerLogo.png";

@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Divider from '@material-ui/core/Divider';
+import {Data} from '../../../../dummyUserData'
 
 class ItemName extends Component {
   render() {
     return (
         <div>
         <Item>
-            <p>Men's Shirt</p>
-            <span>Men's Army Fans Military Tactical Jacket Camouflage Waterproof Combat Jacket Hoody Softshell Coat Army Uniform</span>
-        <Divider />
+            <p>Men's Designer Long Sleeve Dress Shirt White</p>
+            <span>Category: <p>{Data.product.category}</p></span>
+            <p className='amount'>₦{Data.product.amount}</p>
         </Item>     
       </div>
     )
@@ -17,15 +17,24 @@ class ItemName extends Component {
 }
 
 const Item = styled.div`
-font-family: 'Quicksand', sans-serif;
 p{
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 19px;
+    font-weight: 500;
     margin-bottom: 7px;
 }
 span{
-    font-size: 15px;
+  display: flex;
+    font-size: 14px;
     margin-bottom: 10px;
+    p{
+    font-size: 13px;
+    margin: 0px 20px;
+    }
+}
+
+.amount{
+  font-size: 30px;
+  font-weight: 600;
 }
 
 

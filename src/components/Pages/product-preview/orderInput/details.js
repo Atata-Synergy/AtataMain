@@ -44,24 +44,25 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <div className={classes.details}>
           This fabric is a elegant, first class quality fabric, graceful color
-          <br />
+          
           * fabric: available in many colors, you pick up the color
-          <br />
+          
           * Soft and Romantic.
-          <br />
-          * This fabric is perfect for Hoodies sweatshirts Sweaters <br />
+          
+          * This fabric is perfect for Hoodies sweatshirts Sweaters 
+          
           <h5>Features</h5>
-          <br />
+          
           *Brand: Smart wear
-          <br />
+          
           *Sleeve:Regular sleeve
-          <br />
+          
           *Style: Casual
-          <br />
+          
           *length:regular length
-          <br />
+          
           *Design: Blue-Navy Color, regular Sleeve Sweater
-          <br />
+          
         </div>
       </Accordion>
       <Accordion>
