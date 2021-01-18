@@ -10,3 +10,7 @@ body {
   --colorOrange: #FF6001;
   --colorYellow: #FFB302;
 }
+.index-page-container {
+  background-color: #f0f0f0;
+  max-width: 100%;
+}

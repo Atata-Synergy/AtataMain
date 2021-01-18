@@ -19,7 +19,7 @@ import Categories from '../src/components/Pages/Categories/CategoriesPage';
 
 import ProductPage from '../src/components/Pages/product-preview/ProductMain'
 import Checkout from '../src/components/checkout/mainCheckout'
-
+import Cart from '../src/components/cart/cart'
 
 class App extends Component {
   render() {
@@ -34,6 +34,8 @@ class App extends Component {
         <Route exact path="/newpassword" component={NewPwd} />
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/product-page" component={ProductPage} />
+        <Route exact path="/cart" component={Cart} />
+
 
         <Route component={NotFound} />
       </Switch>

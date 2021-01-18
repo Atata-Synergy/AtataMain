@@ -1,31 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { UserData } from '../../dummyUserData';
 import { Link } from "react-router-dom";
-import AtataPay from "./Images/atataPay.png";
-import AtataSure from "./Images/atatasure.png";
-import AtataLogistics from "./Images/atatalogistics.png";
-import Atatahouse from "./Images/atatahouse.png";
+import { GiShoppingCart} from 'react-icons/gi'
+import { VscAccount} from 'react-icons/vsc'
 
-function Others() {
-  const [hover, setHover] = useState("hidden");
 
-  const handleHover = (hover) => {
-      setHover(" ");
-  };
-
-  const handleHoverOut = (hover) => {
-    setHover("hidden");
-  };
-  return (
-    <>
-      <div className="others">
-        <li>Blog</li>
-        <li>Lang</li>
-      </div>
-    </>
-  );
-}
 
 function Account() {
   const [hover, setHover] = useState("hidden active");
@@ -43,11 +22,9 @@ function Account() {
   return (
     <>
     
-      <div className="sign-in" onMouseEnter={handleHover}>
-        <li>
-          Sign In or Register <i class="fas fa-angle-down"></i>
+        <li className="sign-in" onMouseEnter={handleHover}>
+         <VscAccount/> <i class="fas fa-angle-down"></i>
         </li>
-      </div>
 
       {/* dropdowns */}
 
@@ -73,8 +50,15 @@ function Account() {
 function OtherServices() {
   return (
     <Logos>
-      <Others />
+      <div className="others">
+        <li>Blog</li>
+        <li>Lang</li>
+      </div>
+      <div className="rght-itm">
       <Account />
+      <li className="cart"><GiShoppingCart /></li>
+
+      </div>
     </Logos>
   );
 }
@@ -100,6 +84,14 @@ const Logos = styled.div`
       margin: 5px 20px;
     }
   }
+
+  .rght-itm{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
   a {
     margin: 2px 20px;
     display: flex;
@@ -115,7 +107,13 @@ const Logos = styled.div`
     filter: grayscale(70%);
   }
   .sign-in {
-    margin: 5px 20px;
+    margin: 0.5px 20px;
+      font-size: 20px;
+  }
+  .cart{
+      margin: -5px 20px;
+      font-size: 25px;
+    
   }
 
   // dropdown CSS
@@ -135,7 +133,7 @@ const Logos = styled.div`
   .account-dropdown {
     position: absolute;
     background-color: white;
-    right: 100px;
+    right: 190px;
     top: 30px;
     box-shadow: 2px 2px 5px #00000020;
     padding: 10px 20px;

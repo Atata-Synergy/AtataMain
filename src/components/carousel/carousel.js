@@ -9,11 +9,11 @@ import CarouselImg3 from "./Images/banner3.png";
 export default class SimpleSlider extends Component {
   render() {
     return (
-      <div className="carousel">
-        <AliceCarousel autoPlay autoPlayInterval="3000">
-          <img src={CarouselImg} style={{width: 1200, height: 400}} />
-          <img src={CarouselImg2} style={{width: 1200, height: 400}}/>
-          <img src={CarouselImg3} style={{width: 1200, height: 400}}/>
+      <div className="carousel-container">
+        <AliceCarousel autoPlayInterval="3000">
+          <img src={CarouselImg} />
+          <img src={CarouselImg2} />
+          <img src={CarouselImg3} />
         </AliceCarousel>
       </div>
     );

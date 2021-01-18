@@ -1,24 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import ItemName from "./ItemName";
-import Counter from '../counter'
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "../../../../Redux/index";
 
+function OrderInput() {
+  const count = useSelector(state => state);
+  const dispatch = useDispatch();
+  return (
+    <>
+      <ItemName />
 
-class OrderInput extends Component {
-  render() {
-    return (
-      <>
-        <ItemName />
-
-        {/* <Sizes /> */}
-
-        <Counter
-          productQuantity='2'
-          updateQuantity={this.props.updateQuantity}
-          resetQuantity={this.resetQuantity}
-        />
-      </>
-    );
-  }
+      {count == 0 ? (
+        <button>-</button>
+      ) : (
+        <button onClick={() => dispatch(decrement())}>-</button>
+      )}
+      <input type="text" placeholder="0" value={count} />
+      <button onClick={() => dispatch(increment())}>+</button>
+    </>
+  );
 }
+
 
 export default OrderInput;
