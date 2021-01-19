@@ -1,40 +1,75 @@
-import React from "react";
-import styled from "styled-components";
-import MenuIcon from "@material-ui/icons/Menu";
+import React, { Component } from "react";
+import "./header.css";
+import { Link } from "react-router-dom";
+import Logo from "../logoComponents/headerLogo.png";
+import { AllCatMenuItems } from "./AllCateData";
+import { BiMenuAltLeft } from "react-icons/bi";
+import { FiShoppingCart } from "react-icons/fi";
+import { VscAccount } from "react-icons/vsc";
+import { MdClose } from "react-icons/md";
 
-function Header() {
-  return (
-    <Head>
-      <MenuIcon className='icon'/>
-      <form>
-        <input type="search" />
-        <i class="fa fa-search"></i>
-      </form>
-    </Head>
-  );
-}
-
-
-const Head = styled.div`
-display: flex;
-padding: 10px;
-color: var(--colorWhite);
-.icon{
-    margin: 0px 6px;
-}
-input {
-    width: 20rem;
-    margin: auto;
-    height: 30px;
-    background: var(--colorLightTransparent);
-    line-height: 30px;
-    outline: 0;
-    color: var(--colorLight);
-    border: 0;
-    font-size: 1em;
-    border-radius: 5px;
-    padding: 0 20px;
-   
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      clicked: false,
+      loginClicked: false,
+    };
   }
-`
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+  handleLoginClick = () => {
+    this.setState({ loginClicked: !this.state.loginClicked });
+  };
+  render() {
+    return (
+      <div className="mobile-header">
+        <div className="mobile-menu" onClick={this.handleClick}>
+          {this.state.clicked ? <MdClose /> : <BiMenuAltLeft />}
+        </div>
+        <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+          {AllCatMenuItems.map((items, index) => (
+            <Link key={index} to={items.link} style={{ color: "#fff" }}>
+              <li>{items.cate}</li>
+            </Link>
+          ))}
+        </div>
+        <div className="mobile-logo">
+          <div className="logo">
+            <img src={Logo} />
+          </div>
+        </div>
+        <div className="mobile-cart">
+          <li onClick={this.handleLoginClick}>
+            <VscAccount />
+          </li>
+          <li>
+            <Link to="/cart">
+              <FiShoppingCart />
+            </Link>
+          </li>
+        </div>
+        <div
+          className={
+            this.state.loginClicked ? "login-menu active" : "login-menu"
+          }
+        >
+          <Link to="/signin">
+            <li>
+              Login <i class="fas fa-sign-in-alt"></i>
+            </li>
+          </Link>
+          <Link to="/register">
+            <li>
+              Register <i class="far fa-user"></i>
+            </li>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+}
+
 export default Header;
