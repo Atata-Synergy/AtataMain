@@ -22,7 +22,7 @@ function Page() {
 
       <CategoryCard />
 
-      <Auction />
+      {/* <Auction /> */}
 
       <Featured />
 

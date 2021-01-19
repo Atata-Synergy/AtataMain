@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./auction.css";
 import AuctionCard from "./auctionCard";
 import ItemsCarousel from "react-items-carousel";
@@ -24,7 +24,6 @@ export default function Auction() {
           <AuctionCard />
           <AuctionCard />
           <AuctionCard />
-
         </div>
       </ItemsCarousel>
     </div>
