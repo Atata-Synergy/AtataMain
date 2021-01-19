@@ -912,7 +912,7 @@
         height: 180px;
         position: absolute;
         top: 80px;
-        left: 100%;
+        left: -100%;
         list-style-type: none;
         transition: all 0.5s ease;
         background-color: var(--colorWhite);
@@ -1162,7 +1162,7 @@
         height: 180px;
         position: absolute;
         top: 80px;
-        left: 100%;
+        left: -100%;
         list-style-type: none;
         transition: all 0.5s ease;
         background-color: var(--colorWhite);

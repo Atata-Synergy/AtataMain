@@ -947,7 +947,7 @@
     height: 180px;
     position: absolute;
     top: 80px;
-    left: 100%;
+    left: -100%;
     list-style-type: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -1206,7 +1206,7 @@
     height: 180px;
     position: absolute;
     top: 80px;
-    left: 100%;
+    left: -100%;
     list-style-type: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
