@@ -12,16 +12,13 @@ export function removeCartItem(item) {
   };
 }
 const initialState = {
-  cartItem: ["a", "a", "a","a","a"],
+  cartItem: [],
 };
 
-function addToCartReducer(shoppingCart = initialState.cartItem.length, action) {
+function addToCartReducer(shoppingCart = [], action) {
   switch (action.type) {
     case "ADD_CART_ITEM":
-      return {
-        ...shoppingCart,
-        cartItem: [...shoppingCart.cartItem, action.payload],
-      };
+      return  [...shoppingCart.cartItem, action.payload]
     case "REMOVE_CART_ITEM":
       return {
         ...shoppingCart,
@@ -34,5 +31,6 @@ function addToCartReducer(shoppingCart = initialState.cartItem.length, action) {
 const process = createStore(addToCartReducer);
 process.subscribe(() => {
   console.log(process.getState());
+
 });
 export default process

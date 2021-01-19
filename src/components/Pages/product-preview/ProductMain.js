@@ -9,6 +9,7 @@ import Header from "../../header/header";
 //Header
 import Footer from "../../footer/footer";
 import SmallCard from "../../card/smallCard";
+import AddToCartBtn from "./orderInput/addToCartBtn"
 
 class App extends Component {
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
             </div>
             <div className="order">
               <Order />
-              <button>Add to Cart </button>
+              <AddToCartBtn/>
             </div>
           </section>
           <section className="prd-details-display">

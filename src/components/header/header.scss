@@ -45,7 +45,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 70px;
+    padding: 0 30px;
 
     li {
       cursor: pointer;
@@ -53,6 +53,7 @@
 
     .others {
       display: flex;
+      width: 100%;
 
       li {
         margin: 5px 20px;
@@ -60,7 +61,7 @@
     }
 
     .rght-itm {
-      width: 25%;
+      width: 30%;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -88,20 +89,30 @@
     }
 
     .cart {
+      width: 100%;
       margin: 0px 20px;
       font-size: 20px;
-      display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
 
-      .icon {
-        font-size: 23px;
+      a {
+        width: 100%;
+        display: flex;
+
+        .icon {
+          font-size: 23px;
+          display: flex;
+          padding-top: 5px;
+          color: var(--colorGreen);
+        }
+
+
+        span {
+          font-size: 13px;
+        }
       }
 
-      span {
-        font-size: 13px;
-      }
     }
 
     // dropdown CSS
@@ -282,14 +293,17 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 70px;
+    padding: 0 20px;
 
     li {
       cursor: pointer;
+    
     }
 
     .others {
       display: flex;
+      width: 10%;
+
 
       li {
         margin: 5px 20px;
@@ -326,14 +340,15 @@
 
     .cart {
       margin: 0px 20px;
-      font-size: 20px;
+      font-size: 15px;
       display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
 
       .icon {
-        font-size: 23px;
+        font-size: 20px;
+        color: var(--colorGreen);
       }
 
       span {
@@ -889,6 +904,7 @@
         transition: all 0.5s ease;
         z-index: 1;
       }
+
       .login-menu {
         display: flex;
         flex-direction: column;
@@ -907,13 +923,15 @@
           padding: 30px;
           border-bottom: solid 0.3px #dbdada;
         }
-      } 
+      }
+
       .login-menu.active {
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
       }
+
       .mobile-logo {
         width: 70%;
 
@@ -935,7 +953,8 @@
 
         li {
           margin: 15px;
-          a{
+
+          a {
             color: black;
           }
         }
@@ -1135,6 +1154,7 @@
         transition: all 0.5s ease;
         z-index: 1;
       }
+
       .login-menu {
         display: flex;
         flex-direction: column;
@@ -1153,7 +1173,8 @@
           padding: 30px;
           border-bottom: solid 0.3px #dbdada;
         }
-      } 
+      }
+
       .login-menu.active {
         left: 0;
         opacity: 1;
@@ -1183,10 +1204,11 @@
         li {
           margin: 15px;
           cursor: pointer;
-          a{
+
+          a {
             color: black;
           }
-          }
+        }
       }
     }
   }

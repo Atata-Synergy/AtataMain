@@ -41,7 +41,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 70px;
+    padding: 0 30px;
   }
   .other-services li {
     cursor: pointer;
@@ -50,12 +50,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .other-services .others li {
     margin: 5px 20px;
   }
   .other-services .rght-itm {
-    width: 25%;
+    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -89,11 +90,9 @@
     font-size: 23px;
   }
   .other-services .cart {
+    width: 100%;
     margin: 0px 20px;
     font-size: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -103,10 +102,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .other-services .cart .icon {
-    font-size: 23px;
+  .other-services .cart a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .other-services .cart span {
+  .other-services .cart a .icon {
+    font-size: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+    color: var(--colorGreen);
+  }
+  .other-services .cart a span {
     font-size: 13px;
   }
   .other-services .account-dropdown {
@@ -284,7 +294,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 70px;
+    padding: 0 20px;
   }
   .other-services li {
     cursor: pointer;
@@ -293,6 +303,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 10%;
   }
   .other-services .others li {
     margin: 5px 20px;
@@ -333,7 +344,7 @@
   }
   .other-services .cart {
     margin: 0px 20px;
-    font-size: 20px;
+    font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,7 +358,8 @@
             align-items: center;
   }
   .other-services .cart .icon {
-    font-size: 23px;
+    font-size: 20px;
+    color: var(--colorGreen);
   }
   .other-services .cart span {
     font-size: 13px;

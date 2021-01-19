@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import './header.css'
+import "./header.css";
 import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { VscAccount } from "react-icons/vsc";
-import {useSelector} from 'react-redux'
-
-
-
+import { useSelector } from "react-redux";
 
 function Account() {
   const [hover, setHover] = useState("hidden active");
@@ -24,7 +21,7 @@ function Account() {
   return (
     <>
       <li className="sign-in" onMouseEnter={handleHover}>
-        <VscAccount /> 
+        <VscAccount />
       </li>
 
       {/* dropdowns */}
@@ -49,25 +46,27 @@ function Account() {
 }
 
 function OtherServices() {
-  const shoppingCart = useSelector(state => state);
+  const shoppingCart = useSelector((state) => state);
   return (
-    <div className='other-services'>
+    <div className="other-services">
       <div className="others">
         <li>Blog</li>
         <li>Lang</li>
       </div>
       <div className="rght-itm">
         <Account />
+
         <li className="cart">
-          <p className="icon">
-            <FiShoppingCart />
-          </p>
-           <span> {shoppingCart} items in cart</span>
+          <Link to="/cart">
+            <p className="icon">
+              <FiShoppingCart />
+              <span> {shoppingCart.lenght} items in cart</span>
+            </p>
+          </Link>
         </li>
       </div>
     </div>
   );
 }
-
 
 export default OtherServices;
