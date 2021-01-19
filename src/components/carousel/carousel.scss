@@ -280,31 +280,94 @@
         background-repeat: none;
         display: flex;
 
-        .loops1 {
-            width: 50%;
-
-
-            .image1 {
-                width: 270px;
+        .mobile-loop{
+            display: none;
+        }
+        .non-mobile-loop{
+            display: flex;
+            .loops1 {
+                width: 100%;
+                margin-top: 8rem;
+    
+                .text1 {
+                    width: 120%;
+                    white-space: pre-wrap;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image2{
+                    width: 250px;
+                    margin-top: -7rem;
+                    margin-left: 10rem;
+                }
+                .text3 {
+                    width: 140%;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image4{
+                    width: 300px;
+                    margin-top: -7rem;
+                    margin-left: 7rem;
+                }
+                .text5 {
+                    margin-left:-10rem ;
+                    width: 135%;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
             }
+            .loops2 {
+                width: 50%;
+    
+    
+                .image1 {
+                    width: 270px;
+                }
+                .text2 {
+                    width: 150%;
+                    margin-top: 8rem;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image3 {
+                    width: 570px;
+                }
+                .text4 {
+                    width: 130%;
+                    margin-top: 10rem;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image5 {
+                    width: 400px;
+                    
 
+                }
+    
+            }
         }
 
-        .loops2 {
-            width: 70%;
-            margin: auto;
-            margin-top: 8rem;
-            margin-left: 80px;
-
-            .image1-span {
-                background-color: #000;
-                padding: 10px;
-                color: var(--colorWhite);
-                font-size: 35px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-        }
     }
 }
 
@@ -323,28 +386,94 @@
         background-size: cover;
         display: flex;
 
-        .loops1 {
-            width: 50%;
-
-
-            .image1 {
-                width: 350px;
-            }
-
+        .mobile-loop{
+            display: none;
         }
+        .non-mobile-loop{
+            display: flex;
+            .loops1 {
+                width: 100%;
+                margin-top: 8rem;
+    
+                .text1 {
+                    margin-left: 3rem;
+                    width: 120%;
+                    white-space: pre-wrap;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image2{
+                    width: 250px;
+                    margin-top: -7rem;
+                    margin-left: 10rem;
+                }
+                .text3 {
+                    width: 140%;
+                    margin-left: 10rem;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image4{
+                    width: 300px;
+                    margin-top: -7rem;
+                    margin-left: 15rem;
+                }
+                .text5 {
+                    margin-left:10rem ;
+                    width: 100%;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+            .loops2 {
+                width: 50%;
+    
+    
+                .image1 {
+                    width: 300px;
+                    margin-left: 5rem;
+                }
+                .text2 {
+                    width: 150%;
+                    margin-top: 8rem;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image3 {
+                    width: 600px;
+                }
+                .text4 {
+                    width: 130%;
+                    margin-top: 10rem;
+                    background-color: #000;
+                    padding: 10px;
+                    color: var(--colorWhite);
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .image5 {
+                    width: 450px;
+                    margin-top: -2rem;
 
-        .loops2 {
-            width: 80%;
-            margin-top: 8rem;
-            margin-left: 10rem;
-
-            .image1-span {
-                background-color: #000;
-                padding: 10px;
-                color: var(--colorWhite);
-                font-size: 50px;
-                font-weight: 700;
-                text-transform: uppercase;
+                }
+    
             }
         }
     }

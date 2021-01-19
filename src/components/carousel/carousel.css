@@ -255,25 +255,88 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .carousel-container .loops1 {
-    width: 50%;
+  .carousel-container .mobile-loop {
+    display: none;
   }
-  .carousel-container .loops1 .image1 {
-    width: 270px;
+  .carousel-container .non-mobile-loop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .carousel-container .loops2 {
-    width: 70%;
-    margin: auto;
+  .carousel-container .non-mobile-loop .loops1 {
+    width: 100%;
     margin-top: 8rem;
-    margin-left: 80px;
   }
-  .carousel-container .loops2 .image1-span {
+  .carousel-container .non-mobile-loop .loops1 .text1 {
+    width: 120%;
+    white-space: pre-wrap;
     background-color: #000;
     padding: 10px;
     color: var(--colorWhite);
     font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops1 .image2 {
+    width: 250px;
+    margin-top: -7rem;
+    margin-left: 10rem;
+  }
+  .carousel-container .non-mobile-loop .loops1 .text3 {
+    width: 140%;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops1 .image4 {
+    width: 300px;
+    margin-top: -7rem;
+    margin-left: 7rem;
+  }
+  .carousel-container .non-mobile-loop .loops1 .text5 {
+    margin-left: -10rem;
+    width: 135%;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 {
+    width: 50%;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image1 {
+    width: 270px;
+  }
+  .carousel-container .non-mobile-loop .loops2 .text2 {
+    width: 150%;
+    margin-top: 8rem;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image3 {
+    width: 570px;
+  }
+  .carousel-container .non-mobile-loop .loops2 .text4 {
+    width: 130%;
+    margin-top: 10rem;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image5 {
+    width: 400px;
   }
 }
 
@@ -293,24 +356,92 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .carousel-container .loops1 {
-    width: 50%;
+  .carousel-container .mobile-loop {
+    display: none;
   }
-  .carousel-container .loops1 .image1 {
-    width: 350px;
+  .carousel-container .non-mobile-loop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .carousel-container .loops2 {
-    width: 80%;
+  .carousel-container .non-mobile-loop .loops1 {
+    width: 100%;
     margin-top: 8rem;
-    margin-left: 10rem;
   }
-  .carousel-container .loops2 .image1-span {
+  .carousel-container .non-mobile-loop .loops1 .text1 {
+    margin-left: 3rem;
+    width: 120%;
+    white-space: pre-wrap;
     background-color: #000;
     padding: 10px;
     color: var(--colorWhite);
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops1 .image2 {
+    width: 250px;
+    margin-top: -7rem;
+    margin-left: 10rem;
+  }
+  .carousel-container .non-mobile-loop .loops1 .text3 {
+    width: 140%;
+    margin-left: 10rem;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops1 .image4 {
+    width: 300px;
+    margin-top: -7rem;
+    margin-left: 15rem;
+  }
+  .carousel-container .non-mobile-loop .loops1 .text5 {
+    margin-left: 10rem;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 {
+    width: 50%;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image1 {
+    width: 300px;
+    margin-left: 5rem;
+  }
+  .carousel-container .non-mobile-loop .loops2 .text2 {
+    width: 150%;
+    margin-top: 8rem;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image3 {
+    width: 600px;
+  }
+  .carousel-container .non-mobile-loop .loops2 .text4 {
+    width: 130%;
+    margin-top: 10rem;
+    background-color: #000;
+    padding: 10px;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-container .non-mobile-loop .loops2 .image5 {
+    width: 450px;
+    margin-top: -2rem;
   }
 }
 /*# sourceMappingURL=carousel.css.map */
