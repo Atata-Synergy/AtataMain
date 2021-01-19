@@ -103,19 +103,27 @@
             border: none;
             width: 45%;
             margin: 5px;
-            padding: 10px;
+            padding: 15px;
             font-size: 15px;
             font-weight: 700;
-            .cnt-btn{
-                color: var(--colorGreen);
-       
-            }
+           
             
         }
+        .cnt-btn{
+            a{
+                color: var(--colorGreen);
+
+            }
+   
+        }
+        
         .confirm-btn{
             background-color:var(--colorGreen);
-            color: var(--colorWhite);
+            a{
+                color: var(--colorWhite);
+            }
         }
+        
     }
 }
 
@@ -226,16 +234,24 @@
             padding: 15px;
             font-size: 15px;
             font-weight: 700;
-            .cnt-btn{
-                color: var(--colorGreen);
-       
-            }
+           
             
         }
+        .cnt-btn{
+            a{
+                color: var(--colorGreen);
+
+            }
+   
+        }
+        
         .confirm-btn{
             background-color:var(--colorGreen);
-            color: var(--colorWhite);
+            a{
+                color: var(--colorWhite);
+            }
         }
+        
     }
 }
 
@@ -338,7 +354,7 @@
         
     }
     .btns{
-        width: 80%;
+        width: 60%;
         margin: 40px auto;
         button{
             border: none;
@@ -347,16 +363,24 @@
             padding: 15px;
             font-size: 15px;
             font-weight: 700;
-            .cnt-btn{
-                color: var(--colorGreen);
-       
-            }
+           
             
         }
+        .cnt-btn{
+            a{
+                color: var(--colorGreen);
+
+            }
+   
+        }
+        
         .confirm-btn{
             background-color:var(--colorGreen);
-            color: var(--colorWhite);
+            a{
+                color: var(--colorWhite);
+            }
         }
+        
     }
 }
 
@@ -466,21 +490,28 @@
             border: none;
             width: 45%;
             margin: 5px;
-            padding: 20px;
+            padding: 15px;
             font-size: 15px;
             font-weight: 700;
-            .cnt-btn{
-                color: var(--colorGreen);
-       
-            }
+           
             
         }
+        .cnt-btn{
+            a{
+                color: var(--colorGreen);
+
+            }
+   
+        }
+        
         .confirm-btn{
             background-color:var(--colorGreen);
-            color: var(--colorWhite);
+            a{
+                color: var(--colorWhite);
+            }
         }
+        
     }
-
  }
 
 @media (min-width: 1200px) { 
@@ -586,19 +617,27 @@
             border: none;
             width: 45%;
             margin: 5px;
-            padding: 20px;
+            padding: 15px;
             font-size: 15px;
             font-weight: 700;
-            .cnt-btn{
-                color: var(--colorGreen);
-       
-            }
+           
             
         }
+        .cnt-btn{
+            a{
+                color: var(--colorGreen);
+
+            }
+   
+        }
+        
         .confirm-btn{
             background-color:var(--colorGreen);
-            color: var(--colorWhite);
+            a{
+                color: var(--colorWhite);
+            }
         }
+        
     }
 
  }

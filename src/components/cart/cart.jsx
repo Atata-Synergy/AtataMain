@@ -3,8 +3,8 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import './cart.css'
 import Img from './Ankarasneaker.jpg'
-import {RiDeleteBin6Fill} from 'react-icons/ri'
-
+import { RiDeleteBin6Fill } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 export default function Cart() {
     return (
@@ -25,7 +25,7 @@ export default function Cart() {
                         <p>#15,000</p>
                         <span> x3</span>
                     </div>
-                <button className="btn-dlt"><RiDeleteBin6Fill/></button>
+                    <button className="btn-dlt"><RiDeleteBin6Fill /></button>
 
                 </div>
             </div>
@@ -34,8 +34,16 @@ export default function Cart() {
                 <p>#15,000</p>
             </div>
             <div className="btns">
-                <button className='cnt-btn'>Continue Shopping</button>
-                <button className="confirm-btn">Confirm Payment</button>
+                <button className='cnt-btn'>
+                    <Link to='/'>
+                        Continue Shopping
+                    </Link>
+                </button>
+                <button className="confirm-btn">
+                    <Link to='/checkout'>
+                        Confirm Payment
+                    </Link>
+                </button>
             </div>
             <Footer />
 
