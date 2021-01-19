@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { GiShoppingCart} from 'react-icons/gi'
-import { VscAccount} from 'react-icons/vsc'
+import { FiShoppingCart } from "react-icons/fi";
+import { VscAccount } from "react-icons/vsc";
+import {useSelector} from 'react-redux'
+
 
 
 
@@ -21,10 +23,9 @@ function Account() {
 
   return (
     <>
-    
-        <li className="sign-in" onMouseEnter={handleHover}>
-         <VscAccount/> <i class="fas fa-angle-down"></i>
-        </li>
+      <li className="sign-in" onMouseEnter={handleHover}>
+        <VscAccount /> 
+      </li>
 
       {/* dropdowns */}
 
@@ -48,6 +49,7 @@ function Account() {
 }
 
 function OtherServices() {
+  const shoppingCart = useSelector(state => state);
   return (
     <Logos>
       <div className="others">
@@ -55,9 +57,13 @@ function OtherServices() {
         <li>Lang</li>
       </div>
       <div className="rght-itm">
-      <Account />
-      <li className="cart"><GiShoppingCart /></li>
-
+        <Account />
+        <li className="cart">
+          <p className="icon">
+            <FiShoppingCart />
+          </p>
+           <span> {shoppingCart} items in cart</span>
+        </li>
       </div>
     </Logos>
   );
@@ -73,7 +79,7 @@ const Logos = styled.div`
   font-size: 12px;
   font-weight: 500;
   color: var(--colorGreen);
-  padding: 2px 70px;
+  padding: 0 70px;
 
   li {
     cursor: pointer;
@@ -85,12 +91,11 @@ const Logos = styled.div`
     }
   }
 
-  .rght-itm{
+  .rght-itm {
     width: 20%;
     display: flex;
     justify-content: center;
     align-content: center;
-
   }
   a {
     margin: 2px 20px;
@@ -108,12 +113,21 @@ const Logos = styled.div`
   }
   .sign-in {
     margin: 0.5px 20px;
-      font-size: 20px;
+    font-size: 23px;
   }
-  .cart{
-      margin: -5px 20px;
-      font-size: 25px;
-    
+  .cart {
+    margin: 0px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .icon {
+      font-size: 23px;
+    }
+    span {
+      font-size: 13px;
+    }
   }
 
   // dropdown CSS

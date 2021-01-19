@@ -13,7 +13,8 @@ import SmallCard from "../../card/smallCard";
 class App extends Component {
   render() {
     return (
-      <>
+      <>      
+      <Header />
         <div className="prd-contaniner">
           <section className="prd-display">
             <div className="imagePreview">
@@ -79,7 +80,6 @@ class App extends Component {
             </div>
           </section>
         </div>
-        <Header />
         <Footer />
       </>
     );

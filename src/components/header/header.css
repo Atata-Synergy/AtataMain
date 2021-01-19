@@ -1,87 +1,673 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Fredoka+One&display=swap");
 /*colors */
-
 /* Main Header starts */
-
-.MainHeader {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-color: var(--colorWhite);
+@media (min-width: 1200px) {
+  .MainHeader {
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    -webkit-box-shadow: 2px 2px 20px #1c1c1c1c;
+            box-shadow: 2px 2px 20px #1c1c1c1c;
+  }
+  .MainHeader .PagesHeader {
+    width: 90%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .MainHeader .PagesHeader .mobile-contain {
+    display: none;
+  }
+  .MainHeader .PagesHeader .logo-container {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .logo-container .logo {
+    width: 90%;
+    margin: auto;
+  }
+  .MainHeader .PagesHeader .logo-container .logo img {
+    width: 100px;
+  }
+  .MainHeader .PagesHeader .search-container {
+    width: 50%;
+  }
+  .MainHeader .PagesHeader .search-container .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .search-container .search button {
+    font-size: 14px;
+    border: none;
+    background-color: var(--colorGreen);
+    color: var(--colorLight);
+    outline: none;
+    padding: 5px;
+    width: 25%;
+    height: 40px;
+  }
+  .MainHeader .PagesHeader .search-container .search input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .MainHeader .PagesHeader .login {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--colorGreen);
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li {
+    margin: 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li .icon {
+    font-size: 25px;
+  }
+  .login-dropdown {
+    position: absolute;
+    font-size: 13px;
+    right: 240px;
+    padding: 5px;
+    top: 67px;
+    background-color: var(--colorWhite);
+    list-style-type: none;
+    border: solid 0.5px #e2e2e2;
+  }
+  .login-dropdown a {
+    color: var(--colorGreen);
+  }
+  .login-dropdown a li {
+    margin: 10px 15px;
+  }
 }
 
-/* Main Header Ends */
-
-.PagesHeader {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  padding: 10px;
-  box-shadow: 2px 2px 20px #1c1c1c1c;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .MainHeader {
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    border-bottom: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader {
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .MainHeader .PagesHeader .mobile-contain {
+    display: none;
+  }
+  .MainHeader .PagesHeader .logo-container {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .logo-container .logo {
+    width: 90%;
+    margin: auto;
+  }
+  .MainHeader .PagesHeader .logo-container .logo img {
+    width: 100px;
+  }
+  .MainHeader .PagesHeader .search-container {
+    width: 50%;
+  }
+  .MainHeader .PagesHeader .search-container .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .search-container .search button {
+    font-size: 14px;
+    border: none;
+    background-color: var(--colorGreen);
+    color: var(--colorLight);
+    outline: none;
+    padding: 5px;
+    width: 25%;
+    height: 40px;
+  }
+  .MainHeader .PagesHeader .search-container .search input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .MainHeader .PagesHeader .login {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--colorGreen);
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li {
+    margin: 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li .icon {
+    font-size: 25px;
+  }
+  .login-dropdown {
+    position: absolute;
+    font-size: 13px;
+    right: 160px;
+    padding: 5px;
+    top: 67px;
+    background-color: var(--colorWhite);
+    list-style-type: none;
+    border: solid 0.5px #e2e2e2;
+  }
+  .login-dropdown a {
+    color: var(--colorGreen);
+  }
+  .login-dropdown a li {
+    margin: 10px 15px;
+  }
 }
 
-.PagesHeader>.logo, .PagesHeader>.login {
-  margin: auto;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .MainHeader {
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    border-bottom: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .MainHeader .PagesHeader .mobile-contain {
+    display: none;
+  }
+  .MainHeader .PagesHeader .logo-container {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .logo-container .logo {
+    width: 90%;
+    margin: auto;
+  }
+  .MainHeader .PagesHeader .logo-container .logo img {
+    width: 100px;
+  }
+  .MainHeader .PagesHeader .search-container {
+    width: 50%;
+  }
+  .MainHeader .PagesHeader .search-container .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .search-container .search button {
+    font-size: 14px;
+    border: none;
+    background-color: var(--colorGreen);
+    color: var(--colorLight);
+    outline: none;
+    padding: 5px;
+    width: 25%;
+    height: 40px;
+  }
+  .MainHeader .PagesHeader .search-container .search input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .MainHeader .PagesHeader .login {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--colorGreen);
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li {
+    margin: 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .login li .icon {
+    font-size: 25px;
+  }
+  .login-dropdown {
+    position: absolute;
+    font-size: 13px;
+    right: 120px;
+    padding: 5px;
+    top: 67px;
+    background-color: var(--colorWhite);
+    list-style-type: none;
+    border: solid 0.5px #e2e2e2;
+  }
+  .login-dropdown a {
+    color: var(--colorGreen);
+  }
+  .login-dropdown a li {
+    margin: 10px 15px;
+  }
 }
 
-.PagesHeader>.logo>a>img {
-  width: 70px;
-  height: 50px;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .MainHeader {
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    border-bottom: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .MainHeader .PagesHeader .logo-container {
+    width: 15%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .logo-container .logo {
+    width: 90%;
+    margin: auto;
+  }
+  .MainHeader .PagesHeader .logo-container .logo img {
+    width: 100px;
+  }
+  .MainHeader .PagesHeader .mobile-contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--colorWhite);
+    border-top: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container {
+    width: 70%;
+    margin: auto;
+    padding: 0px 3px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search button {
+    font-size: 14px;
+    border: none;
+    background-color: var(--colorGreen);
+    color: var(--colorLight);
+    outline: none;
+    padding: 5px;
+    width: 30%;
+    height: 40px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--colorGreen);
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 10px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li :nth-child(2) {
+    width: 90%;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li .icon {
+    font-size: 20px;
+  }
+  .MainHeader .PagesHeader .search-container {
+    display: none;
+  }
+  .MainHeader .PagesHeader .login {
+    display: none;
+  }
+  .login-dropdown {
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    right: 0px;
+    padding: 5px;
+    bottom: 67px;
+    background-color: var(--colorWhite);
+    list-style-type: none;
+    border: solid 0.5px #e2e2e2;
+  }
+  .login-dropdown a {
+    color: var(--colorGreen);
+  }
+  .login-dropdown a li {
+    margin: 30px 15px;
+    text-align: center;
+  }
 }
 
-.PagesHeader>.search {
-  display: flex;
-  margin: auto;
-  border: solid 1px #aaaaaa;
-  border-radius: 5px;
-  height: 42px;
-  width: 45%;
-  overflow: hidden;
+@media (max-width: 575.98px) {
+  .MainHeader {
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    border-bottom: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .MainHeader .PagesHeader .logo-container {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .logo-container .logo {
+    width: 90%;
+    margin: auto;
+  }
+  .MainHeader .PagesHeader .logo-container .logo img {
+    width: 100px;
+  }
+  .MainHeader .PagesHeader .mobile-contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--colorWhite);
+    border-top: solid 0.5px #e2e2e2;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container {
+    width: 70%;
+    margin: auto;
+    padding: 0px 3px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search button {
+    font-size: 14px;
+    border: none;
+    background-color: var(--colorGreen);
+    color: var(--colorLight);
+    outline: none;
+    padding: 5px;
+    width: 40%;
+    height: 40px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--colorGreen);
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 10px;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li :nth-child(2) {
+    width: 100%;
+  }
+  .MainHeader .PagesHeader .mobile-contain .login li .icon {
+    font-size: 20px;
+  }
+  .MainHeader .PagesHeader .search-container {
+    display: none;
+  }
+  .MainHeader .PagesHeader .login {
+    display: none;
+  }
+  .login-dropdown {
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    right: 0px;
+    padding: 5px;
+    bottom: 67px;
+    background-color: var(--colorWhite);
+    list-style-type: none;
+    border: solid 0.5px #e2e2e2;
+  }
+  .login-dropdown a {
+    color: var(--colorGreen);
+  }
+  .login-dropdown a li {
+    margin: 30px 15px;
+    text-align: center;
+  }
 }
-
-.PagesHeader>.search>button {
-  font-size: 14px;
-  border: none;
-  background-color: var(--colorGreen);
-  color: var(--colorLight);
-  outline: none;
-  padding: 5px;
-  width: 25%;
-  height: 40px;
-}
-
-.PagesHeader>.search>input {
-  width: 75%;
-  height: 40px;
-  border: none;
-  margin-left: 10px;
-  border-radius: 5px;
-  outline: none;
-}
-
-.PagesHeader>.login {
-  margin-top: 10px;
-  font-size: 13px;
-  color: var(--colorGreen);
-  list-style-type: none;
-  cursor: pointer;
-}
-
-.login-dropdown {
-  position: absolute;
-  font-size: 13px;
-  right: 100px;
-  padding: 5px;
-  top: 45px;
-  background-color: var(--colorWhite);
-  list-style-type: none;
-  box-shadow: 2px 2px 5px #1c1c1c0c;
-}
-
-.login-dropdown>a>li {
-  margin: 10px 15px;
-}
-
-@media screen and (max-width: 960px) {}
+/*# sourceMappingURL=header.css.map */

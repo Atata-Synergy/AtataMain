@@ -1,7 +1,7 @@
 import React from "react";
 import ItemName from "./ItemName";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "../../../../Redux/index";
+import { increment, decrement } from "../../../../Redux/count";
 
 function OrderInput() {
   const count = useSelector(state => state);
