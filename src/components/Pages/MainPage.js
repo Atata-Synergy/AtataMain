@@ -1,6 +1,5 @@
 import React from "react";
 import  '../../App.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 import MainHeader from "../header/mainHeader";
 import Simpleslider from "../carousel/carousel";
 import CategoryLinks from "./bottomCategoryItems";

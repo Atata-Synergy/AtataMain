@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AllCatMenuItems } from "../../header/AllCateData";
-import { StickyContainer, Sticky } from "react-sticky";
 import ItemsCarousel from "react-items-carousel";
 import Link from "react-dom";
 import styled from "styled-components";
@@ -8,7 +7,6 @@ import Header from "../../header/header";
 import Card from "../../card/smallCard";
 import Footer from "../../footer/footer";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-// import "react-tabs/style/react-tabs.css";
 
 function TopCategory() {
 
@@ -19,7 +17,6 @@ function TopCategory() {
         <Container>
           
             <Tabs>
-              <StickyContainer>
                 <TabList>
                   
                   <div style={{ padding: `0 ${chevronWidth}px` }}>
@@ -40,7 +37,6 @@ function TopCategory() {
                     </ItemsCarousel> 
                   </div>
                 </TabList>
-              </StickyContainer>
 
               {/*   */}
             </Tabs>

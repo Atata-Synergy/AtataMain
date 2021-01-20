@@ -6,7 +6,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 10px;
   }
@@ -14,14 +14,15 @@
     background-color: var(--colorWhite);
     padding: 10px;
     margin: 10px auto;
-    width: 48%;
+    width: 45%;
     overflow: hidden;
     border: solid 0.5px var(--colorAsh);
     border-radius: 10px;
   }
   .blog-body .blog .Imagecontainer {
     overflow: hidden;
-    width: 430px;
+    width: 450px;
+    margin-left: -20px;
     margin-top: -10px;
     height: 200px;
     background-color: var(--colorBlack);
@@ -45,12 +46,12 @@
   }
   .blog-body .blog .blogtext p {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
   }
   .blog-body .blog .blogtext .content {
     font-size: 15px;
-    height: 90px;
+    height: 100px;
     width: 100%;
     white-space: pre-wrap;
     overflow: hidden;
@@ -62,16 +63,19 @@
     color: var(--colorAsh);
     width: 100%;
     padding: 10px;
+    font-size: 12px;
   }
   .blog-body .blog .blogtext .Blogdetails i {
     margin: 0 10px;
   }
   .blog-body .blog .blogtext .Blogdetails .post-by {
-    width: 50%;
+    width: 40%;
+    margin: auto;
     text-align: center;
   }
   .blog-body .blog .blogtext .Blogdetails .comments {
-    width: 50%;
+    width: 40%;
+    margin: auto;
     text-align: center;
   }
 }
@@ -84,7 +88,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 10px;
   }
@@ -92,7 +96,7 @@
     background-color: var(--colorWhite);
     padding: 10px;
     margin: 10px auto;
-    width: 48%;
+    width: 43%;
     overflow: hidden;
     border: solid 0.5px var(--colorAsh);
     border-radius: 10px;
@@ -100,6 +104,7 @@
   .blog-body .blog .Imagecontainer {
     overflow: hidden;
     width: 430px;
+    margin-left: -10px;
     margin-top: -10px;
     height: 200px;
     background-color: var(--colorBlack);
@@ -128,7 +133,7 @@
   }
   .blog-body .blog .blogtext .content {
     font-size: 15px;
-    height: 90px;
+    height: 100px;
     width: 100%;
     white-space: pre-wrap;
     overflow: hidden;
@@ -138,18 +143,19 @@
   }
   .blog-body .blog .blogtext .Blogdetails {
     color: var(--colorAsh);
-    width: 100%;
+    max-width: 90%;
     padding: 10px;
+    font-size: 13px;
   }
   .blog-body .blog .blogtext .Blogdetails i {
     margin: 0 10px;
   }
   .blog-body .blog .blogtext .Blogdetails .post-by {
-    width: 50%;
+    width: 40%;
     text-align: center;
   }
   .blog-body .blog .blogtext .Blogdetails .comments {
-    width: 50%;
+    width: 40%;
     text-align: center;
   }
 }
@@ -162,7 +168,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 10px;
   }
@@ -170,7 +176,7 @@
     background-color: var(--colorWhite);
     padding: 10px;
     margin: 10px auto;
-    width: 48%;
+    width: 45%;
     overflow: hidden;
     border: solid 0.5px var(--colorAsh);
     border-radius: 10px;
@@ -179,6 +185,7 @@
     overflow: hidden;
     width: 430px;
     margin-top: -10px;
+    margin-left: -10px;
     height: 200px;
     background-color: var(--colorBlack);
   }
@@ -240,7 +247,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 10px;
   }
@@ -248,7 +255,7 @@
     background-color: var(--colorWhite);
     padding: 10px;
     margin: 10px auto;
-    width: 24%;
+    width: 30%;
     overflow: hidden;
     border: solid 0.5px var(--colorAsh);
     border-radius: 10px;
@@ -318,7 +325,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 10px;
   }
@@ -326,7 +333,7 @@
     background-color: var(--colorWhite);
     padding: 10px;
     margin: 10px auto;
-    width: 24%;
+    width: 22%;
     overflow: hidden;
     border: solid 0.5px var(--colorAsh);
     border-radius: 10px;

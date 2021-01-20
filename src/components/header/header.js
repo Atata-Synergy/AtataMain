@@ -1,5 +1,4 @@
 import React, { Component, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import { Link } from "react-router-dom";
 import HeaderLogo from "../logoComponents/headerLogo.png";
