@@ -20,6 +20,8 @@
     padding: 5px;
     background-color: #9c0303;
     color: var(--colorWhite);
+    cursor: pointer;
+    outline: none;
   }
   .cart-container .cart-item .btn-dlt:hover {
     background-color: var(--colorRed);
@@ -131,6 +133,8 @@
     padding: 5px;
     background-color: #9c0303;
     color: var(--colorWhite);
+    cursor: pointer;
+    outline: none;
   }
   .cart-container .cart-item .btn-dlt:hover {
     background-color: var(--colorRed);
@@ -242,6 +246,8 @@
     padding: 5px;
     background-color: #9c0303;
     color: var(--colorWhite);
+    cursor: pointer;
+    outline: none;
   }
   .cart-container .cart-item .btn-dlt:hover {
     background-color: var(--colorRed);
@@ -353,6 +359,8 @@
     padding: 5px;
     background-color: #9c0303;
     color: var(--colorWhite);
+    cursor: pointer;
+    outline: none;
   }
   .cart-container .cart-item .btn-dlt:hover {
     background-color: var(--colorRed);
@@ -464,6 +472,8 @@
     padding: 5px;
     background-color: #9c0303;
     color: var(--colorWhite);
+    cursor: pointer;
+    outline: none;
   }
   .cart-container .cart-item .btn-dlt:hover {
     background-color: var(--colorRed);
