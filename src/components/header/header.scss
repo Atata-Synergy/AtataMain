@@ -45,7 +45,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 30px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -103,7 +103,6 @@
         .icon {
           font-size: 23px;
           display: flex;
-          padding-top: 5px;
           color: var(--colorGreen);
         }
 
@@ -293,7 +292,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 20px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -311,7 +310,7 @@
     }
 
     .rght-itm {
-      width: 25%;
+      width: 30%;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -530,7 +529,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 10px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -1190,7 +1189,7 @@
           margin: auto;
 
           img {
-            width: 100px;
+            width: 70px;
           }
         }
       }

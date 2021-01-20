@@ -41,7 +41,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 30px;
+    padding: 10px;
   }
   .other-services li {
     cursor: pointer;
@@ -113,7 +113,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 5px;
     color: var(--colorGreen);
   }
   .other-services .cart a span {
@@ -294,7 +293,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 20px;
+    padding: 10px;
   }
   .other-services li {
     cursor: pointer;
@@ -309,7 +308,7 @@
     margin: 5px 20px;
   }
   .other-services .rght-itm {
-    width: 25%;
+    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,7 +536,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 10px;
+    padding: 10px;
   }
   .other-services li {
     cursor: pointer;
@@ -1233,7 +1232,7 @@
     margin: auto;
   }
   .MainHeader .mobile-header .mobile-logo .logo img {
-    width: 100px;
+    width: 70px;
   }
   .MainHeader .mobile-header .mobile-cart {
     width: 20%;
