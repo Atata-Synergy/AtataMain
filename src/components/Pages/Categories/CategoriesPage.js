@@ -13,7 +13,10 @@ import CarouselSlider from "./cart-slider";
 
 function Categories() {
   return (
-    <div className="cart-container">
+    <>
+        
+    <Header />
+    <div className="cart-container">  
         <Breadcrumbs aria-label="breadcrumb">
           <Link to='/' className='bd-text'>
             Home
@@ -36,9 +39,10 @@ function Categories() {
           ))}
         </section>
       </div>
-      <Footer />
-      <Header />
     </div>
+    <Footer />
+
+    </>
   );
 }
 export default Categories;

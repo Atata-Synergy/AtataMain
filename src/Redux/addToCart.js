@@ -12,10 +12,10 @@ export function removeCartItem(item) {
   };
 }
 const initialState = {
-  cartItem: [],
+  cartItem: [true, 2],
 };
 
-function addToCartReducer(shoppingCart = [], action) {
+function addToCartReducer(shoppingCart = initialState.cartItem.length, action) {
   switch (action.type) {
     case "ADD_CART_ITEM":
       return  [...shoppingCart.cartItem, action.payload]

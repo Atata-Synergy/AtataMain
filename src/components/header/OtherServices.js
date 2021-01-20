@@ -60,7 +60,7 @@ function OtherServices() {
           <Link to="/cart">
             <p className="icon">
               <FiShoppingCart />
-              <span> {shoppingCart.lenght} items in cart</span>
+              <span> {shoppingCart} items in cart</span>
             </p>
           </Link>
         </li>
