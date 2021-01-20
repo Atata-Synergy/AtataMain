@@ -18,39 +18,39 @@ const Categories = {
   SideNav: [
     {
       id: 0,
-      category: "category",
+      category: "adire",
     },
     {
       id: 1,
-      category: "category",
+      category: "arts",
     },
     {
       id: 2,
-      category: "category",
+      category: "assesories",
     },
     {
       id: 3,
-      category: "category",
+      category: "men",
     },
     {
       id: 4,
-      category: "category",
+      category: "women",
     },
     {
       id: 5,
-      category: "category",
+      category: "kids",
     },
     {
       id: 6,
-      category: "category",
+      category: "animal skins",
     },
     {
       id: 7,
-      category: "category",
+      category: "africa",
     },
     {
       id: 8,
-      category: "category",
+      category: "made in africa",
     },
     {
       id: 9,
@@ -153,6 +153,27 @@ const Categories = {
       title: "Beads",
       category: 'Beads and wireworks',
       img: Img10,
+      amount: 20000,
+    },
+    {
+      id: 11,
+      title: "Ankara Shoe, Bag and purse",
+      category: 'Textiles',
+      img: Img11,
+      amount: 20000,
+    },
+    {
+      id: 11,
+      title: "Ankara Shoe, Bag and purse",
+      category: 'Textiles',
+      img: Img11,
+      amount: 20000,
+    },
+    {
+      id: 11,
+      title: "Ankara Shoe, Bag and purse",
+      category: 'Textiles',
+      img: Img11,
       amount: 20000,
     },
     {
