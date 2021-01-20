@@ -3,6 +3,11 @@
     margin: 2rem auto;
     max-width: 100%;
   }
+  .items-card-container .header {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: 10px;
+  }
   button.right-btn, button.left-btn {
     -webkit-box-shadow: 1px 1px 10px #0000002f;
             box-shadow: 1px 1px 10px #0000002f;
@@ -98,6 +103,11 @@
   .items-card-container {
     margin: 2rem auto;
     max-width: 100%;
+  }
+  .items-card-container .header {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: 10px;
   }
   button.right-btn, button.left-btn {
     -webkit-box-shadow: 1px 1px 10px #0000002f;
@@ -195,6 +205,11 @@
     margin: 2rem auto;
     max-width: 100%;
   }
+  .items-card-container .header {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: 10px;
+  }
   button.right-btn, button.left-btn {
     -webkit-box-shadow: 1px 1px 10px #0000002f;
             box-shadow: 1px 1px 10px #0000002f;
@@ -291,6 +306,11 @@
     margin: 2rem auto;
     max-width: 100%;
   }
+  .items-card-container .header {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: 10px;
+  }
   button.right-btn, button.left-btn {
     -webkit-box-shadow: 1px 1px 10px #0000002f;
             box-shadow: 1px 1px 10px #0000002f;
@@ -386,6 +406,11 @@
   .items-card-container {
     margin: 2rem auto;
     max-width: 100%;
+  }
+  .items-card-container .header {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: 10px;
   }
   button.right-btn, button.left-btn {
     -webkit-box-shadow: 1px 1px 10px #0000002f;
