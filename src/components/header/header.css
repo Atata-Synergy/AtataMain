@@ -803,14 +803,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 100%;
+    width: 100%;
     position: fixed;
     bottom: 0;
     background-color: var(--colorWhite);
     border-top: solid 0.5px #e2e2e2;
   }
   .MainHeader .PagesHeader .mobile-contain .search-mobile-container {
-    width: 70%;
+    max-width: 100%;
     margin: auto;
     padding: 0px 3px;
   }
@@ -822,7 +822,7 @@
     border: solid 1px #aaaaaa;
     border-radius: 5px;
     height: 42px;
-    width: 100%;
+    width: 130%;
     overflow: hidden;
   }
   .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search button {
@@ -832,8 +832,8 @@
     color: var(--colorLight);
     outline: none;
     padding: 5px;
-    width: 30%;
-    height: 40px;
+    width: 37%;
+    height: 45px;
   }
   .MainHeader .PagesHeader .mobile-contain .search-mobile-container .search input {
     width: 75%;
