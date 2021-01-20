@@ -14,11 +14,15 @@ import Latest from "../card/LatestItem";
 
 function Page() {
   return (
-    <div className="index-page-container">
-      {/* <Simpleslider /> */}
+    <div className="index-page-container">      
+
+      <MainHeader />
+      
+      <Simpleslider />
+
       <CategoryCard />
 
-      <Auction />
+      {/* <Auction /> */}
 
       <Featured />
 
@@ -26,11 +30,7 @@ function Page() {
 
       <IndexBlog />
 
-      {/* <Footer /> */}
-
-      {/* Fixed properties  */}
-      {/* <MainHeader /> */}
-      {/* Fixed properties Ends Here  */}
+      <Footer />
     </div>
   );
 }

@@ -1,28 +1,14 @@
-import redux, {createStore} from "redux"
+import {combineReducers, createStore} from "redux";
+import countReducer from "./count";
+import addToCartReducer from "./addToCart";
 
-export function increment() {
-    return {
-        type: "INCREMENT"
-    }
-}
+const rootReducer =  combineReducers({
+  countReducer,
+  addToCartReducer
+});
 
-export function decrement() {
-    return {
-        type: "DECREMENT"
-    }
-}
-
-function reducer(count = 0, action) {
-    switch(action.type) {
-        case "INCREMENT":
-            return count + 1
-        case "DECREMENT":
-            return count - 1
-        default:
-            return count
-    }
-}
-
-const store = createStore(reducer)
-store.subscribe(() => console.log(store.getState()))
+const store = createStore(rootReducer);
+store.subscribe(() => {
+  console.log(store.getState());
+});
 export default store

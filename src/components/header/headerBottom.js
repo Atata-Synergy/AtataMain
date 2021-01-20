@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import "./headerBottom.css";
+import "./header.css";
 import { AllCatMenuItems } from "./AllCateData";
 import ItemsCarousel from "react-items-carousel";
 import { Link } from "react-router-dom";
