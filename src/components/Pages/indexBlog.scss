@@ -305,7 +305,6 @@
     }
  }
 
-// // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .blog-body{
         background-color: var(--colorLight);
@@ -330,7 +329,7 @@
               height: 200px;
               background-color: var(--colorBlack);
               img {
-                width: 300px;
+                width: 350px;
                 margin: auto;
                 height: 250px;
                 &:hover {

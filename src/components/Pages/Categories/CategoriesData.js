@@ -162,27 +162,6 @@ const Categories = {
       img: Img11,
       amount: 20000,
     },
-    {
-      id: 11,
-      title: "Ankara Shoe, Bag and purse",
-      category: 'Textiles',
-      img: Img11,
-      amount: 20000,
-    },
-    {
-      id: 11,
-      title: "Ankara Shoe, Bag and purse",
-      category: 'Textiles',
-      img: Img11,
-      amount: 20000,
-    },
-    {
-      id: 11,
-      title: "Ankara Shoe, Bag and purse",
-      category: 'Textiles',
-      img: Img11,
-      amount: 20000,
-    },
   ],
   RelatedItems: [
     {
