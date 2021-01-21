@@ -8,6 +8,7 @@ PACKAGES TO INSTALL:
 * react-flags-select
 * styled-components
 * Redux
+* bs-stepper
 
 check package.jsonfor other installed packages
 
