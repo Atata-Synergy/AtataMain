@@ -115,6 +115,9 @@
     background-color: var(--colorGreen);
     color: var(--colorWhite);
   }
+  .react-tabs {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -188,6 +191,9 @@
   }
   .mobile-user-page-container .user-page-menu a li:hover {
     background-color: var(--colorLight);
+  }
+  .react-tabs {
+    display: none;
   }
   .order-container {
     max-width: 100%;
@@ -398,13 +404,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 97%;
+    width: 50%;
+    margin: auto;
   }
   .react-tabs .react-tabs__tab-panel--selected .order-container form .order-btn .bck-btn {
     display: none;
   }
   .react-tabs .react-tabs__tab-panel--selected .order-container form .order-btn .save {
-    width: 95%;
+    width: 70%;
     padding: 10px;
     outline: none;
     border: none;
@@ -488,14 +495,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 97%;
+    width: 50%;
+    margin: auto;
   }
   .react-tabs .react-tabs__tab-panel--selected .order-container form .order-btn .bck-btn {
     display: none;
   }
   .react-tabs .react-tabs__tab-panel--selected .order-container form .order-btn .save {
-    width: 95%;
-    padding: 10px;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
     outline: none;
     border: none;
     margin: 0 5px;

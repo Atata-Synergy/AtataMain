@@ -124,6 +124,9 @@
             
         }
     }
+    .react-tabs {
+        display: none;
+    }
 }
 
 
@@ -208,6 +211,9 @@
 
         }
         
+    }
+    .react-tabs {
+        display: none;
     }
     .order-container{
         max-width: 100%;
@@ -423,12 +429,13 @@
                     }
                     .order-btn{
                         display: flex;
-                        width: 97%;
+                        width: 50%;
+                        margin: auto;
                         .bck-btn{
                            display: none;
                         }
                         .save{
-                            width: 95%;
+                            width: 70%;
                             padding: 10px;
                             outline: none;
                             border: none;
@@ -518,13 +525,15 @@
                     }
                     .order-btn{
                         display: flex;
-                        width: 97%;
+                        width: 50%;
+                        margin: auto;
                         .bck-btn{
                            display: none;
                         }
                         .save{
-                            width: 95%;
-                            padding: 10px;
+                            width: 70%;
+                            margin: auto;
+                            padding: 15px;
                             outline: none;
                             border: none;
                             margin: 0 5px ;
