@@ -17,6 +17,7 @@ class ItemName extends Component {
 }
 
 const Item = styled.div`
+padding: 10px;
 p{
     font-size: 19px;
     font-weight: 500;

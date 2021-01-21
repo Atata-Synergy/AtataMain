@@ -6,8 +6,9 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Summary from './summary'
+import CustomerDetails from './CustomerDetails'
+import DeliverySection from './delivery'
 import {IoIosArrowBack} from 'react-icons/io'
-import Header from '../header/header'
 
 function getSteps() {
   return ['', '', ''];
@@ -18,9 +19,9 @@ function getStepContent(stepIndex) {
     case 0:
       return <Summary/>;
     case 1:
-      return 'What is an ad group anyways?';
+      return <CustomerDetails/>;
     case 2:
-      return 'This is the bit I really care about!';
+      return <DeliverySection/>;
     default:
       return 'Unknown stepIndex';
   }
@@ -44,7 +45,6 @@ export default function HorizontalLabelPositionBelowStepper() {
 
   return (
       <>
-      <Header/>
     <div className='root'>
         <div className="heading">Checkout</div>
       <Stepper activeStep={activeStep} alternativeLabel>
@@ -72,7 +72,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                <IoIosArrowBack/>
               </Button>
               <Button variant="contained" color="primary" onClick={handleNext}>
-                {activeStep === steps.length - 1 ? 'Finish' : 'Continue'}
+                {activeStep === steps.length - 1 ? 'Pay 17,500' : 'Continue'}
               </Button>
             </div>
           </div>
