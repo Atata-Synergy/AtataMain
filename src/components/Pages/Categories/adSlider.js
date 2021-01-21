@@ -10,11 +10,11 @@ import AdsBanner2 from "../categoryImages/ADS2.png";
 export default function AdsSlider() {
   return (
     <div className="Ads-slider">
-      <AliceCarousel autoPlay autoPlayInterval="4000">
+      {/* <AliceCarousel autoPlay autoPlayInterval="4000">
         <img src={AdsBanner} />
         <img src={AdsBanner1} />
         <img src={AdsBanner2} />
-      </AliceCarousel>
+      </AliceCarousel> */}
     </div>
   );
 }

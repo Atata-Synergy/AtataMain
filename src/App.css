@@ -1,4 +1,6 @@
 body {
+  box-sizing: border-box;
+  max-width: 100%;
   font-family: "Muli", sans-serif !important;
 }
 
@@ -12,5 +14,7 @@ body {
 }
 .index-page-container {
   background-color: #f0f0f0;
-  max-width: 100%;
+}
+a{
+  text-decoration: none;
 }

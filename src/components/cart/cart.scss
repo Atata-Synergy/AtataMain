@@ -17,11 +17,13 @@
                 padding: 5px;
                 background-color: #9c0303;
                 color: var(--colorWhite);
-                
+                cursor: pointer;
+                outline: none;
             }
             .btn-dlt:hover{
                 background-color: var(--colorRed);
                 color: black;
+
              }
 
             .cart-img-container {
@@ -126,8 +128,6 @@
         
     }
 }
-
-
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .cart-container {
         width: 100%;
@@ -147,7 +147,8 @@
                 padding: 5px;
                 background-color: #9c0303;
                 color: var(--colorWhite);
-                
+                cursor: pointer;
+                outline: none;
             }
             .btn-dlt:hover{
                 background-color: var(--colorRed);
@@ -254,8 +255,6 @@
         
     }
 }
-
-
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .cart-container {
         width: 100%;
@@ -275,7 +274,8 @@
                 padding: 5px;
                 background-color: #9c0303;
                 color: var(--colorWhite);
-                
+                cursor: pointer;
+                outline: none;
             }
             .btn-dlt:hover{
                 background-color: var(--colorRed);
@@ -383,10 +383,6 @@
         
     }
 }
-
-
-
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .cart-container {
         width: 100%;
@@ -406,7 +402,8 @@
                 padding: 5px;
                 background-color: #9c0303;
                 color: var(--colorWhite);
-                
+                cursor: pointer;
+                outline: none;
             }
             .btn-dlt:hover{
                 background-color: var(--colorRed);
@@ -513,7 +510,6 @@
         
     }
  }
-
 @media (min-width: 1200px) { 
     .cart-container {
         width: 100%;
@@ -533,7 +529,8 @@
                 padding: 5px;
                 background-color: #9c0303;
                 color: var(--colorWhite);
-                
+                cursor: pointer;
+                outline: none;
             }
             .btn-dlt:hover{
                 background-color: var(--colorRed);

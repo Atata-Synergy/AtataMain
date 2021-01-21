@@ -16,7 +16,7 @@
   }
 
   .all-categories {
-    width: 100%;
+    max-width: 100%;
     background-color: var(--colorGreen);
     overflow: hidden;
   }
@@ -36,7 +36,7 @@
   }
 
   .other-services {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -45,7 +45,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 30px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -103,7 +103,6 @@
         .icon {
           font-size: 23px;
           display: flex;
-          padding-top: 5px;
           color: var(--colorGreen);
         }
 
@@ -264,7 +263,7 @@
   }
 
   .all-categories {
-    width: 100%;
+    max-width: 100%;
     background-color: var(--colorGreen);
     overflow: hidden;
   }
@@ -284,7 +283,7 @@
   }
 
   .other-services {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -293,7 +292,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 20px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -311,7 +310,7 @@
     }
 
     .rght-itm {
-      width: 25%;
+      width: 30%;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -505,7 +504,7 @@
   }
 
   .all-categories {
-    width: 100%;
+    max-width: 100%;
     background-color: var(--colorGreen);
     overflow: hidden;
 
@@ -521,7 +520,7 @@
   }
 
   .other-services {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -530,7 +529,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--colorGreen);
-    padding: 0 10px;
+    padding: 10px;
 
     li {
       cursor: pointer;
@@ -787,7 +786,7 @@
         border-top: solid 0.5px #e2e2e2;
 
         .search-mobile-container {
-          width: 70%;
+          max-width: 100%;
           margin: auto;
           padding: 0px 3px;
 
@@ -797,7 +796,7 @@
             border: solid 1px #aaaaaa;
             border-radius: 5px;
             height: 42px;
-            width: 100%;
+            width: 130%;
             overflow: hidden;
 
             button {
@@ -807,8 +806,8 @@
               color: var(--colorLight);
               outline: none;
               padding: 5px;
-              width: 30%;
-              height: 40px;
+              width: 37%;
+              height: 45px;
             }
 
             input {
@@ -866,7 +865,7 @@
     }
 
     .mobile-header {
-      width: 100%;
+      max-width: 100%;
       display: flex;
 
       .mobile-menu {
@@ -1116,7 +1115,7 @@
     }
 
     .mobile-header {
-      width: 97%;
+      max-width: 96%;
       display: flex;
 
       .mobile-menu {
@@ -1190,7 +1189,7 @@
           margin: auto;
 
           img {
-            width: 100px;
+            width: 70px;
           }
         }
       }

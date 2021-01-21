@@ -32,7 +32,7 @@ export default class IndexBlog extends Component {
                 molestiae consequatur, vel illum qui dolorem eum fugiat quo
                 voluptas nulla pariatur?"
               </div>
-              <div className="Blogdetails d-flex">
+              <div className="Blogdetails ">
                 <span className="post-by">
                   <i class="fas fa-pen-square"></i>Mc Don
                 </span>
